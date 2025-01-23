@@ -3,10 +3,57 @@
 <head>
     <title>Friedrich Wicke</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
-        
+        /* Toggle switch styling */
+        .switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        .switch input {
+            display: none;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0; left: 0;
+            right: 0; bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+        }
+        .slider::before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+        }
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
         body {
-            font-family: 'EB Garamond', serif;
+            /* If you had 'EB Garamond' previously, 
+               ensure it's either commented or removed here
+               to use the default font */
         }
 
         .content {
@@ -15,20 +62,48 @@
             white-space: pre-wrap;
         }
 
+        /* Image style restored */
         img {
             width: 15%;
             float: left;
             margin: 0px 20px 50px 0px;
         }
+
+        /* Position the indication text just below the switch */
+        #modeIndicator {
+            position: absolute;
+            top: 60px; /* adjust to your liking */
+            right: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Friedrich Wicke</h1>
-    <div class="content">
-        <p><img src="frido.png" alt="Friedrich Wicke">
+    <!-- On/Off toggle switch in top-right corner -->
+    <label class="switch">
+        <input type="checkbox" id="toggleSwitch">
+        <span class="slider round"></span>
+    </label>
 
-Working on the <a href="https://swipemath.com/">SwipeMath App</a> at <a href="https://sophiaedulabs.com">Sophia Edu Labs</a>
+    <!-- This will display "First Person" or "Third Person" under the toggle -->
+    <div id="modeIndicator"></div>
+
+    <h1>Friedrich Wicke</h1>
+    <!-- Re-added image (replace with desired src) -->
+    <img src="frido.png" alt="Portrait of Friedrich Wicke">
+
+    
+    <div class="content">
+        <!-- Leave this paragraph empty so our script sets it to first-person by default -->
+        <p id="bio"></p>
+    </div>
+
+    <script>
+        // First-person text
+        const firstPerson = `
+Working on <a href="https://bloom.boo">Bloom</a> by <a href="https://sophiaedulabs.com">Sophia Edu Labs</a>, an affordable AI private tutor.
 Computer Science Master's student @<a href="https://ethz.ch/en.html">ETH Zurich</a>
 Previously Mathematics & Economics at TU Berlin, Harvard, Max Planck MIS
 Supported by the German Academic Foundation and Heinrich Boell Foundation.
@@ -36,8 +111,39 @@ Co-Founder <a href="https://www.starcode.de">Starcode e.V.</a>, <a href="https:/
 Working on <a href="http://www.thinkersandmakers.eu">Thinkers & Makers</a>, a Podcast about Startups & Science in Europe
 Contact me: <a href="mailto:friedrich.wicke@protonmail.com">friedrich.wicke@protonmail.com</a>, or via <a href="https://www.linkedin.com/in/friedrich-wicke-203a44191/">Linked In</a>
 Follow me on <a href="https://www.instagram.com/friedrichwicke/">Instagram</a> and <a href="https://twitter.com/fridowicke">Twitter</a>
-        </p>
-    </div>
+        `;
+
+        // Third-person text
+        const thirdPerson = `
+Friedrich is working on <a href="https://bloom.boo">Bloom</a> by <a href="https://sophiaedulabs.com">Sophia Edu Labs</a>, an affordable AI private tutor.
+He is a Computer Science Master's student at <a href="https://ethz.ch/en.html">ETH Zurich</a>.
+He previously studied Mathematics & Economics at TU Berlin, Harvard, and Max Planck MIS.
+He is supported by the German Academic Foundation and Heinrich Boell Foundation.
+He is a co-founder of <a href="https://www.starcode.de">Starcode e.V.</a>, <a href="https://bliss.berlin">BLISS Berlin</a>, and <a href="http://culturecampus.berlin/">Culture Campus Berlin</a>.
+He currently works on <a href="http://www.thinkersandmakers.eu">Thinkers & Makers</a>, a podcast about Startups & Science in Europe.
+You can contact him at <a href="mailto:friedrich.wicke@protonmail.com">friedrich.wicke@protonmail.com</a> or via <a href="https://www.linkedin.com/in/friedrich-wicke-203a44191/">Linked In</a>.
+Follow him on <a href="https://www.instagram.com/friedrichwicke/">Instagram</a> and <a href="https://twitter.com/fridowicke">Twitter</a>.
+        `;
+
+        // On page load, set the bio to first-person and label it
+        window.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("bio").innerHTML = firstPerson.trim();
+            document.getElementById("modeIndicator").textContent = "First Person";
+        });
+
+        // Toggle between first-person and third-person when the switch changes
+        document.getElementById("toggleSwitch").addEventListener("change", (e) => {
+            const bio = document.getElementById("bio");
+            const modeIndicator = document.getElementById("modeIndicator");
+            if (e.target.checked) {
+                bio.innerHTML = thirdPerson.trim();
+                modeIndicator.textContent = "Third Person";
+            } else {
+                bio.innerHTML = firstPerson.trim();
+                modeIndicator.textContent = "First Person";
+            }
+        });
+    </script>
 </body>
 
 </html>
