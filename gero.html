@@ -263,7 +263,7 @@
             }
         }
         
-        // Replace the createConfetti function with the new yippee function
+        // Spin the wheel
         spinButton.addEventListener('click', () => {
             if (!canSpin) return;
             
@@ -279,22 +279,25 @@
             const resultIndex = Math.floor(Math.random() * 2);
             
             // Calculate final rotation in degrees
-            // 0 degrees for "NOCH WACH", 180 degrees for "SCHON WACH"
-            const finalRotation = rotations * 360 + (resultIndex * 180);
+            // For "NOCH WACH" (red, left side), we want the wheel to end with red at the top
+            // For "SCHON WACH" (green, right side), we want the wheel to end with green at the top
+            const finalRotation = rotations * 360 + (resultIndex === 0 ? 0 : 180);
             
             // Apply rotation
             wheel.style.transform = `rotate(${finalRotation}deg)`;
             
             // Show result after animation completes
             setTimeout(() => {
-                result.textContent = results[resultIndex];
+                // Set text based on which color is at the top pointer
+                const resultText = results[resultIndex];
+                result.textContent = resultText;
                 result.style.opacity = "1";
                 
                 // Play confetti with yippee function
                 yippee();
                 
                 // Show fullscreen result
-                fullscreenText.textContent = results[resultIndex];
+                fullscreenText.textContent = resultText;
                 fullscreenResult.style.opacity = "1";
                 fullscreenResult.style.pointerEvents = "auto";
                 
