@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nachhilfe Links - Tutor.new Sessions"/>
+    <title>Nachhilfe Links - Friedrich Wicke</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.4;
+            font-size: 16px;
+            padding: 0 20px;
+            margin: 50px auto;
+            max-width: 900px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .students-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .student-card {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .student-name {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .grade-info {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .tutor-button {
+            display: block;
+            width: 200px;
+            padding: 15px 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 0 rgba(0,0,0,0.3);
+            position: relative;
+            text-align: center;
+            margin: 8px;
+            border-radius: 4px;
+        }
+
+        .tutor-button:hover {
+            transform: translateY(3px);
+            box-shadow: 0 3px 0 rgba(0,0,0,0.3);
+        }
+
+        .tutor-button:active {
+            transform: translateY(6px);
+            box-shadow: 0 0 0 rgba(0,0,0,0.3);
+        }
+
+        .red-button {
+            background-color: #e74c3c;
+        }
+
+        .red-button:hover {
+            background-color: #c0392b;
+        }
+
+        .red-card .student-name {
+            color: #e74c3c;
+        }
+
+        .yellow-button {
+            background-color: #f1c40f;
+            color: #333;
+        }
+
+        .yellow-button:hover {
+            background-color: #d4ac0d;
+        }
+
+        .yellow-card .student-name {
+            color: #f39c12;
+        }
+
+        .green-button {
+            background-color: #27ae60;
+        }
+
+        .green-button:hover {
+            background-color: #229954;
+        }
+
+        .green-card .student-name {
+            color: #27ae60;
+        }
+
+        .schedule-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .button-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .button-day {
+            font-size: 0.8em;
+            font-weight: normal;
+            opacity: 0.9;
+        }
+
+        .button-time {
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .schedule-info {
+            display: none;
+        }
+
+        .back-link {
+            margin-top: 50px;
+            font-size: 1.1em;
+        }
+
+        .back-link a {
+            color: #333;
+            text-decoration: none;
+            border-bottom: 2px solid #333;
+            padding-bottom: 2px;
+        }
+
+        .back-link a:hover {
+            color: #e74c3c;
+            border-bottom-color: #e74c3c;
+        }
+
+        @media (max-width: 600px) {
+            .schedule-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .tutor-button {
+                width: 180px;
+                padding: 12px 16px;
+                font-size: 1em;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+
+            .student-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Nachhilfe Links</h1>
+        
+        <div class="students-container">
+            <div class="student-card red-card">
+                <div class="student-name">Mohamed</div>
+                <div class="grade-info">5. Klasse</div>
+                <div class="schedule-buttons">
+                    <a href="https://live.tutor.new/u?password=412116" target="_blank" class="tutor-button red-button">
+                        <div class="button-content">
+                            <div class="button-day">Mittwoch</div>
+                            <div class="button-time">14:00-15:00</div>
+                        </div>
+                    </a>
+                    <a href="https://live.tutor.new/u?password=412116" target="_blank" class="tutor-button red-button">
+                        <div class="button-content">
+                            <div class="button-day">Freitag</div>
+                            <div class="button-time">17:00-18:00</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="student-card yellow-card">
+                <div class="student-name">Mustafe</div>
+                <div class="grade-info">4. Klasse</div>
+                <div class="schedule-buttons">
+                    <a href="https://live.tutor.new/u?password=822437" target="_blank" class="tutor-button yellow-button">
+                        <div class="button-content">
+                            <div class="button-day">Mittwoch</div>
+                            <div class="button-time">15:00-16:00</div>
+                        </div>
+                    </a>
+                    <a href="https://live.tutor.new/u?password=822437" target="_blank" class="tutor-button yellow-button">
+                        <div class="button-content">
+                            <div class="button-day">Freitag</div>
+                            <div class="button-time">14:00-15:00</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="student-card green-card">
+                <div class="student-name">Muna</div>
+                <div class="grade-info">3. Klasse</div>
+                <div class="schedule-buttons">
+                    <a href="https://live.tutor.new/u?password=486391" target="_blank" class="tutor-button green-button">
+                        <div class="button-content">
+                            <div class="button-day">Mittwoch</div>
+                            <div class="button-time">16:00-17:00</div>
+                        </div>
+                    </a>
+                    <a href="https://live.tutor.new/u?password=486391" target="_blank" class="tutor-button green-button">
+                        <div class="button-content">
+                            <div class="button-day">Freitag</div>
+                            <div class="button-time">15:00-16:00</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="back-link">
+            <a href="/">← Zurück zur Hauptseite</a>
+        </div>
+    </div>
+</body>
+
+</html> 
