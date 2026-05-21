@@ -17,13 +17,14 @@
     --neg-zone: #fdecec;
     --pos-zone: #ebf5ee;
 
-    --c1: #1f6b3f;     /* 2GW */
+    --c1: #1f6b3f;
     --c1-soft: #d4ead9;
-    --c2: #b86518;     /* 1SW */
+    --c2: #b86518;
     --c2-soft: #f4dfc9;
 
     --up: #1f6b3f;
     --down: #b54040;
+    --flat: #888;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -39,7 +40,6 @@
 
   .page { max-width: 880px; margin: 0 auto; padding: 48px 36px 72px; }
 
-  /* ── HEADER ── */
   header { border-bottom: 2px solid var(--ink); padding-bottom: 18px; margin-bottom: 32px; }
   .eyebrow { font-size: 10.5px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
   h1 { font-family: Georgia, serif; font-size: 26px; font-weight: 400; line-height: 1.25; color: var(--ink); margin-bottom: 8px; }
@@ -47,25 +47,15 @@
   .meta { font-size: 12px; color: var(--muted); margin-top: 14px; line-height: 1.7; }
   .meta strong { color: var(--ink); font-weight: 600; }
 
-  /* ── SECTIONS ── */
   section { margin-bottom: 40px; }
   h2 {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.8px;
-    text-transform: uppercase;
-    color: var(--ink);
-    margin-bottom: 14px;
-    padding-bottom: 6px;
+    font-size: 12px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase;
+    color: var(--ink); margin-bottom: 14px; padding-bottom: 6px;
     border-bottom: 1px solid var(--line);
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
+    display: flex; align-items: baseline; gap: 10px;
   }
   h2 .num { color: var(--muted); font-weight: 400; }
-  h2 .sub { margin-left: auto; font-size: 11px; font-weight: 400; color: var(--muted); text-transform: none; letter-spacing: 0; }
 
-  /* ── KPI CARDS ── */
   .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 14px 0; }
   .kpi { padding: 14px 14px; border-radius: 8px; background: #f7faf8; border: 1px solid var(--c1-soft); }
   .kpi.c2 { background: #fcf6ef; border-color: var(--c2-soft); }
@@ -75,143 +65,65 @@
   .kpi .l { font-size: 11px; color: var(--text); margin-top: 6px; line-height: 1.4; }
   .kpi .src { font-size: 9.5px; color: var(--muted); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.6px; }
 
-  /* ── LEGEND ── */
   .legend {
-    display: flex;
-    gap: 16px;
-    font-size: 11.5px;
-    color: var(--muted);
-    margin: 0 0 18px;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 8px 12px;
-    background: #fafbfc;
-    border-radius: 6px;
+    display: flex; gap: 14px; font-size: 11.5px; color: var(--muted);
+    margin: 0 0 18px; flex-wrap: wrap; align-items: center;
+    padding: 8px 12px; background: #fafbfc; border-radius: 6px;
   }
   .legend-item { display: inline-flex; align-items: center; gap: 6px; }
   .legend-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
   .legend-dot.c1 { background: var(--c1); }
   .legend-dot.c2 { background: var(--c2); }
+  .legend-dot.open { background: white; border: 2px solid var(--muted); width: 8px; height: 8px; }
   .legend-line { width: 14px; height: 0; border-top: 1.5px dashed var(--neu); }
 
-  /* ── CATEGORY BLOCK ── */
   .category {
-    margin-bottom: 22px;
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    overflow: hidden;
-    background: white;
+    margin-bottom: 22px; border: 1px solid var(--line);
+    border-radius: 12px; overflow: hidden; background: white;
   }
-  .cat-head {
-    padding: 16px 20px 8px;
-    background: linear-gradient(180deg, #fafbfc 0%, white 100%);
-  }
-  .cat-title {
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    color: var(--ink);
-    margin-bottom: 4px;
-  }
-  .cat-explain {
-    font-size: 13px;
-    color: var(--text);
-    line-height: 1.5;
-    margin-bottom: 14px;
-  }
+  .cat-head { padding: 16px 20px 8px; background: linear-gradient(180deg, #fafbfc 0%, white 100%); }
+  .cat-title { font-size: 13px; font-weight: 700; letter-spacing: 0.5px; color: var(--ink); margin-bottom: 4px; }
+  .cat-explain { font-size: 13px; color: var(--text); line-height: 1.5; margin-bottom: 14px; }
   .cat-explain b { color: var(--ink); font-weight: 700; }
 
-  /* ── HERO DATAPOINT ── */
-  .hero {
-    padding: 14px 20px 16px;
-    background: white;
-  }
-  .hero + .hero { border-top: 1px solid var(--line-soft); }
-  .hero-q {
-    font-size: 13.5px;
-    color: var(--ink);
-    font-weight: 600;
-    margin-bottom: 12px;
-    line-height: 1.4;
-  }
-
-  .hero-grid {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    gap: 18px;
-    align-items: center;
-  }
-
+  .hero { padding: 14px 20px 16px; background: white; }
+  .hero + .hero, .hero + .hero-vn, .hero-vn + .hero-vn, .hero-vn + .hero { border-top: 1px solid var(--line-soft); }
+  .hero-q { font-size: 13.5px; color: var(--ink); font-weight: 600; margin-bottom: 12px; line-height: 1.4; }
+  .hero-grid { display: grid; grid-template-columns: 1fr 200px; gap: 18px; align-items: center; }
   .hero-scale {
-    position: relative;
-    height: 38px;
-    background: linear-gradient(to right,
-      var(--neg-zone) 0%, var(--neg-zone) 50%,
-      var(--pos-zone) 50%, var(--pos-zone) 100%);
+    position: relative; height: 38px;
+    background: linear-gradient(to right, var(--neg-zone) 0%, var(--neg-zone) 50%, var(--pos-zone) 50%, var(--pos-zone) 100%);
     border-radius: 6px;
   }
   .hero-scale::before {
-    content: '';
-    position: absolute;
-    left: 50%; top: -4px; bottom: -4px;
-    width: 0;
-    border-left: 1.5px dashed var(--neu);
-    transform: translateX(-50%);
+    content: ''; position: absolute; left: 50%; top: -4px; bottom: -4px;
+    width: 0; border-left: 1.5px dashed var(--neu); transform: translateX(-50%);
   }
   .hero-scale-labels {
-    position: absolute;
-    left: 0; right: 0; bottom: -16px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 9.5px;
-    color: var(--muted);
-    letter-spacing: 0.5px;
+    position: absolute; left: 0; right: 0; bottom: -16px;
+    display: flex; justify-content: space-between;
+    font-size: 9.5px; color: var(--muted); letter-spacing: 0.5px;
   }
   .hero-scale-labels span.neu { color: var(--ink); font-weight: 700; }
-
   .hero-dot {
-    position: absolute;
-    top: 50%;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    border: 3px solid white;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.18);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 10px;
-    font-weight: 700;
-    z-index: 2;
+    position: absolute; top: 50%;
+    width: 22px; height: 22px; border-radius: 50%;
+    transform: translate(-50%, -50%); border: 3px solid white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.18); z-index: 2;
   }
   .hero-dot.c1 { background: var(--c1); }
   .hero-dot.c2 { background: var(--c2); }
   .hero-dot-label {
-    position: absolute;
-    top: -22px;
-    font-size: 9.5px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    transform: translateX(-50%);
-    white-space: nowrap;
+    position: absolute; top: -22px;
+    font-size: 9.5px; font-weight: 700; letter-spacing: 0.5px;
+    transform: translateX(-50%); white-space: nowrap;
   }
   .hero-dot-label.c1 { color: var(--c1); }
   .hero-dot-label.c2 { color: var(--c2); }
-
-  .hero-vals {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
+  .hero-vals { display: flex; flex-direction: column; gap: 6px; }
   .hero-val {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 8px;
-    padding: 8px 12px;
-    border-radius: 6px;
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 8px; padding: 8px 12px; border-radius: 6px;
   }
   .hero-val.c1 { background: var(--c1-soft); }
   .hero-val.c2 { background: var(--c2-soft); }
@@ -223,298 +135,186 @@
   .hero-val.c2 .number { color: var(--c2); }
   .hero-val .number small { font-size: 12px; font-weight: 500; opacity: 0.6; }
 
-  /* ── DETAILS / TOGGLE ── */
-  details {
-    border-top: 1px solid var(--line);
-    background: #fafbfc;
+  .hero-vn { padding: 14px 20px 22px; background: white; }
+  .hero-vn .hero-q { font-size: 13.5px; font-weight: 600; margin-bottom: 14px; }
+  .hero-vn-tracks { display: grid; grid-template-columns: 1fr 200px; gap: 18px; align-items: stretch; }
+  .vn-stack { display: flex; flex-direction: column; gap: 12px; justify-content: center; }
+  .vn-line { display: grid; grid-template-columns: 38px 1fr; align-items: center; gap: 10px; }
+  .vn-class { font-size: 10.5px; font-weight: 700; letter-spacing: 0.6px; text-align: right; }
+  .vn-class.c1 { color: var(--c1); }
+  .vn-class.c2 { color: var(--c2); }
+  .vn-track {
+    position: relative; height: 26px;
+    background: linear-gradient(to right, var(--neg-zone) 0%, var(--neg-zone) 50%, var(--pos-zone) 50%, var(--pos-zone) 100%);
+    border-radius: 5px;
   }
+  .vn-track::before {
+    content: ''; position: absolute; left: 50%; top: -2px; bottom: -2px;
+    width: 0; border-left: 1.5px dashed var(--neu); transform: translateX(-50%);
+  }
+  .vn-conn { position: absolute; top: 50%; height: 3px; transform: translateY(-50%); border-radius: 2px; }
+  .vn-conn.c1 { background: var(--c1); }
+  .vn-conn.c2 { background: var(--c2); }
+  .vn-conn.flat { background: var(--flat); opacity: 0.4; }
+  .vn-vor, .vn-nach {
+    position: absolute; top: 50%;
+    width: 14px; height: 14px; border-radius: 50%;
+    transform: translate(-50%, -50%); z-index: 2;
+  }
+  .vn-vor { background: white; border: 2px solid var(--muted); }
+  .vn-nach.c1 { background: var(--c1); border: 2px solid white; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+  .vn-nach.c2 { background: var(--c2); border: 2px solid white; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+
+  .vn-scale-labels { display: grid; grid-template-columns: 38px 1fr; gap: 10px; margin-top: 4px; }
+  .vn-scale-labels .ticks { display: flex; justify-content: space-between; font-size: 9.5px; color: var(--muted); }
+  .vn-scale-labels .ticks span.neu { color: var(--ink); font-weight: 700; }
+
+  .vn-delta-stack { display: flex; flex-direction: column; gap: 6px; }
+  .vn-delta-card {
+    padding: 8px 12px; border-radius: 6px;
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  }
+  .vn-delta-card.c1 { background: var(--c1-soft); }
+  .vn-delta-card.c2 { background: var(--c2-soft); }
+  .vn-delta-card .klass { font-size: 10px; font-weight: 700; letter-spacing: 0.6px; }
+  .vn-delta-card.c1 .klass { color: var(--c1); }
+  .vn-delta-card.c2 .klass { color: var(--c2); }
+  .vn-delta-card .delta-big { font-size: 18px; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.05; }
+  .vn-delta-card .delta-big.up { color: var(--up); }
+  .vn-delta-card .delta-big.down { color: var(--down); }
+  .vn-delta-card .delta-big.flat { color: var(--flat); }
+  .vn-delta-card .vals { font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+  details { border-top: 1px solid var(--line); background: #fafbfc; }
   details > summary {
-    list-style: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    font-size: 11.5px;
-    font-weight: 600;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    color: var(--muted);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    user-select: none;
+    list-style: none; cursor: pointer; padding: 10px 20px;
+    font-size: 11.5px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase;
+    color: var(--muted); display: flex; align-items: center; gap: 8px; user-select: none;
   }
   details > summary::-webkit-details-marker { display: none; }
-  details > summary::after {
-    content: '+';
-    margin-left: auto;
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--muted);
-    transition: transform 0.2s;
-  }
+  details > summary::after { content: '+'; margin-left: auto; font-size: 18px; font-weight: 400; color: var(--muted); }
   details[open] > summary::after { content: '−'; }
   details > summary:hover { color: var(--ink); background: #f0f3f5; }
-
   details .more { padding: 8px 20px 16px; }
 
-  /* ── COMPACT ROW (inside details) ── */
   .compact-head {
-    display: grid;
-    grid-template-columns: 1fr 220px 86px;
-    gap: 12px;
-    font-size: 9.5px;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 6px 0 4px;
-    border-bottom: 1px solid var(--ink);
-    margin-bottom: 2px;
+    display: grid; grid-template-columns: 1fr 220px 86px; gap: 12px;
+    font-size: 9.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px;
+    padding: 6px 0 4px; border-bottom: 1px solid var(--ink); margin-bottom: 2px;
   }
   .compact-head .ticks { display: flex; justify-content: space-between; }
   .compact-head .ticks span.neu { color: var(--ink); font-weight: 700; }
   .compact-head .right { text-align: right; }
-
   .row {
-    display: grid;
-    grid-template-columns: 1fr 220px 86px;
-    align-items: center;
-    gap: 12px;
-    padding: 6px 0;
-    border-bottom: 1px solid var(--line-soft);
-    font-size: 12.5px;
+    display: grid; grid-template-columns: 1fr 220px 86px; align-items: center; gap: 12px;
+    padding: 6px 0; border-bottom: 1px solid var(--line-soft); font-size: 12.5px;
   }
   .row:last-child { border-bottom: none; }
-
   .track {
-    position: relative;
-    height: 16px;
-    background: linear-gradient(to right,
-      var(--neg-zone) 0%, var(--neg-zone) 50%,
-      var(--pos-zone) 50%, var(--pos-zone) 100%);
+    position: relative; height: 16px;
+    background: linear-gradient(to right, var(--neg-zone) 0%, var(--neg-zone) 50%, var(--pos-zone) 50%, var(--pos-zone) 100%);
     border-radius: 3px;
   }
   .track::before {
-    content: '';
-    position: absolute;
-    left: 50%; top: -2px; bottom: -2px;
-    width: 0;
-    border-left: 1.5px dashed var(--neu);
-    transform: translateX(-50%);
+    content: ''; position: absolute; left: 50%; top: -2px; bottom: -2px;
+    width: 0; border-left: 1.5px dashed var(--neu); transform: translateX(-50%);
   }
   .dot {
-    position: absolute;
-    top: 50%;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    border: 1.5px solid white;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    position: absolute; top: 50%; width: 11px; height: 11px;
+    border-radius: 50%; transform: translate(-50%, -50%);
+    border: 1.5px solid white; box-shadow: 0 1px 2px rgba(0,0,0,0.15);
   }
   .dot.c1 { background: var(--c1); }
   .dot.c2 { background: var(--c2); }
-
   .row .vals {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-    font-size: 11.5px;
-    font-variant-numeric: tabular-nums;
-    font-weight: 600;
+    display: flex; gap: 10px; justify-content: flex-end;
+    font-size: 11.5px; font-variant-numeric: tabular-nums; font-weight: 600;
   }
   .row .vals .v1 { color: var(--c1); }
   .row .vals .v2 { color: var(--c2); }
-  .row .vals .v-na { color: var(--neu); font-weight: 400; }
 
-  /* ── CHANGE ROW (vor/nach) ── */
-  .change-row {
-    display: grid;
-    grid-template-columns: 1fr 220px 86px;
-    align-items: center;
-    gap: 12px;
-    padding: 8px 0;
-    border-bottom: 1px solid var(--line-soft);
-    font-size: 12.5px;
+  .vn-compact-head {
+    display: grid; grid-template-columns: 1fr 220px 96px 96px; gap: 12px;
+    font-size: 9.5px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px;
+    padding: 6px 0 4px; border-bottom: 1px solid var(--ink); margin-bottom: 4px;
   }
-  .change-row .q { line-height: 1.35; }
-  .change-row .q .klass {
-    display: inline-block;
-    font-size: 9px;
-    padding: 1px 5px;
-    border-radius: 3px;
-    margin-left: 4px;
-    vertical-align: 1.5px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-  }
-  .klass.k1 { background: var(--c1-soft); color: var(--c1); }
-  .klass.k2 { background: var(--c2-soft); color: var(--c2); }
+  .vn-compact-head .ticks { display: flex; justify-content: space-between; }
+  .vn-compact-head .ticks span.neu { color: var(--ink); font-weight: 700; }
+  .vn-compact-head .right { text-align: right; }
 
-  .arrow-track {
-    position: relative;
-    height: 18px;
-    background: linear-gradient(to right,
-      var(--neg-zone) 0%, var(--neg-zone) 50%,
-      var(--pos-zone) 50%, var(--pos-zone) 100%);
+  .vn-row {
+    display: grid; grid-template-columns: 1fr 220px 96px 96px; align-items: center; gap: 12px;
+    padding: 10px 0; border-bottom: 1px solid var(--line-soft); font-size: 12.5px;
+  }
+  .vn-row:last-child { border-bottom: none; }
+  .vn-row .q { line-height: 1.35; }
+
+  .vn-row-tracks { display: flex; flex-direction: column; gap: 4px; }
+  .vn-mini {
+    position: relative; height: 14px;
+    background: linear-gradient(to right, var(--neg-zone) 0%, var(--neg-zone) 50%, var(--pos-zone) 50%, var(--pos-zone) 100%);
     border-radius: 3px;
   }
-  .arrow-track::before {
-    content: '';
-    position: absolute;
-    left: 50%; top: -2px; bottom: -2px;
-    width: 0;
-    border-left: 1.5px dashed var(--neu);
-    transform: translateX(-50%);
+  .vn-mini::before {
+    content: ''; position: absolute; left: 50%; top: -2px; bottom: -2px;
+    width: 0; border-left: 1.5px dashed var(--neu); transform: translateX(-50%);
   }
-  .pt-vor, .pt-nach {
-    position: absolute;
-    top: 50%;
-    width: 11px; height: 11px;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
+  .vn-mini .mconn { position: absolute; top: 50%; height: 2px; transform: translateY(-50%); }
+  .vn-mini .mconn.c1 { background: var(--c1); }
+  .vn-mini .mconn.c2 { background: var(--c2); }
+  .vn-mini .mconn.flat { background: var(--flat); opacity: 0.4; }
+  .vn-mini .mvor, .vn-mini .mnach {
+    position: absolute; top: 50%; width: 9px; height: 9px;
+    border-radius: 50%; transform: translate(-50%, -50%); z-index: 2;
   }
-  .pt-vor { background: white; border: 2px solid var(--muted); }
-  .pt-nach { background: var(--c1); border: 2px solid white; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
-  .change-row.k2 .pt-nach { background: var(--c2); }
-  .conn { position: absolute; top: 50%; height: 2px; background: var(--c1); transform: translateY(-50%); }
-  .change-row.k2 .conn { background: var(--c2); }
+  .vn-mini .mvor { background: white; border: 1.5px solid var(--muted); }
+  .vn-mini .mnach.c1 { background: var(--c1); border: 1.5px solid white; }
+  .vn-mini .mnach.c2 { background: var(--c2); border: 1.5px solid white; }
 
-  .delta {
-    text-align: right;
-    font-size: 12.5px;
-    font-weight: 700;
-    font-variant-numeric: tabular-nums;
+  .vn-row .delta-cell { text-align: right; font-size: 11.5px; font-variant-numeric: tabular-nums; }
+  .vn-row .delta-cell .d-class {
+    font-size: 9px; font-weight: 700; letter-spacing: 0.5px;
+    padding: 1px 5px; border-radius: 3px; margin-right: 4px;
   }
-  .delta.up { color: var(--up); }
-  .delta .small { font-size: 9.5px; color: var(--muted); font-weight: 500; display: block; margin-top: 1px; }
+  .vn-row .delta-cell.c1 .d-class { background: var(--c1-soft); color: var(--c1); }
+  .vn-row .delta-cell.c2 .d-class { background: var(--c2-soft); color: var(--c2); }
+  .vn-row .delta-cell .d-val { font-weight: 700; }
+  .vn-row .delta-cell .d-val.up { color: var(--up); }
+  .vn-row .delta-cell .d-val.down { color: var(--down); }
+  .vn-row .delta-cell .d-val.flat { color: var(--flat); }
+  .vn-row .delta-cell .d-vals { font-size: 9.5px; color: var(--muted); margin-top: 2px; line-height: 1.2; }
 
-  /* ── HERO CHANGE (large vor→nach) ── */
-  .hero-change-grid {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    gap: 18px;
-    align-items: center;
-  }
-  .hero-arrow-scale {
-    position: relative;
-    height: 38px;
-    background: linear-gradient(to right,
-      var(--neg-zone) 0%, var(--neg-zone) 50%,
-      var(--pos-zone) 50%, var(--pos-zone) 100%);
-    border-radius: 6px;
-  }
-  .hero-arrow-scale::before {
-    content: '';
-    position: absolute;
-    left: 50%; top: -4px; bottom: -4px;
-    width: 0;
-    border-left: 1.5px dashed var(--neu);
-    transform: translateX(-50%);
-  }
-  .hero-arrow-scale-labels {
-    position: absolute;
-    left: 0; right: 0; bottom: -16px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 9.5px;
-    color: var(--muted);
-  }
-  .hero-arrow-scale-labels span.neu { color: var(--ink); font-weight: 700; }
-  .h-conn {
-    position: absolute;
-    top: 50%;
-    height: 4px;
-    background: var(--c1);
-    transform: translateY(-50%);
-    border-radius: 2px;
-  }
-  .hero-change-grid.c2 .h-conn { background: var(--c2); }
-  .h-vor, .h-nach {
-    position: absolute;
-    top: 50%;
-    width: 20px; height: 20px;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 9px;
-    font-weight: 700;
-  }
-  .h-vor { background: white; border: 2.5px solid var(--muted); color: var(--muted); }
-  .h-nach { background: var(--c1); border: 3px solid white; color: white; box-shadow: 0 2px 6px rgba(0,0,0,0.18); }
-  .hero-change-grid.c2 .h-nach { background: var(--c2); }
-
-  .hero-delta-card {
-    padding: 12px 14px;
-    border-radius: 8px;
-    background: var(--c1-soft);
-    text-align: center;
-  }
-  .hero-change-grid.c2 .hero-delta-card { background: var(--c2-soft); }
-  .hero-delta-card .big {
-    font-size: 30px;
-    font-weight: 700;
-    font-variant-numeric: tabular-nums;
-    color: var(--c1);
-    line-height: 1.05;
-  }
-  .hero-change-grid.c2 .hero-delta-card .big { color: var(--c2); }
-  .hero-delta-card .lbl { font-size: 10.5px; color: var(--muted); margin-top: 4px; }
-  .hero-delta-card .vals { font-size: 12px; font-weight: 600; margin-top: 4px; font-variant-numeric: tabular-nums; }
-
-  /* ── QUOTES ── */
   .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   blockquote {
-    margin: 0;
-    padding: 12px 14px;
-    border-left: 3px solid var(--c1);
-    background: #fafbfc;
-    font-style: italic;
-    color: var(--text);
-    font-size: 12.5px;
-    line-height: 1.5;
-    border-radius: 0 5px 5px 0;
+    margin: 0; padding: 12px 14px; border-left: 3px solid var(--c1);
+    background: #fafbfc; font-style: italic; color: var(--text);
+    font-size: 12.5px; line-height: 1.5; border-radius: 0 5px 5px 0;
   }
   blockquote.c2 { border-color: var(--c2); }
   blockquote .src {
-    display: block;
-    font-style: normal;
-    font-size: 10px;
-    color: var(--muted);
-    margin-top: 6px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    display: block; font-style: normal; font-size: 10px; color: var(--muted);
+    margin-top: 6px; text-transform: uppercase; letter-spacing: 0.5px;
   }
 
-  /* ── ANTRAG ── */
   ul.antrag { list-style: none; padding: 0; margin: 10px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
   ul.antrag li {
-    padding: 10px 14px;
-    background: #f4faf6;
-    border-left: 3px solid var(--c1);
-    border-radius: 0 5px 5px 0;
-    font-size: 13px;
+    padding: 10px 14px; background: #f4faf6; border-left: 3px solid var(--c1);
+    border-radius: 0 5px 5px 0; font-size: 13px;
   }
   ul.antrag li strong { color: var(--c1); }
 
-  /* ── FOOTER ── */
   footer {
-    margin-top: 40px;
-    padding-top: 14px;
-    border-top: 1px solid var(--line);
-    font-size: 10.5px;
-    color: var(--muted);
-    line-height: 1.6;
+    margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line);
+    font-size: 10.5px; color: var(--muted); line-height: 1.6;
   }
 
-  /* ── RESPONSIVE ── */
   @media (max-width: 760px) {
     .page { padding: 28px 18px 56px; }
     .kpis { grid-template-columns: repeat(2, 1fr); }
     .quotes, ul.antrag { grid-template-columns: 1fr; }
-    .hero-grid, .hero-change-grid { grid-template-columns: 1fr; }
-    .row, .compact-head, .change-row { grid-template-columns: 1fr 130px 60px; font-size: 11.5px; }
+    .hero-grid, .hero-vn-tracks { grid-template-columns: 1fr; }
+    .row, .compact-head { grid-template-columns: 1fr 130px 60px; font-size: 11.5px; }
+    .vn-row, .vn-compact-head { grid-template-columns: 1fr 130px 70px 70px; font-size: 11px; }
   }
 
   @media print {
@@ -524,14 +324,12 @@
     details { background: white; }
     details > summary { display: none; }
     details .more { display: block !important; padding: 0; }
-    details:not([open]) .more { display: block !important; }
   }
 </style>
 </head>
 <body>
 <div class="page">
 
-  <!-- ── HEADER ── -->
   <header>
     <div class="eyebrow">Auswertung Pilotprojekt &nbsp;·&nbsp; Schuljahr 2025/26</div>
     <h1>Einsatz von tutor.new im Biologieunterricht an der Kantonsschule Wattwil</h1>
@@ -543,7 +341,6 @@
     </div>
   </header>
 
-  <!-- ── 1 KENNZAHLEN ── -->
   <section>
     <h2><span class="num">1</span>Kennzahlen</h2>
     <div class="kpis">
@@ -570,50 +367,36 @@
     </div>
   </section>
 
-  <!-- ── LEGEND ── -->
   <div class="legend">
-    <span class="legend-item"><span class="legend-dot c1"></span> Klasse 2GW (Pilot)</span>
-    <span class="legend-item"><span class="legend-dot c2"></span> Klasse 1SW</span>
+    <span class="legend-item"><span class="legend-dot c1"></span> 2GW nachher</span>
+    <span class="legend-item"><span class="legend-dot c2"></span> 1SW nachher</span>
+    <span class="legend-item"><span class="legend-dot open"></span> vorher (offener Punkt)</span>
     <span class="legend-item"><span class="legend-line"></span> neutral (3)</span>
     <span class="legend-item" style="margin-left:auto">Rote Zone links: Ablehnung &nbsp;·&nbsp; Grüne Zone rechts: Zustimmung</span>
   </div>
 
-  <!-- ══════════════════════════════════════════════════════════ -->
-  <!-- ── 2 BEWERTUNG NACH DEM EINSATZ ──                         -->
-  <!-- ══════════════════════════════════════════════════════════ -->
   <section>
-    <h2><span class="num">2</span>Bewertung nach dem Einsatz</h2>
+    <h2><span class="num">2</span>Bewertung in drei Bereichen</h2>
 
-    <!-- ── KATEGORIE A: ERFAHRUNG MIT TUTOR.NEW ── -->
     <div class="category">
       <div class="cat-head">
-        <div class="cat-title">A &nbsp; Erfahrung mit tutor.new</div>
-        <div class="cat-explain">Beide Klassen erleben das Tool als <b>hilfreich</b> – in der Pilotklasse 2GW grenzt die Zustimmung mit <b>4.87 / 5</b> an Begeisterung; auch Klasse 1SW liegt mit <b>3.78 / 5</b> klar im Zustimmungsbereich.</div>
+        <div class="cat-title">A &nbsp; Erfahrung mit tutor.new <span style="font-weight:400;color:var(--muted);font-size:11.5px;margin-left:6px">(nur nach dem Einsatz erfragt)</span></div>
+        <div class="cat-explain">Beide Klassen erleben das Tool als <b>hilfreich</b> – die Pilotklasse 2GW grenzt mit <b>4.87 / 5</b> an Begeisterung, Klasse 1SW liegt mit <b>3.78 / 5</b> klar im Zustimmungsbereich.</div>
       </div>
 
       <div class="hero">
         <div class="hero-q">«tutor.new hilft mir beim Lernen»</div>
         <div class="hero-grid">
           <div class="hero-scale">
-            <div class="hero-dot c1" style="left:96.75%">
-              <div class="hero-dot-label c1" style="left:50%">2GW</div>
-            </div>
-            <div class="hero-dot c2" style="left:69.5%">
-              <div class="hero-dot-label c2" style="left:50%">1SW</div>
-            </div>
+            <div class="hero-dot c1" style="left:96.75%"><div class="hero-dot-label c1" style="left:50%">2GW</div></div>
+            <div class="hero-dot c2" style="left:69.5%"><div class="hero-dot-label c2" style="left:50%">1SW</div></div>
             <div class="hero-scale-labels">
               <span>1 nein</span><span>2</span><span class="neu">3 neutral</span><span>4</span><span>5 ja</span>
             </div>
           </div>
           <div class="hero-vals">
-            <div class="hero-val c1">
-              <span class="klass">2GW</span>
-              <span class="number">4.87<small> / 5</small></span>
-            </div>
-            <div class="hero-val c2">
-              <span class="klass">1SW</span>
-              <span class="number">3.78<small> / 5</small></span>
-            </div>
+            <div class="hero-val c1"><span class="klass">2GW</span><span class="number">4.87<small> / 5</small></span></div>
+            <div class="hero-val c2"><span class="klass">1SW</span><span class="number">3.78<small> / 5</small></span></div>
           </div>
         </div>
       </div>
@@ -626,7 +409,6 @@
             <div class="ticks"><span>1</span><span>2</span><span class="neu">3</span><span>4</span><span>5</span></div>
             <div class="right">2GW &nbsp; 1SW</div>
           </div>
-
           <div class="row">
             <div>Es war eine positive Erfahrung</div>
             <div class="track"><div class="dot c1" style="left:91.75%"></div><div class="dot c2" style="left:73.5%"></div></div>
@@ -671,281 +453,233 @@
       </details>
     </div>
 
-    <!-- ── KATEGORIE B: UNTERRICHT & LERNUMGEBUNG ── -->
     <div class="category">
       <div class="cat-head">
-        <div class="cat-title">B &nbsp; Unterricht &amp; Lernumgebung</div>
-        <div class="cat-explain">Die Schülerinnen und Schüler erleben einen <b>hohen Lerngewinn</b> – in der Pilotklasse 2GW liegt der Wert bei <b>4.60 / 5</b>, in Klasse 1SW bei <b>3.56 / 5</b>. Selbstständiges Arbeiten und Problemlösen sind in beiden Klassen klar gestärkt.</div>
+        <div class="cat-title">B &nbsp; Unterricht &amp; Lernumgebung <span style="font-weight:400;color:var(--muted);font-size:11.5px;margin-left:6px">(vor / nach Einsatz)</span></div>
+        <div class="cat-explain">Der subjektive Lerngewinn springt in der Pilotklasse 2GW von <b>3.07 auf 4.60</b> (+1.53) – die grösste Veränderung der Erhebung. In Klasse 1SW lag der Ausgangswert höher und bewegt sich entsprechend moderater (3.35 → 3.56).</div>
       </div>
 
-      <div class="hero">
+      <div class="hero-vn">
         <div class="hero-q">«Mein Lerngewinn ist gross»</div>
-        <div class="hero-grid">
-          <div class="hero-scale">
-            <div class="hero-dot c1" style="left:90%">
-              <div class="hero-dot-label c1" style="left:50%">2GW</div>
+        <div class="hero-vn-tracks">
+          <div class="vn-stack">
+            <div class="vn-line">
+              <div class="vn-class c1">2GW</div>
+              <div class="vn-track">
+                <div class="vn-conn c1" style="left:51.75%; width:38.25%"></div>
+                <div class="vn-vor" style="left:51.75%"></div>
+                <div class="vn-nach c1" style="left:90%"></div>
+              </div>
             </div>
-            <div class="hero-dot c2" style="left:64%">
-              <div class="hero-dot-label c2" style="left:50%">1SW</div>
+            <div class="vn-line">
+              <div class="vn-class c2">1SW</div>
+              <div class="vn-track">
+                <div class="vn-conn c2" style="left:58.75%; width:5.25%"></div>
+                <div class="vn-vor" style="left:58.75%"></div>
+                <div class="vn-nach c2" style="left:64%"></div>
+              </div>
             </div>
-            <div class="hero-scale-labels">
-              <span>1 nein</span><span>2</span><span class="neu">3 neutral</span><span>4</span><span>5 ja</span>
+            <div class="vn-scale-labels">
+              <div></div>
+              <div class="ticks"><span>1</span><span>2</span><span class="neu">3</span><span>4</span><span>5</span></div>
             </div>
           </div>
-          <div class="hero-vals">
-            <div class="hero-val c1"><span class="klass">2GW</span><span class="number">4.60<small> / 5</small></span></div>
-            <div class="hero-val c2"><span class="klass">1SW</span><span class="number">3.56<small> / 5</small></span></div>
+          <div class="vn-delta-stack">
+            <div class="vn-delta-card c1">
+              <div><div class="klass">2GW</div><div class="vals">3.07 → 4.60</div></div>
+              <div class="delta-big up">+1.53</div>
+            </div>
+            <div class="vn-delta-card c2">
+              <div><div class="klass">1SW</div><div class="vals">3.35 → 3.56</div></div>
+              <div class="delta-big up">+0.21</div>
+            </div>
           </div>
         </div>
       </div>
 
       <details>
-        <summary>Weitere 6 Datenpunkte anzeigen</summary>
+        <summary>Weitere 6 Aussagen anzeigen</summary>
         <div class="more">
-          <div class="compact-head">
+          <div class="vn-compact-head">
             <div>Aussage</div>
             <div class="ticks"><span>1</span><span>2</span><span class="neu">3</span><span>4</span><span>5</span></div>
-            <div class="right">2GW &nbsp; 1SW</div>
+            <div class="right">2GW</div>
+            <div class="right">1SW</div>
           </div>
 
-          <div class="row">
-            <div>Unterricht motiviert mich für das Fach</div>
-            <div class="track"><div class="dot c1" style="left:70%"></div><div class="dot c2" style="left:59.75%"></div></div>
-            <div class="vals"><span class="v1">3.80</span><span class="v2">3.39</span></div>
+          <div class="vn-row">
+            <div class="q">Unterricht motiviert mich für das Fach</div>
+            <div class="vn-row-tracks">
+              <div class="vn-mini"><div class="mconn c1" style="left:35%;width:35%"></div><div class="mvor" style="left:35%"></div><div class="mnach c1" style="left:70%"></div></div>
+              <div class="vn-mini"><div class="mconn c2" style="left:58.75%;width:1%"></div><div class="mvor" style="left:58.75%"></div><div class="mnach c2" style="left:59.75%"></div></div>
+            </div>
+            <div class="delta-cell c1"><span class="d-class">2GW</span><span class="d-val up">+1.40</span><div class="d-vals">2.40 → 3.80</div></div>
+            <div class="delta-cell c2"><span class="d-class">1SW</span><span class="d-val flat">+0.04</span><div class="d-vals">3.35 → 3.39</div></div>
           </div>
-          <div class="row">
-            <div>Unterricht ist verständlich gestaltet</div>
-            <div class="track"><div class="dot c1" style="left:75%"></div><div class="dot c2" style="left:58.25%"></div></div>
-            <div class="vals"><span class="v1">4.00</span><span class="v2">3.33</span></div>
+
+          <div class="vn-row">
+            <div class="q">Unterricht ist verständlich gestaltet</div>
+            <div class="vn-row-tracks">
+              <div class="vn-mini"><div class="mconn c1" style="left:40%;width:35%"></div><div class="mvor" style="left:40%"></div><div class="mnach c1" style="left:75%"></div></div>
+              <div class="vn-mini"><div class="mconn flat" style="left:58.25%;width:0.5%"></div><div class="mvor" style="left:58.75%"></div><div class="mnach c2" style="left:58.25%"></div></div>
+            </div>
+            <div class="delta-cell c1"><span class="d-class">2GW</span><span class="d-val up">+1.40</span><div class="d-vals">2.60 → 4.00</div></div>
+            <div class="delta-cell c2"><span class="d-class">1SW</span><span class="d-val flat">−0.02</span><div class="d-vals">3.35 → 3.33</div></div>
           </div>
-          <div class="row">
-            <div>Raum für selbstständiges Arbeiten</div>
-            <div class="track"><div class="dot c1" style="left:83.25%"></div><div class="dot c2" style="left:84.75%"></div></div>
-            <div class="vals"><span class="v1">4.33</span><span class="v2">4.39</span></div>
+
+          <div class="vn-row">
+            <div class="q">Raum für selbstständiges Arbeiten</div>
+            <div class="vn-row-tracks">
+              <div class="vn-mini"><div class="mconn flat" style="left:83.25%;width:3.5%"></div><div class="mvor" style="left:86.75%"></div><div class="mnach c1" style="left:83.25%"></div></div>
+              <div class="vn-mini"><div class="mconn c2" style="left:79.5%;width:5.25%"></div><div class="mvor" style="left:79.5%"></div><div class="mnach c2" style="left:84.75%"></div></div>
+            </div>
+            <div class="delta-cell c1"><span class="d-class">2GW</span><span class="d-val flat">−0.14</span><div class="d-vals">4.47 → 4.33</div></div>
+            <div class="delta-cell c2"><span class="d-class">1SW</span><span class="d-val up">+0.21</span><div class="d-vals">4.18 → 4.39</div></div>
           </div>
-          <div class="row">
-            <div>Ich fühle mich sicher beim eigenständigen Erarbeiten</div>
-            <div class="track"><div class="dot c1" style="left:86.75%"></div><div class="dot c2" style="left:62.5%"></div></div>
-            <div class="vals"><span class="v1">4.47</span><span class="v2">3.50</span></div>
+
+          <div class="vn-row">
+            <div class="q">Ich fühle mich sicher beim eigenständigen Erarbeiten</div>
+            <div class="vn-row-tracks">
+              <div class="vn-mini"><div class="mconn c1" style="left:60%;width:26.75%"></div><div class="mvor" style="left:60%"></div><div class="mnach c1" style="left:86.75%"></div></div>
+              <div class="vn-mini"><div class="mconn c2" style="left:57.25%;width:5.25%"></div><div class="mvor" style="left:57.25%"></div><div class="mnach c2" style="left:62.5%"></div></div>
+            </div>
+            <div class="delta-cell c1"><span class="d-class">2GW</span><span class="d-val up">+1.07</span><div class="d-vals">3.40 → 4.47</div></div>
+            <div class="delta-cell c2"><span class="d-class">1SW</span><span class="d-val up">+0.21</span><div class="d-vals">3.29 → 3.50</div></div>
           </div>
-          <div class="row">
-            <div>Ich finde selbstständig Lösungen bei Unklarheiten</div>
-            <div class="track"><div class="dot c1" style="left:90%"></div><div class="dot c2" style="left:73.5%"></div></div>
-            <div class="vals"><span class="v1">4.60</span><span class="v2">3.94</span></div>
+
+          <div class="vn-row">
+            <div class="q">Ich finde selbstständig Lösungen bei Unklarheiten</div>
+            <div class="vn-row-tracks">
+              <div class="vn-mini"><div class="mconn c1" style="left:55%;width:35%"></div><div class="mvor" style="left:55%"></div><div class="mnach c1" style="left:90%"></div></div>
+              <div class="vn-mini"><div class="mconn c2" style="left:60.25%;width:13.25%"></div><div class="mvor" style="left:60.25%"></div><div class="mnach c2" style="left:73.5%"></div></div>
+            </div>
+            <div class="delta-cell c1"><span class="d-class">2GW</span><span class="d-val up">+1.40</span><div class="d-vals">3.20 → 4.60</div></div>
+            <div class="delta-cell c2"><span class="d-class">1SW</span><span class="d-val up">+0.53</span><div class="d-vals">3.41 → 3.94</div></div>
           </div>
-          <div class="row">
-            <div>Arbeitsunterlagen schaffen einen roten Faden</div>
-            <div class="track"><div class="dot c1" style="left:83.25%"></div><div class="dot c2" style="left:40.25%"></div></div>
-            <div class="vals"><span class="v1">4.33</span><span class="v2">2.61</span></div>
+
+          <div class="vn-row">
+            <div class="q">Arbeitsunterlagen schaffen einen roten Faden</div>
+            <div class="vn-row-tracks">
+              <div class="vn-mini"><div class="mconn c1" style="left:56.75%;width:26.5%"></div><div class="mvor" style="left:56.75%"></div><div class="mnach c1" style="left:83.25%"></div></div>
+              <div class="vn-mini"><div class="mconn flat" style="left:38.25%;width:2%"></div><div class="mvor" style="left:38.25%"></div><div class="mnach c2" style="left:40.25%"></div></div>
+            </div>
+            <div class="delta-cell c1"><span class="d-class">2GW</span><span class="d-val up">+1.06</span><div class="d-vals">3.27 → 4.33</div></div>
+            <div class="delta-cell c2"><span class="d-class">1SW</span><span class="d-val flat">+0.08</span><div class="d-vals">2.53 → 2.61</div></div>
           </div>
         </div>
       </details>
     </div>
 
-    <!-- ── KATEGORIE C: KLASSENKLIMA & LEHRPERSON ── -->
     <div class="category">
       <div class="cat-head">
-        <div class="cat-title">C &nbsp; Klassenklima &amp; Lehrperson</div>
-        <div class="cat-explain">Das Klassenklima bleibt durchweg positiv – die Schülerinnen und Schüler fühlen sich <b>wohl und ernst genommen</b> (2GW: <b>4.47 / 5</b>, 1SW: <b>3.94 / 5</b>) und erleben die Lehrperson als hilfsbereit.</div>
+        <div class="cat-title">C &nbsp; Klassenklima &amp; Lehrperson <span style="font-weight:400;color:var(--muted);font-size:11.5px;margin-left:6px">(vor / nach Einsatz)</span></div>
+        <div class="cat-explain">Das Gefühl, im Fach etwas zu können, steigt in der Pilotklasse 2GW deutlich (<b>2.67 → 4.00, +1.33</b>); in Klasse 1SW war der Ausgangswert bereits hoch und bleibt stabil (3.65 → 3.72).</div>
       </div>
 
-      <div class="hero">
-        <div class="hero-q">«Ich fühle mich wohl und ernst genommen»</div>
-        <div class="hero-grid">
-          <div class="hero-scale">
-            <div class="hero-dot c1" style="left:86.75%">
-              <div class="hero-dot-label c1" style="left:50%">2GW</div>
+      <div class="hero-vn">
+        <div class="hero-q">«Ich habe das Gefühl, im Fach etwas zu können»</div>
+        <div class="hero-vn-tracks">
+          <div class="vn-stack">
+            <div class="vn-line">
+              <div class="vn-class c1">2GW</div>
+              <div class="vn-track">
+                <div class="vn-conn c1" style="left:41.75%; width:33.25%"></div>
+                <div class="vn-vor" style="left:41.75%"></div>
+                <div class="vn-nach c1" style="left:75%"></div>
+              </div>
             </div>
-            <div class="hero-dot c2" style="left:73.5%">
-              <div class="hero-dot-label c2" style="left:50%">1SW</div>
+            <div class="vn-line">
+              <div class="vn-class c2">1SW</div>
+              <div class="vn-track">
+                <div class="vn-conn c2" style="left:66.25%; width:1.75%"></div>
+                <div class="vn-vor" style="left:66.25%"></div>
+                <div class="vn-nach c2" style="left:68%"></div>
+              </div>
             </div>
-            <div class="hero-scale-labels">
-              <span>1 nein</span><span>2</span><span class="neu">3 neutral</span><span>4</span><span>5 ja</span>
+            <div class="vn-scale-labels">
+              <div></div>
+              <div class="ticks"><span>1</span><span>2</span><span class="neu">3</span><span>4</span><span>5</span></div>
             </div>
           </div>
-          <div class="hero-vals">
-            <div class="hero-val c1"><span class="klass">2GW</span><span class="number">4.47<small> / 5</small></span></div>
-            <div class="hero-val c2"><span class="klass">1SW</span><span class="number">3.94<small> / 5</small></span></div>
+          <div class="vn-delta-stack">
+            <div class="vn-delta-card c1">
+              <div><div class="klass">2GW</div><div class="vals">2.67 → 4.00</div></div>
+              <div class="delta-big up">+1.33</div>
+            </div>
+            <div class="vn-delta-card c2">
+              <div><div class="klass">1SW</div><div class="vals">3.65 → 3.72</div></div>
+              <div class="delta-big flat">+0.07</div>
+            </div>
           </div>
         </div>
       </div>
 
       <details>
-        <summary>Weitere 5 Datenpunkte anzeigen</summary>
+        <summary>Weitere 5 Aussagen anzeigen</summary>
         <div class="more">
-          <div class="compact-head">
+          <div class="vn-compact-head">
             <div>Aussage</div>
             <div class="ticks"><span>1</span><span>2</span><span class="neu">3</span><span>4</span><span>5</span></div>
-            <div class="right">2GW &nbsp; 1SW</div>
+            <div class="right">2GW</div>
+            <div class="right">1SW</div>
           </div>
 
-          <div class="row">
-            <div>Ich habe das Gefühl, im Fach etwas zu können</div>
-            <div class="track"><div class="dot c1" style="left:75%"></div><div class="dot c2" style="left:68%"></div></div>
-            <div class="vals"><span class="v1">4.00</span><span class="v2">3.72</span></div>
+          <div class="vn-row">
+            <div class="q">Ich fühle mich wohl und ernst genommen</div>
+            <div class="vn-row-tracks">
+              <div class="vn-mini"><div class="mconn c1" style="left:63.25%;width:23.5%"></div><div class="mvor" style="left:63.25%"></div><div class="mnach c1" style="left:86.75%"></div></div>
+              <div class="vn-mini"><div class="mconn flat" style="left:73.5%;width:6%"></div><div class="mvor" style="left:79.5%"></div><div class="mnach c2" style="left:73.5%"></div></div>
+            </div>
+            <div class="delta-cell c1"><span class="d-class">2GW</span><span class="d-val up">+0.94</span><div class="d-vals">3.53 → 4.47</div></div>
+            <div class="delta-cell c2"><span class="d-class">1SW</span><span class="d-val flat">−0.24</span><div class="d-vals">4.18 → 3.94</div></div>
           </div>
-          <div class="row">
-            <div>Ich gehe gerne in die Biologie-Lektionen</div>
-            <div class="track"><div class="dot c1" style="left:56.75%"></div><div class="dot c2" style="left:57%"></div></div>
-            <div class="vals"><span class="v1">3.27</span><span class="v2">3.28</span></div>
+
+          <div class="vn-row">
+            <div class="q">Ich gehe gerne in die Biologie-Lektionen</div>
+            <div class="vn-row-tracks">
+              <div class="vn-mini"><div class="mconn c1" style="left:25%;width:31.75%"></div><div class="mvor" style="left:25%"></div><div class="mnach c1" style="left:56.75%"></div></div>
+              <div class="vn-mini"><div class="mconn flat" style="left:57%;width:1.75%"></div><div class="mvor" style="left:58.75%"></div><div class="mnach c2" style="left:57%"></div></div>
+            </div>
+            <div class="delta-cell c1"><span class="d-class">2GW</span><span class="d-val up">+1.27</span><div class="d-vals">2.00 → 3.27</div></div>
+            <div class="delta-cell c2"><span class="d-class">1SW</span><span class="d-val flat">−0.07</span><div class="d-vals">3.35 → 3.28</div></div>
           </div>
-          <div class="row">
-            <div>Lehrperson ist engagiert und aktiv</div>
-            <div class="track"><div class="dot c1" style="left:86.75%"></div><div class="dot c2" style="left:86%"></div></div>
-            <div class="vals"><span class="v1">4.47</span><span class="v2">4.44</span></div>
+
+          <div class="vn-row">
+            <div class="q">Lehrperson ist engagiert und aktiv</div>
+            <div class="vn-row-tracks">
+              <div class="vn-mini"><div class="mconn flat" style="left:85%;width:1.75%"></div><div class="mvor" style="left:85%"></div><div class="mnach c1" style="left:86.75%"></div></div>
+              <div class="vn-mini"><div class="mconn flat" style="left:86%;width:3.75%"></div><div class="mvor" style="left:89.75%"></div><div class="mnach c2" style="left:86%"></div></div>
+            </div>
+            <div class="delta-cell c1"><span class="d-class">2GW</span><span class="d-val flat">+0.07</span><div class="d-vals">4.40 → 4.47</div></div>
+            <div class="delta-cell c2"><span class="d-class">1SW</span><span class="d-val flat">−0.15</span><div class="d-vals">4.59 → 4.44</div></div>
           </div>
-          <div class="row">
-            <div>Lehrperson ist hilfsbereit / unterstützend</div>
-            <div class="track"><div class="dot c1" style="left:81.75%"></div><div class="dot c2" style="left:87.5%"></div></div>
-            <div class="vals"><span class="v1">4.27</span><span class="v2">4.50</span></div>
+
+          <div class="vn-row">
+            <div class="q">Lehrperson ist hilfsbereit / unterstützend</div>
+            <div class="vn-row-tracks">
+              <div class="vn-mini"><div class="mconn c1" style="left:75%;width:6.75%"></div><div class="mvor" style="left:75%"></div><div class="mnach c1" style="left:81.75%"></div></div>
+              <div class="vn-mini"><div class="mconn c2" style="left:82.25%;width:5.25%"></div><div class="mvor" style="left:82.25%"></div><div class="mnach c2" style="left:87.5%"></div></div>
+            </div>
+            <div class="delta-cell c1"><span class="d-class">2GW</span><span class="d-val up">+0.27</span><div class="d-vals">4.00 → 4.27</div></div>
+            <div class="delta-cell c2"><span class="d-class">1SW</span><span class="d-val up">+0.21</span><div class="d-vals">4.29 → 4.50</div></div>
           </div>
-          <div class="row">
-            <div>Bei Fragen kann ich die Lehrperson ansprechen</div>
-            <div class="track"><div class="dot c1" style="left:78.25%"></div><div class="dot c2" style="left:84.75%"></div></div>
-            <div class="vals"><span class="v1">4.13</span><span class="v2">4.39</span></div>
+
+          <div class="vn-row">
+            <div class="q">Bei Fragen kann ich die Lehrperson ansprechen</div>
+            <div class="vn-row-tracks">
+              <div class="vn-mini"><div class="mconn c1" style="left:75%;width:3.25%"></div><div class="mvor" style="left:75%"></div><div class="mnach c1" style="left:78.25%"></div></div>
+              <div class="vn-mini"><div class="mconn c2" style="left:79.5%;width:5.25%"></div><div class="mvor" style="left:79.5%"></div><div class="mnach c2" style="left:84.75%"></div></div>
+            </div>
+            <div class="delta-cell c1"><span class="d-class">2GW</span><span class="d-val flat">+0.13</span><div class="d-vals">4.00 → 4.13</div></div>
+            <div class="delta-cell c2"><span class="d-class">1SW</span><span class="d-val up">+0.21</span><div class="d-vals">4.18 → 4.39</div></div>
           </div>
         </div>
       </details>
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════════════════ -->
-  <!-- ── 3 VERÄNDERUNG VOR / NACH ──                             -->
-  <!-- ══════════════════════════════════════════════════════════ -->
   <section>
-    <h2><span class="num">3</span>Veränderung vorher → nachher</h2>
-
-    <div class="category">
-      <div class="cat-head">
-        <div class="cat-title">D &nbsp; Lernerfolg in der Pilotklasse 2GW</div>
-        <div class="cat-explain">Der grösste gemessene Effekt: Der subjektive Lerngewinn der Pilotklasse springt von <b>3.07</b> (kaum spürbar) auf <b>4.60</b> (sehr hoch) – eine Verschiebung von <b>+1.53 Skalenpunkten</b>, in Schulevaluationen selten beobachtet.</div>
-      </div>
-
-      <div class="hero">
-        <div class="hero-q">«Mein Lerngewinn ist gross» — Klasse 2GW</div>
-        <div class="hero-change-grid">
-          <div class="hero-arrow-scale">
-            <div class="h-conn" style="left:51.75%; width:38.25%"></div>
-            <div class="h-vor" style="left:51.75%">vor</div>
-            <div class="h-nach" style="left:90%">nach</div>
-            <div class="hero-arrow-scale-labels">
-              <span>1</span><span>2</span><span class="neu">3</span><span>4</span><span>5</span>
-            </div>
-          </div>
-          <div class="hero-delta-card">
-            <div class="big">+1.53</div>
-            <div class="lbl">Veränderung</div>
-            <div class="vals" style="color:var(--c1)">3.07 → 4.60</div>
-          </div>
-        </div>
-      </div>
-
-      <details>
-        <summary>Weitere 9 Veränderungen anzeigen</summary>
-        <div class="more">
-          <div class="compact-head">
-            <div>Aussage</div>
-            <div class="ticks"><span>1</span><span>2</span><span class="neu">3</span><span>4</span><span>5</span></div>
-            <div class="right">Δ</div>
-          </div>
-
-          <div class="change-row">
-            <div class="q">Unterricht motiviert mich <span class="klass k1">2GW</span></div>
-            <div class="arrow-track">
-              <div class="conn" style="left:35%; width:35%"></div>
-              <div class="pt-vor" style="left:35%"></div>
-              <div class="pt-nach" style="left:70%"></div>
-            </div>
-            <div class="delta up">+1.40<span class="small">2.40 → 3.80</span></div>
-          </div>
-
-          <div class="change-row">
-            <div class="q">Selbstständig Lösungen finden <span class="klass k1">2GW</span></div>
-            <div class="arrow-track">
-              <div class="conn" style="left:55%; width:35%"></div>
-              <div class="pt-vor" style="left:55%"></div>
-              <div class="pt-nach" style="left:90%"></div>
-            </div>
-            <div class="delta up">+1.40<span class="small">3.20 → 4.60</span></div>
-          </div>
-
-          <div class="change-row">
-            <div class="q">Unterricht ist verständlich <span class="klass k1">2GW</span></div>
-            <div class="arrow-track">
-              <div class="conn" style="left:40%; width:35%"></div>
-              <div class="pt-vor" style="left:40%"></div>
-              <div class="pt-nach" style="left:75%"></div>
-            </div>
-            <div class="delta up">+1.40<span class="small">2.60 → 4.00</span></div>
-          </div>
-
-          <div class="change-row">
-            <div class="q">Im Fach etwas zu können <span class="klass k1">2GW</span></div>
-            <div class="arrow-track">
-              <div class="conn" style="left:41.75%; width:33.25%"></div>
-              <div class="pt-vor" style="left:41.75%"></div>
-              <div class="pt-nach" style="left:75%"></div>
-            </div>
-            <div class="delta up">+1.33<span class="small">2.67 → 4.00</span></div>
-          </div>
-
-          <div class="change-row">
-            <div class="q">Gehe gerne in die Lektionen <span class="klass k1">2GW</span></div>
-            <div class="arrow-track">
-              <div class="conn" style="left:25%; width:31.75%"></div>
-              <div class="pt-vor" style="left:25%"></div>
-              <div class="pt-nach" style="left:56.75%"></div>
-            </div>
-            <div class="delta up">+1.27<span class="small">2.00 → 3.27</span></div>
-          </div>
-
-          <div class="change-row">
-            <div class="q">Sicher beim eigenständigen Erarbeiten <span class="klass k1">2GW</span></div>
-            <div class="arrow-track">
-              <div class="conn" style="left:60%; width:26.75%"></div>
-              <div class="pt-vor" style="left:60%"></div>
-              <div class="pt-nach" style="left:86.75%"></div>
-            </div>
-            <div class="delta up">+1.07<span class="small">3.40 → 4.47</span></div>
-          </div>
-
-          <div class="change-row k2">
-            <div class="q">Selbstständig Lösungen finden <span class="klass k2">1SW</span></div>
-            <div class="arrow-track">
-              <div class="conn" style="left:60.25%; width:13.25%"></div>
-              <div class="pt-vor" style="left:60.25%"></div>
-              <div class="pt-nach" style="left:73.5%"></div>
-            </div>
-            <div class="delta up">+0.53<span class="small">3.41 → 3.94</span></div>
-          </div>
-
-          <div class="change-row k2">
-            <div class="q">Bei Fragen Lehrperson ansprechen <span class="klass k2">1SW</span></div>
-            <div class="arrow-track">
-              <div class="conn" style="left:79.5%; width:5.25%"></div>
-              <div class="pt-vor" style="left:79.5%"></div>
-              <div class="pt-nach" style="left:84.75%"></div>
-            </div>
-            <div class="delta up">+0.21<span class="small">4.18 → 4.39</span></div>
-          </div>
-
-          <div class="change-row k2">
-            <div class="q">Lehrperson hilfsbereit <span class="klass k2">1SW</span></div>
-            <div class="arrow-track">
-              <div class="conn" style="left:82.25%; width:5.25%"></div>
-              <div class="pt-vor" style="left:82.25%"></div>
-              <div class="pt-nach" style="left:87.5%"></div>
-            </div>
-            <div class="delta up">+0.21<span class="small">4.29 → 4.50</span></div>
-          </div>
-        </div>
-      </details>
-    </div>
-  </section>
-
-  <!-- ── 4 STIMMEN ── -->
-  <section>
-    <h2><span class="num">4</span>Stimmen der Schülerinnen und Schüler</h2>
+    <h2><span class="num">3</span>Stimmen der Schülerinnen und Schüler</h2>
     <div class="quotes">
       <blockquote>
         «Man kann gut individuell arbeiten und wird auf dem richtigen Niveau gefordert. Auch das Lernen auf Prüfungen ist effizienter.»
@@ -966,9 +700,8 @@
     </div>
   </section>
 
-  <!-- ── 5 ANTRAG ── -->
   <section>
-    <h2><span class="num">5</span>Antrag an den Bildungsrat</h2>
+    <h2><span class="num">4</span>Antrag an den Bildungsrat</h2>
     <ul class="antrag">
       <li><strong>Dauerhafte Finanzierung</strong> der Lizenzen für tutor.new an der KS Wattwil ab Schuljahr 2026/27.</li>
       <li><strong>Ausweitung des Pilotprojekts</strong> auf weitere Klassen und Fächer im erprobten Evaluationsrahmen.</li>
