@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>On-device TTS test — frido.ai</title>
+<meta name="description" content="Compare small text-to-speech models running fully in your browser. German-first.">
+<style>
+  :root { color-scheme: light dark; --fg:#111; --bg:#fff; --mut:#666; --line:#ddd;
+          --acc:#2b6cb0; --card:#fafafa; --warn:#b7791f; --err:#c53030; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e8e8e8; --bg:#141414; --mut:#9a9a9a; --line:#333; --acc:#7aa7d9;
+            --card:#1c1c1c; --warn:#d69e2e; --err:#fc8181; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:1.5rem 1rem 5rem; background:var(--bg); color:var(--fg);
+         font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;
+         -webkit-text-size-adjust:100%; }
+  main { max-width:640px; margin:0 auto; }
+  h1 { font-size:1.35rem; margin:0 0 .3rem; }
+  p.sub { color:var(--mut); font-size:.85rem; margin:0 0 .4rem; }
+  #device { color:var(--mut); font-size:.75rem; margin:0 0 1.4rem; }
+  label { display:block; font-size:.72rem; text-transform:uppercase; letter-spacing:.05em;
+          color:var(--mut); margin:1.1rem 0 .35rem; }
+  textarea, select, input[type=text] {
+    width:100%; padding:.65rem .7rem; background:var(--bg); color:var(--fg);
+    border:1px solid var(--line); border-radius:9px; font:inherit; }
+  textarea { min-height:96px; resize:vertical; }
+  .row { display:flex; gap:.9rem; flex-wrap:wrap; }
+  .row > div { flex:1 1 140px; }
+  input[type=range] { width:100%; accent-color:var(--acc); }
+  fieldset { border:1px solid var(--line); border-radius:10px; padding:0 1rem 1rem; margin:1.3rem 0 0; }
+  legend { font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; color:var(--mut); padding:0 .4rem; }
+  [hidden] { display:none !important; }
+  button { width:100%; padding:.85rem; font:inherit; font-weight:600; border:0;
+           border-radius:9px; cursor:pointer; background:var(--acc); color:#fff; margin-top:1rem; }
+  button:disabled { opacity:.5; cursor:default; }
+  button.sec { background:none; color:var(--fg); border:1px solid var(--line); font-weight:400; }
+  .note { font-size:.8rem; color:var(--mut); margin:.5rem 0 0; }
+  .note.warn { color:var(--warn); }
+  .note.err { color:var(--err); white-space:pre-wrap; }
+  progress { width:100%; height:.5rem; margin-top:.6rem; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px;
+          padding:.85rem 1rem; margin-top:1rem; }
+  .card h3 { margin:0 0 .15rem; font-size:.95rem; }
+  .card .meta { font-size:.78rem; color:var(--mut); margin:0 0 .55rem; }
+  .card .said { font-size:.85rem; margin:.1rem 0 .6rem; }
+  audio { width:100%; }
+  a { color:var(--acc); }
+  footer { max-width:640px; margin:3rem auto 0; font-size:.78rem; color:var(--mut);
+           border-top:1px solid var(--line); padding-top:1rem; }
+  footer li { margin-bottom:.35rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>On-device TTS test</h1>
+  <p class="sub">Small text-to-speech models running <strong>entirely in your browser</strong> —
+     no server, no upload. German-first. Open this on a phone to see what a real device does.</p>
+  <p id="device">reading device…</p>
+
+  <label for="engine">Model</label>
+  <select id="engine"></select>
+  <p class="note" id="enote"></p>
+
+  <button class="sec" id="load">Load model</button>
+  <progress id="prog" hidden max="100" value="0"></progress>
+  <p class="note" id="lnote"></p>
+
+  <label for="text">Text</label>
+  <textarea id="text">Guten Morgen! Heute wird es größtenteils heiter, bei Höchstwerten um dreiundzwanzig Grad.</textarea>
+
+  <fieldset data-for="piper">
+    <legend>Piper</legend>
+    <label for="pvoice">German voice</label>
+    <select id="pvoice"></select>
+  </fieldset>
+
+  <fieldset data-for="supertonic">
+    <legend>Supertonic 3</legend>
+    <div class="row">
+      <div>
+        <label for="slang">Language</label>
+        <select id="slang"></select>
+      </div>
+      <div>
+        <label for="svoice">Voice</label>
+        <select id="svoice"></select>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label for="ssteps">Quality steps <span id="sstepsv">8</span></label>
+        <input type="range" id="ssteps" min="4" max="12" step="1" value="8">
+      </div>
+      <div>
+        <label for="sspeed">Speed <span id="sspeedv">1.05</span></label>
+        <input type="range" id="sspeed" min="0.7" max="1.6" step="0.05" value="1.05">
+      </div>
+    </div>
+  </fieldset>
+
+  <button id="go" disabled>Generate</button>
+  <div id="out"></div>
+  <button class="sec" id="clear" hidden>Clear results</button>
+</main>
+
+<footer>
+  <p><strong>RTF</strong> = generation time ÷ audio length. Under 1.0 means faster than
+     playback. That number, measured on the device you are holding, is what decides whether
+     a model is usable in an app.</p>
+  <ul>
+    <li>Everything runs client-side via ONNX Runtime Web / WebAssembly. GitHub Pages can't
+        send the COOP/COEP headers that unlock multi-threaded WASM, so this is
+        <em>single-threaded</em> — a native Android build with threads will be meaningfully faster.</li>
+    <li>Models download once, then the browser caches them.</li>
+    <li>Piper voices: CC0 / public-domain training data, MIT-licensed models.
+        Supertonic 3: OpenRAIL-M. MMS-TTS: CC-BY-NC.</li>
+  </ul>
+</footer>
+
+<script type="importmap">
+{
+  "imports": {
+    "onnxruntime-web": "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.23.0/dist/ort.all.min.mjs",
+    "onnxruntime-web/wasm": "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.23.0/dist/ort.all.min.mjs"
+  }
+}
+</script>
+<script type="module">
+import * as ort from 'onnxruntime-web';
+
+// GitHub Pages cannot set COOP/COEP, so SharedArrayBuffer is unavailable.
+// Pin to one thread rather than letting ort probe and warn.
+ort.env.wasm.numThreads = 1;
+ort.env.wasm.wasmPaths = 'https://cdn.jsdelivr.net/npm/onnxruntime-web@1.23.0/dist/';
+
+const $ = id => document.getElementById(id);
+const HF = 'https://huggingface.co';
+const ST = `${HF}/Supertone/supertonic-3/resolve/main`;
+const ORT_VERSION = '1.23.0';
+const PIPER_WASM =
+  'https://cdn.jsdelivr.net/npm/@diffusionstudio/piper-wasm@1.0.0/build/piper_phonemize';
+
+// Only the 256-symbol voices are listed. The phonemizer bundled with
+// piper-tts-web emits the modern 256-symbol espeak id set, so the older
+// low / x_low German voices (num_symbols=130) blow past their embedding
+// table and fail at inference with an out-of-bounds Gather.
+const PIPER_VOICES = [
+  ['de_DE-thorsten-medium',            'Thorsten — medium (63 MB)'],
+  ['de_DE-thorsten-high',              'Thorsten — high (114 MB)'],
+  ['de_DE-thorsten_emotional-medium',  'Thorsten — emotional (77 MB)'],
+  ['de_DE-mls-medium',                 'MLS — multi-speaker (63 MB)'],
+];
+
+const state = { loaded: {}, busy: false };
+
+const ENGINES = {
+  piper: {
+    label: 'Piper (VITS) — smallest, fastest',
+    note: 'The realistic pick for budget Android. Downloads one voice at a time (21–114 MB).',
+    size: () => $('pvoice').selectedOptions[0].textContent,
+    // Piper caches per voice, so the key must include it.
+    key: () => 'piper:' + $('pvoice').value,
+    async load(onProgress) {
+      // jsDelivr serves the untouched browser build. (esm.sh rewrites this
+      // package against a Node 'fs' shim, which the emscripten phonemizer glue
+      // then calls and dies on.) Its one bare import is resolved by the import map.
+      const { TtsSession } = await import(
+        'https://cdn.jsdelivr.net/npm/@mintplex-labs/piper-tts-web@1.0.5/dist/piper-tts-web.js');
+
+      // The library keeps a module-level singleton and, on reuse, swaps only the
+      // voiceId label while keeping the previously loaded ONNX session. Clearing
+      // it forces a real reload when you pick a different voice.
+      TtsSession._instance = null;
+
+      return await TtsSession.create({
+        voiceId: $('pvoice').value,
+        progress: p => onProgress(p.total ? p.loaded / p.total : 0),
+        // Its default onnxWasm base is a cdnjs path for ort 1.18 that 404s today.
+        wasmPaths: {
+          onnxWasm: `https://cdn.jsdelivr.net/npm/onnxruntime-web@${ORT_VERSION}/dist/`,
+          piperData: `${PIPER_WASM}.data`,
+          piperWasm: `${PIPER_WASM}.wasm`,
+        },
+      });
+    },
+    async synth(session, text) {
+      return { blob: await session.predict(text) };
+    },
+  },
+
+  supertonic: {
+    label: 'Supertonic 3 (99M) — best quality',
+    note: '31 languages, 44.1 kHz. Warning: ~400 MB download (fp32 — no int8 build exists for v3). Wi-Fi only.',
+    size: () => '~400 MB',
+    key: () => 'supertonic',
+    async load(onProgress) {
+      const h = await import('./vendor/supertonic-helper.js');
+      $('slang').innerHTML = '';
+      h.AVAILABLE_LANGS.forEach(l => $('slang').add(new Option(l, l, l === 'de', l === 'de')));
+      let done = 0;
+      const { textToSpeech, cfgs } = await h.loadTextToSpeech(
+        `${ST}/onnx`,
+        { executionProviders: ['webgpu', 'wasm'] },
+        () => onProgress(++done / 4));
+      return { h, t: textToSpeech, rate: cfgs.sample_rate ?? 44100, styles: {} };
+    },
+    async synth(handle, text) {
+      const { h, t, styles } = handle;
+      const name = $('svoice').value;
+      if (!styles[name]) {
+        styles[name] = await h.loadVoiceStyle([`${ST}/voice_styles/${name}.json`]);
+      }
+      const { wav } = await t.call(
+        text, $('slang').value, styles[name],
+        +$('ssteps').value, +$('sspeed').value);
+      return { blob: new Blob([h.writeWavFile(wav, handle.rate)], { type: 'audio/wav' }) };
+    },
+  },
+
+  mms: {
+    label: 'MMS-TTS German (VITS, 16 kHz)',
+    note: "Meta's German VITS via transformers.js, int8. Only ~38 MB, but int8 kernels are "
+        + "slow under WASM — expect a worse RTF here than Piper despite the smaller model.",
+    size: () => '38 MB',
+    key: () => 'mms',
+    async load(onProgress) {
+      const { pipeline } = await import('https://esm.sh/@huggingface/transformers@4.2.0');
+      return await pipeline('text-to-speech', 'Xenova/mms-tts-deu', {
+        dtype: 'q8',
+        progress_callback: p => { if (p.progress) onProgress(p.progress / 100); },
+      });
+    },
+    async synth(synth, text) {
+      const out = await synth(text);
+      return { audio: out.audio, rate: out.sampling_rate };
+    },
+  },
+};
+
+// --- WAV encoding for engines that hand back raw samples -------------------
+function toWav(samples, rate) {
+  const buf = new ArrayBuffer(44 + samples.length * 2);
+  const v = new DataView(buf);
+  const str = (o, s) => [...s].forEach((c, i) => v.setUint8(o + i, c.charCodeAt(0)));
+  str(0, 'RIFF'); v.setUint32(4, 36 + samples.length * 2, true); str(8, 'WAVEfmt ');
+  v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true);
+  v.setUint32(24, rate, true); v.setUint32(28, rate * 2, true);
+  v.setUint16(32, 2, true); v.setUint16(34, 16, true);
+  str(36, 'data'); v.setUint32(40, samples.length * 2, true);
+  for (let i = 0; i < samples.length; i++) {
+    const s = Math.max(-1, Math.min(1, samples[i]));
+    v.setInt16(44 + i * 2, s < 0 ? s * 0x8000 : s * 0x7fff, true);
+  }
+  return new Blob([buf], { type: 'audio/wav' });
+}
+
+const wavSeconds = async blob => {
+  const ctx = new (window.AudioContext || window.webkitAudioContext)();
+  try { return (await ctx.decodeAudioData(await blob.arrayBuffer())).duration; }
+  catch { return 0; } finally { ctx.close(); }
+};
+
+// --- UI --------------------------------------------------------------------
+$('device').textContent =
+  `${navigator.hardwareConcurrency || '?'} cores · ` +
+  `${navigator.deviceMemory ? navigator.deviceMemory + ' GB RAM · ' : ''}` +
+  `${screen.width}×${screen.height} · single-threaded WASM`;
+
+Object.entries(ENGINES).forEach(([id, e]) => $('engine').add(new Option(e.label, id)));
+PIPER_VOICES.forEach(([v, l]) => $('pvoice').add(new Option(l, v)));
+['M1','M2','M3','M4','M5','F1','F2','F3','F4','F5']
+  .forEach(v => $('svoice').add(new Option(v, v, v === 'F1', v === 'F1')));
+$('ssteps').oninput = () => $('sstepsv').textContent = $('ssteps').value;
+$('sspeed').oninput = () => $('sspeedv').textContent = (+$('sspeed').value).toFixed(2);
+
+function sync() {
+  const id = $('engine').value, e = ENGINES[id];
+  document.querySelectorAll('fieldset[data-for]')
+    .forEach(f => f.hidden = f.dataset.for !== id);
+  $('enote').textContent = e.note;
+  $('enote').className = 'note' + (id === 'supertonic' ? ' warn' : '');
+  const ready = !!state.loaded[e.key()];
+  $('go').disabled = !ready || state.busy;
+  $('load').textContent = ready ? 'Loaded' : `Load model (${e.size()})`;
+  $('load').disabled = ready || state.busy;
+  if (ready) $('lnote').textContent = '';
+}
+$('engine').onchange = sync;
+$('pvoice').onchange = sync;
+sync();
+
+$('load').onclick = async () => {
+  const e = ENGINES[$('engine').value], key = e.key();
+  state.busy = true; sync();
+  $('load').textContent = 'Downloading…';
+  $('prog').hidden = false; $('prog').value = 0;
+  $('lnote').className = 'note'; $('lnote').textContent = 'First load only — cached afterwards.';
+  try {
+    state.loaded[key] = await e.load(f => $('prog').value = Math.round(f * 100));
+    $('lnote').textContent = '';
+  } catch (err) {
+    $('lnote').className = 'note err';
+    $('lnote').textContent = 'Load failed: ' + err.message;
+  } finally {
+    $('prog').hidden = true; state.busy = false; sync();
+  }
+};
+
+$('go').onclick = async () => {
+  const id = $('engine').value, e = ENGINES[id];
+  const text = $('text').value.trim();
+  if (!text) return;
+  state.busy = true; sync();
+  $('go').textContent = 'Generating…';
+
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `<h3>${e.label}</h3><p class="meta">generating…</p>`;
+  $('out').prepend(card);
+  $('clear').hidden = false;
+
+  const t0 = performance.now();
+  try {
+    const r = await e.synth(state.loaded[e.key()], text);
+    const blob = r.blob || toWav(r.audio, r.rate);
+    const gen = (performance.now() - t0) / 1000;
+    const dur = await wavSeconds(blob);
+    const url = URL.createObjectURL(blob);
+    const extra = id === 'piper' ? $('pvoice').value
+                : id === 'supertonic' ? `${$('svoice').value} · ${$('ssteps').value} steps` : '';
+    card.innerHTML =
+      `<h3>${e.label}</h3>
+       <p class="meta">${gen.toFixed(2)}s for ${dur.toFixed(2)}s of audio ·
+         <strong>RTF ${dur ? (gen / dur).toFixed(2) : '?'}</strong>
+         ${extra ? ' · ' + extra : ''} ·
+         <a href="${url}" download="${id}.wav">download</a></p>
+       <p class="said">${text.replace(/[<>&]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]))}</p>
+       <audio controls src="${url}"></audio>`;
+  } catch (err) {
+    card.innerHTML = `<h3>${e.label}</h3><p class="meta err">${err.message}</p>`;
+  } finally {
+    state.busy = false; $('go').textContent = 'Generate'; sync();
+  }
+};
+
+$('clear').onclick = () => { $('out').innerHTML = ''; $('clear').hidden = true; };
+</script>
+</body>
+</html>
