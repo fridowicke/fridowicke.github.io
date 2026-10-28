@@ -907,5 +907,69 @@
       "https://www.campeggidesign.it/en/product/nessy/"
     ],
     "checkedAt": "2026-10-28"
+  },
+  "ulisse": {
+    "checkedAt": "2026-10-28",
+    "low": 1837,
+    "high": 1837,
+    "label": "Showroom listing",
+    "scope": "Specific animal-print showroom example in Arezzo, Italy",
+    "note": "Dealer currently lists €1,837 including Italian VAT, reduced from €3,170. Transport and assembly excluded. Listed rather than reserved stock; Berlin delivery and condition require dealer confirmation.",
+    "sources": [
+      "https://www.mobilidesignoccasioni.com/9-divani/26-divani-letto/84580-biesse-ulisse.html"
+    ]
+  },
+  "quadrangolo": {
+    "checkedAt": "2026-10-28",
+    "display": "Quote / resale hunt",
+    "label": "Design reference",
+    "scope": "No current asking price verified",
+    "note": "The linked product archive requests a price. The manufacturer also names Quadrangolo in its outlet catalogue, but price and availability require confirmation. No invented vintage range.",
+    "sources": [
+      "https://www.designbest.com/it/catalogo/biesse/divani/divani_con_penisola/quadrangolo/7418",
+      "https://www.biesse2000.it/it/outlet"
+    ]
+  },
+  "easysleep": {
+    "checkedAt": "2026-10-28",
+    "display": "€1,100 · past ask",
+    "label": "Removed listing reference",
+    "scope": "Historical used ask; no current example verified",
+    "note": "The €1,100 Belgian listing surfaced in search but direct browser verification returns page not found. Do not treat it as buyable stock or as a general market valuation. Original catalogue verifies the actual bed conversion.",
+    "sources": [
+      "https://www.2ememain.be/v/maison-meubles/chambre-a-coucher-canapes-lits/m2378488511-canape-lit-design-italien-domodinamica-easy-sleep"
+    ]
+  },
+  "tattomi155": {
+    "checkedAt": "2026-10-28",
+    "display": "TA/155 · quote",
+    "label": "Wide variant quote required",
+    "scope": "Retailer shows €3,014–€4,324 across the size family",
+    "note": "Compass lists €3,014–€4,324 for TA/95, TA/125 and TA/155. The exact selected TA/155 price could not be verified, so the smaller chair price is not presented as a sofa price. Berlin delivery extra; used pricing unverified.",
+    "sources": [
+      "https://compassdesignshop.com/productos/butaca-cama-tattomi/"
+    ]
+  },
+  "ds77vintage": {
+    "checkedAt": "2026-10-28",
+    "low": 3899,
+    "high": 3899,
+    "label": "Used set asking price",
+    "scope": "Two-sofa set from a German seller; good vintage condition",
+    "note": "Pamono lists one €3,899 set of two sofas, with shipping extra and a DS-76/DS-77 naming ambiguity. Seller mentions individual sale but gives no single-sofa price. Confirm labels, usable sleeping area, canvas, foam, leather and Berlin freight.",
+    "sources": [
+      "https://www.pamono.de/ds-77-sofas-tagesbett-von-de-sede-2er-set"
+    ]
+  },
+  "blitz": {
+    "checkedAt": "2026-10-28",
+    "low": 2737.98,
+    "high": 2737.98,
+    "label": "New displayed price",
+    "scope": "Mohd Germany / EUR, multicolour fabric cat. L configuration",
+    "note": "Direct Germany/EUR page lists €2,737.98 with a 3–4 week stated lead time. Delivery to Berlin and final VAT/configuration should be checked at checkout. A new retail reference, not a vintage price range.",
+    "sources": [
+      "https://shop.mohd.it/en/blitz-divanoletto.html?country=DE&currency=EUR"
+    ]
   }
 }
