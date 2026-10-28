@@ -23,7 +23,7 @@ export function priceKind(price) {
 }
 
 export function initialFilters() {
-  return { hearts: [0, 1, 2, 3], designer: '', brand: '', priceMin: '', priceMax: '', priceKinds: ['vintage', 'used', 'new', 'quote'], sleeping: ['bed', 'daybed', 'none'], sort: 'curated' };
+  return { hearts: [0, 1, 2, 3], designer: '', brand: '', priceMin: '', priceMax: '', priceKinds: ['vintage', 'used', 'new', 'quote'], sleeping: ['bed', 'daybed', 'none'], sort: 'hearts-desc' };
 }
 
 export function filterSofas(sofas, prices, preferences, filters, query = '', view = 'all') {
@@ -31,7 +31,7 @@ export function filterSofas(sofas, prices, preferences, filters, query = '', vie
   return sofas.filter(sofa => {
     const hearts = heartsFor(sofa, preferences), price = prices[sofa.id], amount = upperPrice(price);
     for (const key of ['designer', 'brand']) if (filters[key] && !sofa[key].toLowerCase().includes(filters[key].trim().toLowerCase())) return false;
-    if (view === 'new' && !sofa.new || view === 'liked' && hearts === 0) return false;
+    if (view === 'new' && !sofa.new || view === 'liked' && hearts === 0 || view === 'beds' && sofa.bed !== 'bed' || view === 'newbeds' && !sofa.newBed) return false;
     if (!filters.hearts.includes(hearts) || !filters.sleeping.includes(sofa.bed) || !filters.priceKinds.includes(priceKind(price))) return false;
     if (filters.priceMin !== '' && (amount === null || amount < Number(filters.priceMin))) return false;
     if (filters.priceMax !== '' && (amount === null || amount > Number(filters.priceMax))) return false;
@@ -39,20 +39,36 @@ export function filterSofas(sofas, prices, preferences, filters, query = '', vie
   });
 }
 
+export function nextColumnSort(current, column) {
+  const key = column === 'sofa' ? 'name' : column === 'sleeping' ? 'bed' : column;
+  return `${key}-${current === `${key}-asc` ? 'desc' : 'asc'}`;
+}
+
 export function sortSofas(sofas, prices, preferences, sort, rank = []) {
   const curated = sofa => { const index = rank.indexOf(sofa.id); return index < 0 ? 999 : index; };
+  const [key, direction = 'asc'] = sort.split('-');
+  const sign = direction === 'desc' ? -1 : 1;
+  const amount = sofa => Number.isFinite(prices[sofa.id]?.low) ? prices[sofa.id].low : upperPrice(prices[sofa.id]);
+  const bedOrder = { bed: 0, daybed: 1, none: 2 };
   return [...sofas].sort((a, b) => {
-    if (sort === 'hearts-desc') return heartsFor(b, preferences) - heartsFor(a, preferences) || curated(a) - curated(b);
-    if (sort === 'hearts-asc') return heartsFor(a, preferences) - heartsFor(b, preferences) || curated(a) - curated(b);
-    if (sort === 'price-asc' || sort === 'price-desc') {
-      const x = upperPrice(prices[a.id]), y = upperPrice(prices[b.id]);
+    let comparison = 0;
+    if (key === 'hearts') comparison = heartsFor(a, preferences) - heartsFor(b, preferences);
+    if (key === 'price') {
+      const x = amount(a), y = amount(b);
       if (x === null && y !== null) return 1;
       if (y === null && x !== null) return -1;
-      if (x !== null && y !== null) return (sort === 'price-asc' ? x - y : y - x) || curated(a) - curated(b);
+      if (x !== null && y !== null) comparison = x - y;
     }
-    if (sort === 'name') return a.name.localeCompare(b.name);
-    if (sort === 'designer') return a.designer.localeCompare(b.designer);
-    if (sort === 'brand') return a.brand.localeCompare(b.brand);
-    return curated(a) - curated(b);
+    if (['name', 'designer', 'brand'].includes(key)) comparison = a[key].localeCompare(b[key]);
+    if (key === 'bed') comparison = bedOrder[a.bed] - bedOrder[b.bed];
+    return sign * comparison || curated(a) - curated(b);
   });
+}
+
+export function restoreScores(snapshot, preferences = {}) {
+  const restored = { ...preferences };
+  for (const [id, hearts] of Object.entries(snapshot?.scores || {})) {
+    if (Number.isInteger(hearts) && hearts >= 0 && hearts <= 3 && !restored[id]) restored[id] = { hearts, status: hearts ? 'liked' : 'unrated' };
+  }
+  return restored;
 }

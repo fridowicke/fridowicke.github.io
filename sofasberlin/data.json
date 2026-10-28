@@ -393,7 +393,7 @@
     "images": [
       "https://cdn.mohd.it/cache/image/format%3Dwebp/media/catalog/product/c/a/campeggi-quilt.jpg"
     ],
-    "source": "https://shop.mohd.it/en/quilt-sofa-bed.html",
+    "source": "https://shop.mohd.it/en/quilt-sofa-bed.html?country=DE&currency=EUR",
     "new": false,
     "initial": "unrated",
     "green": false,
@@ -834,7 +834,7 @@
     "designer": "team form ag",
     "brand": "COR",
     "era": "1973 / bed version 2018",
-    "bed": "bed",
+    "bed": "daybed",
     "description": "Low modular blocks with loose backs. The dedicated folding-bed version is a later addition.",
     "images": [
       "https://jukiamsterdam.com/cdn/shop/files/CORTrioModularSofabyTeamFormAG_Green_19_2048x2048.jpg?v=1706800922"

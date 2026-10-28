@@ -157,17 +157,19 @@
     "sources": [
       "https://www.campeggidesign.it/en/product/sosia/"
     ],
-    "note": "The manufacturer marks Sosia out of collection. No sufficiently reliable used asking-price range found."
+    "note": "Manufacturer confirms the model is out of collection. Recheck on 28 October 2026 found no current priced offer; an old 2011 magazine figure is not a current secondhand valuation."
   },
   "quilt": {
-    "low": 8542,
-    "high": 8542,
+    "low": 6297.25,
+    "high": 6612.3,
     "label": "New price reference",
-    "scope": "2025 model; no established vintage market",
+    "scope": "Mohd Germany, EUR including 19% VAT; base upholstery/configuration",
     "sources": [
+      "https://shop.mohd.it/en/quilt-sofa-bed.html?country=DE&currency=EUR",
       "https://www.silvera.fr/en/eshop/sofa-bed-quilt-brown-campeggi.html"
     ],
-    "note": "Observed new asking price €8,541.60; used market too thin for a credible range."
+    "note": "Checked 28 October 2026: actual listed starting price €6,297.25 for delivery country Germany. Upholstery and dimensions can increase the price; delivery is excluded. No coupon reduction assumed.",
+    "starting": true
   },
   "d70": {
     "low": 4000,
@@ -430,5 +432,76 @@
       "https://www.selency.co.uk/p/22WXFB69/sapporo-sofa-by-mario-marenco-for-mobil-girgi-italy-1970s"
     ],
     "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "oblo": {
+    "label": "New price reference",
+    "scope": "New Oblò sofa bed, category 3 upholstery; mattress included",
+    "sources": [
+      "https://shop.mohd.it/en/oblo-sofa-bed.html?country=DE&currency=EUR",
+      "https://www.campeggidesign.it/en/product/oblo/"
+    ],
+    "note": "Checked 28 October 2026: actual listed starting price €3,134.97 for delivery country Germany. Upholstery and dimensions can increase the price; delivery is excluded. No coupon reduction assumed.",
+    "low": 3134.97,
+    "high": 3134.97,
+    "starting": true
+  },
+  "clam": {
+    "low": 4726,
+    "high": 6310,
+    "label": "New price reference",
+    "scope": "New German retail reference; upholstery affects price",
+    "sources": [
+      "https://www.ligne-roset-werkhaus.de/produkt/clam-schlafsofa/",
+      "https://www.ligne-roset-contracts.com/uk/modele/living/sofa-beds/clam/2616"
+    ],
+    "note": "German dealer lists variants from €4,726 to €6,310; displayed amount is the entry price, not a vintage estimate. Fabric and shipping are additional configuration considerations.",
+    "starting": true
+  },
+  "nomadeexpress": {
+    "low": 850,
+    "high": 2800,
+    "label": "Expected secondhand price",
+    "scope": "Used 2–3-seat sofa bed; condition and production year vary",
+    "sources": [
+      "https://www.kleinanzeigen.de/s-anzeige/ligne-roset-nomade-express-schlafsofa-design-didier-gomez-/3541674248-88-4823",
+      "https://www.whoppah.com/de/mobel/betten/schlafsofas",
+      "https://www.ligne-roset.com/uk/p/sofa-beds/bed-settee-nomade-express-3148"
+    ],
+    "note": "Working budget based on observed asks: €850 for a reportedly very good 2017 version, €950 marketplace reference and €2,800 near-new Munich example. Condition claims and availability need direct confirmation."
+  },
+  "boa": {
+    "label": "New price reference",
+    "scope": "Mohd Germany, EUR including 19% VAT; base upholstery/configuration",
+    "sources": [
+      "https://shop.mohd.it/en/boa-sofa-bed.html?country=DE&currency=EUR",
+      "https://www.campeggidesign.it/en/product/boa/"
+    ],
+    "note": "Checked 28 October 2026: actual listed starting price €5,549.11 for delivery country Germany. Upholstery and dimensions can increase the price; delivery is excluded. No coupon reduction assumed.",
+    "low": 5549.11,
+    "high": 5827.1,
+    "starting": true
+  },
+  "brooklyn": {
+    "low": 3990,
+    "high": 3990,
+    "label": "New price reference",
+    "scope": "Dealer reference for the quoted double-sofa-bed configuration",
+    "sources": [
+      "https://www.tomassini.com/it/campeggi-divano-letto-matrimoniale-brooklyn-p-8976.html",
+      "https://www.campeggidesign.it/en/product/brooklyn/"
+    ],
+    "note": "Tomassini lists a current sale price of €3,990 for its double-sofa-bed configuration. €4,366 is the crossed-out reference price, not a second current offer. Fabric, dimensions and Berlin delivery can change the quote."
+  },
+  "br02": {
+    "low": 1000,
+    "high": 2300,
+    "label": "Expected vintage price",
+    "scope": "Single-bed model in good usable condition",
+    "sources": [
+      "https://www.whoppah.com/brands/spectrum/sofas",
+      "https://www.vntg.com/58417/br02-sofa-by-martin-visser-for-spectrum-1960s/",
+      "https://www.spectrumdesign.nl/collectie/br-02-slaapbank/"
+    ],
+    "note": "Budget estimate from asking prices around €1,450–2,250 and sold dealer bands €1,000–1,500. Worn private examples can be cheaper. Pictured manufacturer photo is a model reference, not the offered vintage piece."
   }
 }

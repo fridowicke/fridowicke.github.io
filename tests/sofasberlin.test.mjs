@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { heartsFor, setHearts, initialFilters, filterSofas, sortSofas } from '../sofasberlin/catalogue.mjs';
+import { heartsFor, setHearts, initialFilters, filterSofas, sortSofas, restoreScores, nextColumnSort } from '../sofasberlin/catalogue.mjs';
 
 const read = async file => JSON.parse(await readFile(new URL(`../sofasberlin/${file}`, import.meta.url)));
 const sofas = [...await read('data.json'), ...await read('extra.json')];
@@ -46,4 +46,45 @@ test('price sorting keeps unknown prices last in either direction', () => {
   assert.deepEqual(sortSofas(subset, prices, {}, 'price-asc').map(s => s.id), ['multy', 'ds85', 'scoop']);
   assert.deepEqual(sortSofas(subset, prices, {}, 'price-desc').map(s => s.id), ['ds85', 'multy', 'scoop']);
   assert.deepEqual(sortSofas(subset, prices, { multy: { hearts: 3 }, ds85: { hearts: 2 } }, 'hearts-desc').map(s => s.id), ['multy', 'ds85', 'scoop']);
+});
+
+test('saved scores restore on a new browser while newer browser ratings and notes survive', () => {
+  const saved = { scores: { ds85: 3, superonda: 3, multy: 3, invalid: 9 } };
+  const restored = restoreScores(saved, { ds85: { hearts: 0, note: 'Changed my mind' } });
+  assert.equal(restored.ds85.hearts, 0);
+  assert.equal(restored.ds85.note, 'Changed my mind');
+  assert.equal(restored.superonda.hearts, 3);
+  assert.equal(restored.invalid, undefined);
+});
+
+test('the backed-up scores determine the default order and retain all 40 original ratings', async () => {
+  const snapshot = await read('ratings.json');
+  assert.equal(Object.keys(snapshot.scores).length, 40);
+  const ordered = sortSofas(sofas, prices, restoreScores(snapshot), initialFilters().sort);
+  assert.deepEqual(new Set(ordered.slice(0, 5).map(s => s.id)), new Set(['ds85', 'ds76', 'superonda', 'multy', 'strips']));
+});
+
+test('new sofa beds are six verified convertibles and the sofa-bed view excludes daybeds', () => {
+  const recent = filterSofas(sofas, prices, {}, initialFilters(), '', 'newbeds');
+  assert.equal(recent.length, 6);
+  assert.ok(recent.every(s => s.bed === 'bed' && s.images.length && prices[s.id]));
+  const beds = filterSofas(sofas, prices, {}, initialFilters(), '', 'beds');
+  assert.ok(beds.every(s => s.bed === 'bed'));
+  assert.ok(!beds.some(s => s.id === 'trio'));
+});
+
+test('a column starts ascending, reverses on the second click and replaces the previous sort', () => {
+  assert.equal(nextColumnSort('hearts-desc', 'price'), 'price-asc');
+  assert.equal(nextColumnSort('price-asc', 'price'), 'price-desc');
+  assert.equal(nextColumnSort('price-desc', 'price'), 'price-asc');
+  assert.equal(nextColumnSort('price-desc', 'designer'), 'designer-asc');
+  assert.equal(nextColumnSort('designer-desc', 'sofa'), 'name-asc');
+  assert.equal(nextColumnSort('name-asc', 'sleeping'), 'bed-asc');
+});
+
+test('bed and text column order reverse consistently', () => {
+  const subset = ['ds85', 'superonda', 'marsala'].map(id => sofas.find(s => s.id === id));
+  assert.deepEqual(sortSofas(subset, prices, {}, 'bed-asc').map(s => s.bed), ['bed', 'daybed', 'none']);
+  assert.deepEqual(sortSofas(subset, prices, {}, 'bed-desc').map(s => s.bed), ['none', 'daybed', 'bed']);
+  assert.deepEqual(sortSofas(subset, prices, {}, 'name-desc').map(s => s.name), ['Superonda', 'Marsala', 'DS-85']);
 });

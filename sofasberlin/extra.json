@@ -146,5 +146,139 @@
     "bedNote": "Sofa only; no conversion.",
     "priceNote": "Vintage price and delivery to research",
     "availability": "Model reference · stock unverified"
+  },
+  {
+    "id": "oblo",
+    "name": "Oblò",
+    "designer": "Vico Magistretti",
+    "brand": "Campeggi",
+    "era": "2005 / current reissue",
+    "bed": "bed",
+    "description": "Playful red frame and yellow upholstery; converts to a single or double bed.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2022/04/01_CAMPEGGI-oblo.jpg"
+    ],
+    "source": "https://shop.mohd.it/en/oblo-sofa-bed.html?country=DE&currency=EUR",
+    "bedNote": "Mohd specifies an included 136 × 202 cm polyurethane mattress, 10 cm thick. Sofa width 275 cm; open depth 165 cm.",
+    "new": true,
+    "newBed": true,
+    "initial": "unrated",
+    "availability": "Model reference; exact stock and Berlin delivery unverified",
+    "tags": [
+      "sofa bed",
+      "guest bed"
+    ]
+  },
+  {
+    "id": "clam",
+    "name": "Clam",
+    "designer": "Dubreil & Pilato",
+    "brand": "Ligne Roset",
+    "era": "contemporary",
+    "bed": "bed",
+    "description": "A sculptural upholstered shell that unfolds into a double sleeping surface.",
+    "images": [
+      "https://www.ligne-roset-werkhaus.de/wp-content/uploads/ligne-roset-werkhaus-rosenheim_schlafsofa_clam_5-1.jpg",
+      "https://www.ligne-roset-werkhaus.de/wp-content/uploads/ligne-roset-werkhaus-rosenheim_schlafsofa_clam_6.jpg"
+    ],
+    "source": "https://www.ligne-roset-werkhaus.de/produkt/clam-schlafsofa/",
+    "bedNote": "Manufacturer specifies an articulated mechanism and 136 × 190 cm sleeping surface; confirm the current German version.",
+    "new": true,
+    "newBed": true,
+    "initial": "unrated",
+    "availability": "Model reference; exact stock and Berlin delivery unverified",
+    "tags": [
+      "sofa bed",
+      "guest bed"
+    ]
+  },
+  {
+    "id": "nomadeexpress",
+    "name": "Nomade Express",
+    "designer": "Didier Gomez",
+    "brand": "Ligne Roset",
+    "era": "2000s–present",
+    "bed": "bed",
+    "description": "Buttoned mattress-like upholstery and cast-metal legs; a direct follow-up to your three-heart Multy.",
+    "images": [
+      "https://www.beadlecromeinteriors.co.uk/images/products/large/21345_15074.jpg"
+    ],
+    "source": "https://www.kleinanzeigen.de/s-anzeige/ligne-roset-nomade-express-schlafsofa-design-didier-gomez-/3541674248-88-4823",
+    "bedNote": "Official specification: 140 × 200 cm Bultex sleeping mattress, 16 cm thick. Linked used example is pickup only in Seligenstadt; arrange transport separately.",
+    "new": true,
+    "newBed": true,
+    "initial": "unrated",
+    "availability": "Model reference; exact stock and Berlin delivery unverified",
+    "tags": [
+      "sofa bed",
+      "guest bed"
+    ]
+  },
+  {
+    "id": "boa",
+    "name": "Boa",
+    "designer": "Giulio Manzoni",
+    "brand": "Campeggi",
+    "era": "2026",
+    "bed": "bed",
+    "description": "New, oversized rounded upholstery around an actual folding bed.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2026/04/Boa_Giulio_Manzoni.jpg"
+    ],
+    "source": "https://shop.mohd.it/en/boa-sofa-bed.html?country=DE&currency=EUR",
+    "bedNote": "Official specification: 16 cm mattress; 140 × 200 or 160 × 200 cm sleeping surface. Order the sofa-bed version, not the fixed sofa.",
+    "new": true,
+    "newBed": true,
+    "initial": "unrated",
+    "availability": "Model reference; exact stock and Berlin delivery unverified",
+    "tags": [
+      "sofa bed",
+      "guest bed"
+    ]
+  },
+  {
+    "id": "brooklyn",
+    "name": "Brooklyn",
+    "designer": "Giulio Manzoni",
+    "brand": "Campeggi",
+    "era": "2022",
+    "bed": "bed",
+    "description": "Retro upholstery on slim metal feet with a real pull-out mattress.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2022/07/1_square-2.jpg"
+    ],
+    "source": "https://www.tomassini.com/it/campeggi-divano-letto-matrimoniale-brooklyn-p-8976.html",
+    "bedNote": "Manufacturer confirms a pull-out mattress on welded-steel sleeping support. Confirm the size in the quoted configuration.",
+    "new": true,
+    "newBed": true,
+    "initial": "unrated",
+    "availability": "Model reference; exact stock and Berlin delivery unverified",
+    "tags": [
+      "sofa bed",
+      "guest bed"
+    ]
+  },
+  {
+    "id": "br02",
+    "name": "BR 02",
+    "designer": "Martin Visser",
+    "brand": "Spectrum",
+    "era": "1960",
+    "bed": "bed",
+    "description": "Colourful upholstery on a tubular steel frame; the seat pulls forward into a single guest bed.",
+    "images": [
+      "https://www.spectrumdesign.nl/wp-content/uploads/2018/10/br-02-slaapbank-martin-visser-3.jpg"
+    ],
+    "source": "https://www.spectrumdesign.nl/collectie/br-02-slaapbank/",
+    "bedNote": "Single sleeper only. Manufacturer dimensions: 192 × 100 cm overall when opened; verify usable sleeping width on the exact vintage piece.",
+    "sleepLabel": "Sofa bed · single",
+    "new": true,
+    "newBed": true,
+    "initial": "unrated",
+    "availability": "Model reference; exact stock and Berlin delivery unverified",
+    "tags": [
+      "sofa bed",
+      "guest bed"
+    ]
   }
 ]
