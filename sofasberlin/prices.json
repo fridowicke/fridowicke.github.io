@@ -1189,5 +1189,182 @@
       "https://www.pamono.eu/4-seater-sofa-bed-from-bonaldo-1982"
     ],
     "checkedAt": "2026-10-28"
+  },
+  "bretzgaudi": {
+    "low": 550,
+    "high": 550,
+    "label": "Used asking price",
+    "scope": "Good-condition orange sleeper, Ziemetshausen collection",
+    "note": "€550 negotiable. Current private listing, collection only; Berlin transport extra. Seller states a 140 × 200 cm bed. Production date and individual designer are not verified.",
+    "sources": [
+      "https://www.kleinanzeigen.de/s-anzeige/orangefarbenes-alcantara-samtsofa-bettsofa-von-bretz-gaudi/3547490310-88-7132"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "bretzchelsea": {
+    "low": 2899,
+    "high": 2899,
+    "label": "Used asking price",
+    "scope": "Revive Köln; top-condition aubergine sleeper",
+    "note": "One available at €2,899. Listed delivery into the apartment €149: €3,048 total if Berlin postcode is covered at that rate; confirm access conditions. No verified production year.",
+    "sources": [
+      "https://revive.de/collections/sofas/products/bretz-chelsea-stoff-dreisitzer-aubergine-lila-silber-glitzer-manuelle-funktion-schlaffunktion-sofa-couch-31696-c4"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "toothill": {
+    "low": 3526,
+    "high": 3526,
+    "label": "Vintage asking price",
+    "scope": "Marylebone Antiques, UK; restored cream bouclé",
+    "note": "Direct listing asks £2,950 and currently displays €3,526 conversion. Exchange conversion can change. UK-to-Berlin freight and import charges extra; obtain an all-in quote. A separate older Chairish example is unavailable and is not the offer linked here.",
+    "sources": [
+      "https://www.loveantiques.com/items/listings/vintage-afromosia-sofa-bed-by-toothill-LA588877"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "knollstella": {
+    "low": 3200,
+    "high": 3200,
+    "label": "Vintage listing",
+    "scope": "Vintage listing",
+    "note": "Berlin dealer current-stock category, €3,200 asking. Listed German delivery €150–350 (total €3,350–3,550); ask local Berlin rate and confirm stock. Main photographs are the current Magasin example.",
+    "sources": [
+      "https://magasin-berlin.de/knoll-sofa-stella/"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "guermonprezgalet": {
+    "low": 1790,
+    "high": 1790,
+    "label": "Vintage listing",
+    "scope": "Vintage listing",
+    "note": "€1,790 asking; “bid from €1,611” is an offer threshold, not a confirmed sale price. Professional seller in Corps Nuds, France, delivery quote needed for Berlin. Seller calls it Galet and attributes it to Guermonprez; independent model attribution not established.",
+    "sources": [
+      "https://www.whoppah.com/products/scandinavian-vintage-sofa-bed-by-gerard-guermonprez-1960-VJBJQX5Q7V6L"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "simardcl106": {
+    "low": 2070,
+    "high": 2070,
+    "label": "Vintage listing",
+    "scope": "Vintage listing",
+    "note": "Current buyable 1stDibs listing €2,070 VAT included, seller L’Estampille, Navilly/Frontenard, France. Re-covering labour €450 extra excluding fabric. Published €250 shipping applies to France, not Berlin; Germany quote required. Current listing photographs, not the separately advertised restored Kvadrat example.",
+    "sources": [
+      "https://www.1stdibs.com/fr/meubles/si%C3%A8ges/canap%C3%A9s/canap%C3%A9-banc-cl-106-dandr%C3%A9-simard-%C3%A9ditions-airborne-1960/id-f_52605872/",
+      "https://www.gazette-drouot.com/lots/7348971-simard-andre--2f-airborne--3a---"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "picardseta": {
+    "low": 380,
+    "high": 380,
+    "label": "Vintage listing",
+    "scope": "Vintage listing",
+    "note": "Current Selency asking €380 (previously €580), add-to-cart available. Same descriptive listing appears on Whoppah at €550; use lower directly displayed Selency price and reconfirm. Budget for a replacement mattress and a Berlin transport quote. Current seller photographs show original fabric.",
+    "sources": [
+      "https://www.selency.fr/p/SB9DCBJ6/canape-lit-de-jean-rene-picard-pour-seta",
+      "https://www.whoppah.com/fr/produits/canape-lit-vintage-par-jean-rene-picard-pour-seta-1950-ZHOZ9KS551S3"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "roromedium": {
+    "low": 4100,
+    "high": 4100,
+    "label": "Used listing",
+    "scope": "Used listing",
+    "note": "Used asking €4,100, stock/pickup in Hamburg. Seller publishes €180 delivery to the chosen room elsewhere in Germany, so expected Berlin total €4,280 subject to route/access. Photographs are this offered brown leather example. Exact production age not stated; not claimed to be an original 1998 example.",
+    "sources": [
+      "https://aaron-gmbh.com/products/bruhl-roro-sofa-medium-leder-taron-braun",
+      "https://bruehl.com/en/product_models/roro-medium-classic/"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "stein700": {
+    "low": null,
+    "high": null,
+    "label": "Restoration offer",
+    "scope": "Restoration offer",
+    "note": "Buma dealer restoration offer CHF4,200 (not EUR), including restoration/re-covering according to page. Ask current availability and final fabric allowance. Photos are BEFORE restoration, not a finished-condition promise. Shipping, German import tax/handling and any FX costs require a Berlin quote.",
+    "sources": [
+      "https://www.bumadesign.ch/moebelklassiker/richard-stein-sofa-knoll/kategorie/sofas_sessel"
+    ],
+    "checkedAt": "2026-10-28",
+    "display": "CHF 4,200"
+  },
+  "brucobiesse": {
+    "low": 400,
+    "high": 400,
+    "label": "Vintage asking price",
+    "scope": "Restored private listing · Monza",
+    "note": "Current €400 listing. Manufacturer restoration, like-new condition and designer attribution are seller claims; verify invoice/label. Berlin delivery not included.",
+    "sources": [
+      "https://www.subito.it/arredamento-casalinghi/divano-letto-design-vintage-anni-80-bruco-monza-383811071.htm"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "pepperarflex": {
+    "low": 2350,
+    "high": 2350,
+    "label": "Vintage asking price",
+    "scope": "Current listing · Verona collection",
+    "note": "Current Subito asking €2350. Not pristine/original: missing duvet and non-original textiles/foam. Listed €250 shipping is local; seller gives distance-based Italian delivery rates, Berlin quote required. Earlier indexed Berlin €900 offer is no longer present in current search.",
+    "sources": [
+      "https://www.subito.it/arredamento-casalinghi/1988-arflex-pepper-divano-letto-garanzia-ricevuta-mantova-600644928.htm",
+      "https://revive.de/en/products/arflex-pepper-stoff-schlafsofa-schwarz-dreisitzer-sofa-couch-16468-c4"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "ribaltaarflex": {
+    "low": 350,
+    "high": 350,
+    "label": "Vintage asking price",
+    "scope": "Current Hannover listing · repair needed",
+    "note": "Direct current listing shows €350 negotiable (search results retained older €380/400). Small hole disclosed, collection only. Separate March 2025 Quittenbaum auction sold another Ribalta for €750 hammer plus fees. Maker biography notes a 1993 award; auction dates the design 1988.",
+    "sources": [
+      "https://www.kleinanzeigen.de/s-anzeige/arflex-ribalta-schlafsofa-daybett-design-space-age-midcentury/3501631785-88-3172",
+      "https://www.quittenbaum.de/en/auktionen/design/177A/all-lots/fabrizio-ballardiniarflex-mailand-milan-daybed-ribalta-1988-136043/",
+      "https://www.arflex.it/us/it/fabrizio-ballardini"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "jekyllhyde": {
+    "low": null,
+    "high": null,
+    "label": "Sold dealer reference",
+    "scope": "Sold · source another example",
+    "note": "Seller site now explicitly SOLD with €0 placeholder and previous €1800 reference; web cached product displayed €1500 promotion. €1800 is a past asking reference, not a verified realised sale price. The initially indexed Viterbo €1500 Subito offer now returns 410 Gone, so do not advertise it as available.",
+    "sources": [
+      "https://ilrestaurato.com/products/dr-jekyll-mr-hyde-modular-sofa-bed-by-poltrona-frau-1980s"
+    ],
+    "checkedAt": "2026-10-28",
+    "referencePriceEur": 1800,
+    "display": "Sold · €1,800 ref"
+  },
+  "magellanocampeggi": {
+    "display": "Price unverified",
+    "label": "Discontinued design",
+    "scope": "Vintage hunt · no current priced offer",
+    "note": "Manufacturer marks discontinued. No defensible current vintage price or available example found; no invented price range. Photos are manufacturer archive references.",
+    "sources": [
+      "https://www.campeggidesign.it/en/product/magellano/",
+      "https://pdf.archiexpo.com/pdf/campeggi/magellano/57169-260320.html"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "naideifrau": {
+    "low": null,
+    "high": null,
+    "label": "Sold outlet reference",
+    "scope": "Sold red ex-display sofa-bed",
+    "note": "MDO explicitly SOLD, previous €3000 outlet asking price against €6000 list. This is a reference for hunting another example, not an available deal or realised sale. Photos show that sold red example. Berlin transport extra.",
+    "sources": [
+      "https://www.mobilidesignoccasioni.com/9-divani/26-divani-letto/90312-poltrona-frau-naidei.html",
+      "https://www.centroforme.it/en/news/130-naidei-by-poltrona-frau.htm"
+    ],
+    "checkedAt": "2026-10-28",
+    "referencePriceEur": 3000,
+    "display": "Sold · €3,000 ref"
   }
 }
