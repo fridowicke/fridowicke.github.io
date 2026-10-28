@@ -9,7 +9,7 @@ function status(message,error=false){$('#sync-status').textContent=message;$('#s
 function overlayPending(){people=Object.fromEntries(PEOPLE.map(p=>[p.id,{...serverPeople[p.id]}]));for(const change of pending.values())people[change.person][change.sofaId]=change.hearts}
 function acceptSnapshot(snapshot){if(snapshot.revision>=serverRevision){serverPeople=snapshot.people;serverRevision=snapshot.revision}overlayPending()}
 async function apiRequest(options={}){const response=await fetch(API,{cache:'no-store',...options,signal:AbortSignal.timeout(10000)});if(!response.ok)throw new Error('Ratings server unavailable');const snapshot=await response.json();if(!Number.isInteger(snapshot.revision)||!snapshot.people)throw new Error('Invalid ratings response');return snapshot}
-async function refreshRatings(){if(!ready||refreshing||pending.size)return;refreshing=true;try{const snapshot=await apiRequest();const changed=snapshot.revision!==serverRevision||!sharedReady;acceptSnapshot(snapshot);sharedReady=true;if(changed)render();status(pending.size?'Saving…':'Saved')}catch{sharedReady=false;status('Shared saving unavailable — reconnecting…',true);render()}finally{refreshing=false}}
+async function refreshRatings(){if(!ready||refreshing||pending.size)return;refreshing=true;try{const snapshot=await apiRequest();const firstSnapshot=serverRevision<0,changed=snapshot.revision!==serverRevision||!sharedReady;acceptSnapshot(snapshot);sharedReady=true;if(changed)render({resort:firstSnapshot});status(pending.size?'Saving…':'Saved')}catch{sharedReady=false;status('Shared saving unavailable — reconnecting…',true);render()}finally{refreshing=false}}
 function saveRating(person,sofaId,hearts){
  const key=person+':'+sofaId,change={person,sofaId,hearts,sequence:++sequence};pending.set(key,change);overlayPending();status('Saving…');render();
  saveQueue=saveQueue.then(async()=>{try{const snapshot=await apiRequest({method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({person,sofaId,hearts}),keepalive:true});if(pending.get(key)?.sequence===change.sequence)pending.delete(key);acceptSnapshot(snapshot);sharedReady=true;render();status(pending.size?'Saving…':'Saved')}catch{if(pending.get(key)?.sequence===change.sequence)pending.delete(key);overlayPending();render();status('Could not save — please try again',true)}});
@@ -22,7 +22,24 @@ const money=n=>'€'+new Intl.NumberFormat('en-GB',{minimumFractionDigits:Number
 const priceText=p=>p?.starting?'From '+money(p.low):p?.low&&p?.high?(p.low===p.high?money(p.low):money(p.low)+'–'+money(p.high))+(p.highPlus?'+':''):p?.display||'Quote required';
 const rank=['additional','ds85','superonda','freesystem','marsala','onda','orbis','amanta','kali','alanda','soriana','serpentone','ds600','duc','sapporo','corbi','hyaline','sesann','confidential','anfibio','d70','ds76','sosia','quilt','sofo','rumble','lemura','scoop','gs195','cozypad','multy','smala','strips','trio'];
 const sleepLabel=s=>s.sleepLabel||(s.bed==='bed'?'Sofa bed':s.bed==='daybed'?'Daybed':'Sofa only');
-function render(){
+// Keep existing rows and focus intact while ratings sync. Only an explicit
+// column sort (or the first shared snapshot) should change the browsing order.
+function renderRatings(){
+ for(const row of $('#list').rows){
+  const id=row.dataset.id;
+  for(const person of PEOPLE){
+   const cell=row.querySelector('.person-'+person.id),hearts=personHearts(people,id,person.id),editable=sharedReady&&selectedPerson===person.id;
+   cell.classList.toggle('person-selected',selectedPerson===person.id);
+   for(const button of cell.querySelectorAll('[data-rate]')){
+    const value=Number(button.dataset.value);button.disabled=!editable;button.setAttribute('aria-pressed',String(hearts===value));button.querySelector('svg').classList.toggle('filled',value<=hearts);
+    button.title=editable?(value===hearts?'Clear rating':'Rate '+value+' of 3'):'Choose '+person.name+' to edit';
+   }
+  }
+  const total=totalHearts(people,id),cell=row.querySelector('.total-cell');cell.textContent=total;cell.setAttribute('aria-label','Total '+total+' of 9 hearts');
+ }
+}
+function render({resort=false}={}){
+ if($('#list').rows.length&&!resort){renderRatings();return}
  const list=sortSofas(batch?sofas.filter(s=>s.batch===batch):sofas,prices,{},sort,rank,people);
  $('#result').textContent=list.length+' of '+sofas.length+' sofas';$('#empty').hidden=!!list.length;
  $('#list').innerHTML=list.map(s=>{const p=prices[s.id]||{},kind=priceKind(p),label=kind==='quote'?(/new/i.test(p.label||'')?'New / reissue':''):kind==='new'?'New / reissue':kind==='used'?'Secondhand':'Vintage',scope=p.display?.includes('set reference')?' · set':'';return `<tr class="sofa" id="sofa-${s.id}" data-id="${s.id}"><td class="photo-cell"><button class="sofa-photo" data-photo="${s.id}" aria-label="Enlarge ${esc(s.name)} photograph"><img src="${esc(image(s))}" alt="${esc(s.name+' by '+s.designer)}" loading="lazy" decoding="async"></button></td><th scope="row"><a class="sofa-name" href="${esc(s.source)}" target="_blank" rel="noopener noreferrer">${esc(s.name)}</a></th><td class="designer-cell">${esc(s.designer)}</td><td class="maker-cell">${esc(s.brand)}</td>${PEOPLE.map(person=>{const hearts=personHearts(people,s.id,person.id),editable=sharedReady&&selectedPerson===person.id;return `<td class="hearts-cell person-${person.id} ${selectedPerson===person.id?'person-selected':''}"><div class="hearts-control" role="group" aria-label="${esc(person.name+' rating for '+s.name)}">${[1,2,3].map(n=>`<button class="heart" data-rate="${s.id}" data-person="${person.id}" data-value="${n}" aria-label="${esc(person.name+': rate '+s.name+' '+n+' '+(n===1?'heart':'hearts'))}" aria-pressed="${hearts===n}" ${editable?'':'disabled'} title="${editable?(n===hearts?'Clear rating':'Rate '+n+' of 3'):'Choose '+person.name+' to edit'}">${heartIcon(n<=hearts)}</button>`).join('')}</div></td>`}).join('')}<td class="total-cell" aria-label="Total ${totalHearts(people,s.id)} of 9 hearts">${totalHearts(people,s.id)}</td><td class="price-cell" title="${esc([p.label,p.scope,p.note].filter(Boolean).join(' · '))}"><span class="price">${esc(priceText(p))}</span><span class="price-label">${esc(label+scope)}</span></td><td class="sleep-cell"><span class="bed-badge bed-${s.bed}" title="${esc(s.bedNote||'')}">${sleepLabel(s)}</span></td></tr>`}).join('');
@@ -33,8 +50,8 @@ function render(){
 function renderPhoto(){const arr=photos(current);photoIndex=(photoIndex+arr.length)%arr.length;$('#large-photo').src=arr[photoIndex];$('#large-photo').alt=current.name;$('#photo-title').textContent=current.name;$('#photo-price').textContent=priceText(prices[current.id]);$('#photo-note').textContent=[current.description,current.bedNote].filter(Boolean).join(' ');$('#photo-count').textContent=(photoIndex+1)+' / '+arr.length;$('#prev-photo').disabled=$('#next-photo').disabled=arr.length<2;$('#photo-source').href=current.imageSource||current.source;}
 document.addEventListener('click',e=>{
  const b=e.target.closest('button');
- if(b?.dataset.column){sort=nextColumnSort(sort,b.dataset.column);render();return}
- if(b?.dataset.rate){const id=b.dataset.rate,person=b.dataset.person,clicked=Number(b.dataset.value);if(!sharedReady||selectedPerson!==person)return;const hearts=personHearts(people,id,person)===clicked?0:clicked;saveRating(person,id,hearts);document.querySelector(`[data-rate="${id}"][data-person="${person}"][data-value="${clicked}"]`)?.focus()}
+ if(b?.dataset.column){sort=nextColumnSort(sort,b.dataset.column);render({resort:true});return}
+ if(b?.dataset.rate){const id=b.dataset.rate,person=b.dataset.person,clicked=Number(b.dataset.value);if(!sharedReady||selectedPerson!==person)return;const hearts=personHearts(people,id,person)===clicked?0:clicked;saveRating(person,id,hearts);document.querySelector(`[data-rate="${id}"][data-person="${person}"][data-value="${clicked}"]`)?.focus({preventScroll:true})}
  if(b?.dataset.photo){current=sofas.find(s=>s.id===b.dataset.photo);photoIndex=current.id==='additional'&&photos(current).length>1?1:0;renderPhoto();$('#photo-view').showModal()}
 });
 $('#close-photo').addEventListener('click',()=>$('#photo-view').close());$('#prev-photo').addEventListener('click',()=>{photoIndex--;renderPhoto()});$('#next-photo').addEventListener('click',()=>{photoIndex++;renderPhoto()});$('#photo-view').addEventListener('click',e=>{if(e.target===$('#photo-view')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close()}});
