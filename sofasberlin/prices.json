@@ -503,5 +503,283 @@
       "https://www.spectrumdesign.nl/collectie/br-02-slaapbank/"
     ],
     "note": "Budget estimate from asking prices around €1,450–2,250 and sold dealer bands €1,000–1,500. Worn private examples can be cheaper. Pictured manufacturer photo is a model reference, not the offered vintage piece."
+  },
+  "concentre": {
+    "display": "Resale hunt",
+    "label": "Archived model reference",
+    "scope": "Out of collection; no reliable current price found",
+    "sources": [
+      "https://www.campeggidesign.it/prodotto/concentre-de-vie/"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Design reference only. No live offer or current price verified."
+  },
+  "dynamiclife": {
+    "display": "Resale hunt",
+    "label": "Archived model reference",
+    "scope": "Out of collection; no reliable current price found",
+    "sources": [
+      "https://www.campeggidesign.it/prodotto/dynamic-life/"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "An archived 2014 magazine gave €1,000–2,000; that is historical pricing, not a current offer or reliable present-day resale range."
+  },
+  "papillonxl": {
+    "low": 290,
+    "high": 850,
+    "label": "Expected vintage / used price",
+    "scope": "Observed asking-price range; condition and transport vary",
+    "sources": [
+      "https://www.subito.it/arredamento-casalinghi/divano-papilon-xl-bonaldo-modena-664963801.htm",
+      "https://www.subito.it/annunci-italia/vendita/usato/?q=bonaldo+divano"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Observed private asks €290, €790 and €850. Transport from Italy and inspection are additional; photos are an archived dealer model reference."
+  },
+  "revolve": {
+    "low": 3372.27,
+    "high": 3372.27,
+    "starting": true,
+    "label": "New price reference",
+    "scope": "Listed EU retail price before Berlin delivery; upholstery and destination VAT can change the total",
+    "sources": [
+      "https://www.muebleslluesma.com/sofas-cama-dos-plazas/13396-18806307-sofa-cama-revolve-prostoria.html"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Observed asking price, not a delivered quote. No coupon or bank-transfer discount assumed."
+  },
+  "uplift": {
+    "low": 3494.48,
+    "high": 3494.48,
+    "starting": true,
+    "label": "New price reference",
+    "scope": "Listed EU retail price before Berlin delivery; upholstery and destination VAT can change the total",
+    "sources": [
+      "https://www.muebleslluesma.com/sofas-cama-dos-plazas/8847-25683794-sofa-cama-matrimonio-up-lift-prostoria.html"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Entry price on the sofa product page. The wider two-seat version and different fabrics cost more."
+  },
+  "bigbag": {
+    "low": 3850,
+    "high": 3850,
+    "starting": true,
+    "label": "New price reference",
+    "scope": "Listed EU retail price before Berlin delivery; upholstery and destination VAT can change the total",
+    "sources": [
+      "https://www.malfattizorzan.com/en/product/big-bag-sofa-campeggi"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Observed asking price, not a delivered quote. No coupon or bank-transfer discount assumed."
+  },
+  "cinova711": {
+    "low": 2700,
+    "high": 4500,
+    "label": "Expected vintage / used price",
+    "scope": "Observed asking-price range; condition and transport vary",
+    "sources": [
+      "https://www.dimanoinmano.mom/en/cp380681/modernism/sofas/711-sofa-by-tito-agnoli-for-cinova",
+      "https://www.lampandco.com/en/product/tito-agnoli-leather-sofa-cinova-editions-circa-1968/"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Current red example €2,700 for shop collection; delivery extra. €4,500 leather example has notable wear, so a higher ask is not proof of better condition."
+  },
+  "slalom": {
+    "display": "Resale hunt",
+    "label": "Archived model reference",
+    "scope": "Out of collection; no reliable current price found",
+    "sources": [
+      "https://www.campeggidesign.it/prodotto/slalom/"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Design reference only. No live offer or current price verified."
+  },
+  "pillow": {
+    "low": 4504.83,
+    "high": 4504.83,
+    "starting": true,
+    "label": "New price reference",
+    "scope": "Listed EU retail price before Berlin delivery; upholstery and destination VAT can change the total",
+    "sources": [
+      "https://www.muebleslluesma.com/sofas-cama-dos-plazas/13395-18769069-sofa-cama-pil-low-prostoria.html"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Observed asking price, not a delivered quote. No coupon or bank-transfer discount assumed."
+  },
+  "twin": {
+    "low": 4613.69,
+    "high": 4613.69,
+    "starting": false,
+    "label": "New price reference",
+    "scope": "Listed EU retail price before Berlin delivery; upholstery and destination VAT can change the total",
+    "sources": [
+      "https://shop.mohd.it/en/twin-sofa-bed.html?country=DE&currency=EUR"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Mohd page requested with Germany/EUR: €4,613.69. Manufacturer marks the model out of collection: confirm supply before paying."
+  },
+  "abcbed": {
+    "low": 4379,
+    "high": 4379,
+    "starting": false,
+    "label": "New price reference",
+    "scope": "Listed EU retail price before Berlin delivery; upholstery and destination VAT can change the total",
+    "sources": [
+      "https://shop.fattorinidesign.com/divano-letto-abc-campeggi/"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Observed asking price, not a delivered quote. No coupon or bank-transfer discount assumed."
+  },
+  "docbunk": {
+    "low": 3012.18,
+    "high": 3012.18,
+    "starting": false,
+    "label": "New price reference",
+    "scope": "Listed EU retail price before Berlin delivery; upholstery and destination VAT can change the total",
+    "sources": [
+      "https://www.lartdevivre.it/en/doc-sofa-bunk-bed-clei.html"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Displayed tax-inclusive price €3,012.18; €2,469 is the net amount, not an alternative retail offer. Quoted configuration includes two mattresses."
+  },
+  "ditraverso": {
+    "low": 4115.25,
+    "high": 4115.25,
+    "starting": true,
+    "label": "New price reference",
+    "scope": "Listed EU retail price before Berlin delivery; upholstery and destination VAT can change the total",
+    "sources": [
+      "https://shop.mohd.it/en/di-tra-verso-sofa-bed.html?country=DE&currency=EUR"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Mohd page requested with Germany/EUR: listed starting price €4,115.25; fabric and delivery extra."
+  },
+  "pierrotking": {
+    "low": 750,
+    "high": 950,
+    "label": "Expected vintage / used price",
+    "scope": "Observed asking-price range; condition and transport vary",
+    "sources": [
+      "https://www.subito.it/annunci-italia/vendita/usato/?q=bonaldo+divano",
+      "https://www.deesup.com/en/shop/convertible-sofa-pierrot-king-eco-leather-beige-bonaldo-92729"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Private King asks around €750–800; archived Deesup example €950 and unavailable. Photo is the archived beige King; bright fabric versions are worth hunting."
+  },
+  "daynight": {
+    "low": 2870,
+    "high": 2870,
+    "label": "Expected vintage / used price",
+    "scope": "Observed asking-price range; condition and transport vary",
+    "sources": [
+      "https://compasso-design.it/furniture/seating/day-night-daybed-enzo-mari-driade"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "€2,870 is the linked dealer asking price. Not a realised sale and not inclusive of Berlin transport."
+  },
+  "tango": {
+    "low": 4394,
+    "high": 4394,
+    "starting": true,
+    "label": "New price reference",
+    "scope": "Listed EU retail price before Berlin delivery; upholstery and destination VAT can change the total",
+    "sources": [
+      "https://classicdesign.it/en/campeggi/tango-sofa-bed.html"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "VAT-inclusive entry price on Classicdesign. Larger bed and premium upholstery cost more."
+  },
+  "piazzagrande": {
+    "low": 3259.9,
+    "high": 3259.9,
+    "starting": false,
+    "label": "New price reference",
+    "scope": "Listed EU retail price before Berlin delivery; upholstery and destination VAT can change the total",
+    "sources": [
+      "https://www.newpop.it/en/beds/36586-Campeggi-Piazzagrande-3-seater-double-sofa-bed-160x95-cm.html"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Observed current sale ask €3,259.90; €4,657 is the crossed-out reference. Configuration and German delivery/VAT need confirmation."
+  },
+  "ospite": {
+    "low": 1400,
+    "high": 1400,
+    "starting": true,
+    "label": "New price reference",
+    "scope": "Listed EU retail price before Berlin delivery; upholstery and destination VAT can change the total",
+    "sources": [
+      "https://www.tomassini.com/en/supplier/219-campeggi-designer"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Tomassini lists the Ospite folding sofa at €1,400; €1,570 is its crossed-out reference. It is a single emergency bed, not a double."
+  },
+  "gobbalunga": {
+    "display": "Resale hunt",
+    "label": "Archived model reference",
+    "scope": "Out of collection; no reliable current price found",
+    "sources": [
+      "https://www.campeggidesign.it/prodotto/gobbalunga/"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Manufacturer archive; current used price not verified. Mohd lists the model without a supported public price."
+  },
+  "commedia": {
+    "low": 3762.16,
+    "high": 3762.16,
+    "starting": true,
+    "label": "New price reference",
+    "scope": "Listed EU retail price before Berlin delivery; upholstery and destination VAT can change the total",
+    "sources": [
+      "https://shop.mohd.it/en/commedia-daybed.html?country=DE&currency=EUR"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Mohd page requested with Germany/EUR: starting price €3,762.16, with 80 × 200 cm mattress, blanket and four cushions."
+  },
+  "ds80": {
+    "low": 3899,
+    "high": 6500,
+    "label": "Expected vintage / used price",
+    "scope": "Observed asking-price range; condition and transport vary",
+    "sources": [
+      "https://jsfurniture.de/en/products/de-sede-ds-80-daybed",
+      "https://www.2nd-home.io/en/products/vintage-daybed-ds80-memory-de-sede-mit-patina-33803",
+      "https://www.selency.co.uk/p/PXTKB6GV/de-sede-ds80-daybed-vintage-in-perfect-condition"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Observed asks €3,899, €4,390 and €6,500. JSFurniture page has conflicting sold-out/available wording. Colour, back-cushion count and condition affect price."
+  },
+  "constanze": {
+    "low": 2400,
+    "high": 4000,
+    "label": "Expected vintage / used price",
+    "scope": "Observed asking-price range; condition and transport vary",
+    "sources": [
+      "https://www.vntg.com/368048/early-constanze-daybed-by-johannes-spalt-for-wittmann/",
+      "https://www.kunstunddesign-auktionen.de/en/auktionen/K-15/johannes-spaltwittmann-austria-sofa-daybed-model-constanze-137715/"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "A reupholstered dealer example asks €2,400. The photographed auction example realised €3,000 hammer, before buyer fees. Range is a budget guide, not a live matched offer."
+  },
+  "taipi": {
+    "low": 3921,
+    "high": 3921,
+    "starting": false,
+    "label": "New price reference",
+    "scope": "Listed EU retail price before Berlin delivery; upholstery and destination VAT can change the total",
+    "sources": [
+      "https://shop.mohd.it/it/taipi-divano-letto.html"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Italian Mohd page lists €3,921; manufacturer archives it as out of collection. Confirm remaining supply, German VAT and transport before treating this as an available order."
+  },
+  "ikoi": {
+    "display": "Resale hunt",
+    "label": "Archived model reference",
+    "scope": "Out of collection; no reliable current price found",
+    "sources": [
+      "https://www.campeggidesign.it/prodotto/ikoi/"
+    ],
+    "checkedAt": "2026-10-28",
+    "note": "Design reference only. No live offer or current price verified."
   }
 }

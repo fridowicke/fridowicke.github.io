@@ -280,5 +280,735 @@
       "sofa bed",
       "guest bed"
     ]
+  },
+  {
+    "id": "concentre",
+    "name": "Concentré de Vie",
+    "designer": "Matali Crasset",
+    "brand": "Campeggi",
+    "era": "2013",
+    "bed": "bed",
+    "description": "Orange tray, green blocks and blue cushions rearrange into a tiny living landscape. The most radical extension of your three-heart Oblò and Superonda.",
+    "bedNote": "Manufacturer confirms the central support becomes a single bed. No usable mattress dimensions or week-long comfort verified; discontinued, so this is a resale hunt.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/campeggi_design_concentredevie_01.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/campeggi_design_concentre_de_vie_ambiente-1.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/Concentre-de-Vie-1.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/Concentre-de-Vie-2.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/Concentre-de-Vie-3.jpg"
+    ],
+    "source": "https://www.campeggidesign.it/prodotto/concentre-de-vie/",
+    "imageSource": "https://www.campeggidesign.it/prodotto/concentre-de-vie/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "newBed": true,
+    "sleepLabel": "Sofa bed · single"
+  },
+  {
+    "id": "dynamiclife",
+    "name": "Dynamic Life",
+    "designer": "Matali Crasset",
+    "brand": "Campeggi",
+    "era": "2011",
+    "bed": "bed",
+    "description": "Colour-blocked foam folds into two lounging positions or one wide bed. More playful and architectural than a conventional pull-out.",
+    "bedNote": "Official sleeping surface 130 × 202 cm. Foam platform rather than a separate sprung mattress. Out of collection.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2022/04/Dynamic-Life.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/04/campeggi_design_dynamic_life_04-1.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/04/Dynamic-Life-1.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/04/Dynamic-Life-2.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/04/Dynamic-Life-3.jpg"
+    ],
+    "source": "https://www.campeggidesign.it/prodotto/dynamic-life/",
+    "imageSource": "https://www.campeggidesign.it/prodotto/dynamic-life/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "newBed": true
+  },
+  {
+    "id": "papillonxl",
+    "name": "Papillon XL",
+    "designer": "Centro Design Bonaldo",
+    "brand": "Bonaldo",
+    "era": "1990 design family / discontinued",
+    "bed": "bed",
+    "description": "Two butterfly wings on a chrome skeleton; dramatic in orange, red or olive. The opposite of an anonymous sofa bed.",
+    "bedNote": "Reclining wings form a 120 × 200 cm usable sleeping surface in the 2018 catalogue. The standard Papillon is only a single: look specifically for XL. Dealer outer opened dimensions differ from mattress dimensions.",
+    "images": [
+      "https://www.gomodern.co.uk/var/images/product/1200.863/GM-PAPI-02-1-large.jpg"
+    ],
+    "source": "https://www.subito.it/arredamento-casalinghi/divano-papilon-xl-bonaldo-modena-664963801.htm",
+    "imageSource": "https://www.gomodern.co.uk/bonaldo-papillon-xl-sofa-bed-now-discontinued.html",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "functionSource": "https://www.gomodern.co.uk/bonaldo-papillon-xl-sofa-bed-now-discontinued.html",
+    "newBed": true,
+    "attributionSource": "https://www.suite22.ca/pdf/bonaldo_monograph.pdf"
+  },
+  {
+    "id": "revolve",
+    "name": "Revolve",
+    "designer": "Numen / For Use, Borovnjak & Bratović",
+    "brand": "Prostoria",
+    "era": "2011 / current",
+    "bed": "bed",
+    "description": "A chunky capsule whose whole back rotates 180°. Strong object-like shape, particularly in saturated green or rust.",
+    "bedNote": "Official opened dimensions 210 × 140 × 38 cm; cold-foam sleeping surface. Conversion is verified; test firmness before a week-long stay.",
+    "images": [
+      "https://www.prostoria.com/dnl5jhinu/image/upload/c_limit,w_2560/f_webp/q_auto/v1/00_collection_hero_desktop_horizontal_Revolve_png?_a=BAVAZGE70",
+      "https://www.prostoria.com/dnl5jhinu/image/upload/c_limit,w_1800/f_webp/q_auto/v1/00_collection_hero_mobile_horizontal_Revolve_jpg_xhghyo?_a=BAVAZGE70",
+      "https://www.prostoria.com/dnl5jhinu/image/upload/c_limit,w_1280/f_webp/q_auto/v1/02_Revolve_collection_gallery_png_ihykan?_a=BAVAZGE70",
+      "https://www.prostoria.com/dnl5jhinu/image/upload/c_limit,w_2560/f_webp/q_auto/v1/04_Revolve_collection_gallery_png_eaei1v?_a=BAVAZGE70",
+      "https://www.prostoria.com/dnl5jhinu/image/upload/c_limit,w_2560/f_webp/q_auto/v1/05_Revolve_collection_gallery_png_dm2xty?_a=BAVAZGE70"
+    ],
+    "source": "https://www.muebleslluesma.com/sofas-cama-dos-plazas/13396-18806307-sofa-cama-revolve-prostoria.html",
+    "imageSource": "https://www.prostoria.com/collections/revolve/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "functionSource": "https://www.prostoria.com/collections/revolve/",
+    "newBed": true
+  },
+  {
+    "id": "uplift",
+    "name": "Up-Lift / sofa version",
+    "designer": "Neisako",
+    "brand": "Prostoria",
+    "era": "2013 / current",
+    "bed": "bed",
+    "description": "Giant circular arms act like wheels as the sofa rolls open. A properly strange little machine, not decorative styling.",
+    "bedNote": "Choose the 1.5- or 2-seat sofa, not the armchair. Two-seat version opens to 160 × 200 cm overall; dealer specifies usable mattress 150 × 195 cm. Listed entry price may be the narrower 1.5-seater.",
+    "images": [
+      "https://www.muebleslluesma.com/303192-large_default/sofa-cama-matrimonio-up-lift-prostoria.jpg",
+      "https://www.prostoria.com/dnl5jhinu/image/upload/c_limit,w_2560/f_webp/q_auto/v1/01_Up-lift_sofa-bed_jpg_ssocky?_a=BAVAZGE70",
+      "https://www.prostoria.com/dnl5jhinu/image/upload/c_limit,w_2560/f_webp/q_auto/v1/04_Up-lift_sofa-bed_jpg_e8cq2n?_a=BAVAZGE70"
+    ],
+    "source": "https://www.muebleslluesma.com/sofas-cama-dos-plazas/8847-25683794-sofa-cama-matrimonio-up-lift-prostoria.html",
+    "imageSource": "https://www.muebleslluesma.com/sofas-cama-dos-plazas/8847-25683794-sofa-cama-matrimonio-up-lift-prostoria.html",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "functionSource": "https://www.prostoria.com/collections/up-lift/",
+    "newBed": true
+  },
+  {
+    "id": "bigbag",
+    "name": "Big-Bag",
+    "designer": "Giulio Manzoni",
+    "brand": "Campeggi",
+    "era": "2019",
+    "bed": "bed",
+    "description": "A fat mattress landscape with portable, leather-handled backrests. A practical route toward the loose, puffy construction you liked in Strips.",
+    "bedNote": "Dealer specifies a 14 cm mattress; single 112 × 200 cm or unfolded double 193 × 185 cm. The double is unusually short in one direction: check your guests’ height.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2022/04/Big-Bag.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/04/campeggi_design_bigbag_01-1.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/04/Big-Bag-6.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/04/Big-Bag-9-1.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/04/Big-Bag-10-1.jpg"
+    ],
+    "source": "https://www.malfattizorzan.com/en/product/big-bag-sofa-campeggi",
+    "imageSource": "https://www.campeggidesign.it/prodotto/big-bag/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "functionSource": "https://www.campeggidesign.it/prodotto/big-bag/",
+    "newBed": true
+  },
+  {
+    "id": "cinova711",
+    "name": "711",
+    "designer": "Tito Agnoli",
+    "brand": "Cinova",
+    "era": "1967–1969",
+    "bed": "bed",
+    "description": "A red vintage transformer: the back and arms fold outward into bedside tables. Wheels, visible fittings and a genuine covered mattress.",
+    "bedNote": "Single sleeper, not a double. A documented example has a 77 × 192 cm mattress; dimensions vary between examples. Inspect foam and folding fittings.",
+    "images": [
+      "https://www.dimanoinmano.mom/img/1406394/410/modernariato/divani/divano-711-di-tito-agnoli-per-cinova.jpg",
+      "https://www.dimanoinmano.mom/img/1414776/410/modernariato/divani/divano-711-di-tito-agnoli-per-cinova.jpg",
+      "https://www.dimanoinmano.mom/img/1406395/410/modernariato/divani/divano-711-di-tito-agnoli-per-cinova.jpg",
+      "https://www.dimanoinmano.mom/img/1406396/410/modernariato/divani/divano-711-di-tito-agnoli-per-cinova.jpg",
+      "https://www.dimanoinmano.mom/img/1406397/410/modernariato/divani/divano-711-di-tito-agnoli-per-cinova.jpg"
+    ],
+    "source": "https://www.dimanoinmano.mom/en/cp380681/modernism/sofas/711-sofa-by-tito-agnoli-for-cinova",
+    "imageSource": "https://www.lampandco.com/en/product/tito-agnoli-leather-sofa-cinova-editions-circa-1968/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "functionSource": "https://www.lampandco.com/en/product/tito-agnoli-leather-sofa-cinova-editions-circa-1968/",
+    "newBed": true,
+    "sleepLabel": "Sofa bed · single"
+  },
+  {
+    "id": "slalom",
+    "name": "Slalom",
+    "designer": "Giulio Manzoni",
+    "brand": "Campeggi",
+    "era": "2016",
+    "bed": "bed",
+    "description": "An offset chaise arrangement slides around like dominoes into a bed. The transformation is part of its sculptural appeal.",
+    "bedNote": "Manufacturer catalogue specifies 120 × 210 or 140 × 210 cm sleeping configurations. Discontinued; confirm the exact size and complete mechanism on a used example.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/Slalom.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/campeggi_design_slalom_02.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/Slalom-1.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/Slalom-2.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/Slalom-3.jpg"
+    ],
+    "source": "https://www.campeggidesign.it/prodotto/slalom/",
+    "imageSource": "https://www.campeggidesign.it/prodotto/slalom/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "newBed": true
+  },
+  {
+    "id": "pillow",
+    "name": "Pil-Low",
+    "designer": "Neisako",
+    "brand": "Prostoria",
+    "era": "contemporary",
+    "bed": "bed",
+    "description": "An oversized wedge cushion, conspicuous seams and a folded geometric silhouette. A sharper cousin of your quilted foam favourites.",
+    "bedNote": "Official diagrams show a 200 × 155 cm opened platform. Seat lifts and rotates, back folds flat; storage below.",
+    "images": [
+      "https://www.prostoria.com/dnl5jhinu/image/upload/c_limit,w_2560/f_webp/q_auto/v1/00_collection_hero_desktop_horizontal_Pil-low_png?_a=BAVAZGE70",
+      "https://www.prostoria.com/dnl5jhinu/image/upload/c_limit,w_1800/f_webp/q_auto/v1/00_collection_hero_mobile_horizontal_Pil-low_jpg_fyxai1?_a=BAVAZGE70",
+      "https://www.prostoria.com/dnl5jhinu/image/upload/c_limit,w_1280/f_webp/q_auto/v1/01_Pil-low_collection_gallery_png?_a=BAVAZGE70",
+      "https://www.prostoria.com/dnl5jhinu/image/upload/c_limit,w_1280/f_webp/q_auto/v1/02_Pil-low_collection_gallery_png?_a=BAVAZGE70",
+      "https://www.prostoria.com/dnl5jhinu/image/upload/c_limit,w_2560/f_webp/q_auto/v1/03_Pil-low_collection_gallery_png?_a=BAVAZGE70"
+    ],
+    "source": "https://www.muebleslluesma.com/sofas-cama-dos-plazas/13395-18769069-sofa-cama-pil-low-prostoria.html",
+    "imageSource": "https://www.prostoria.com/collections/pil-low/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "functionSource": "https://www.prostoria.com/collections/pil-low/",
+    "newBed": true
+  },
+  {
+    "id": "twin",
+    "name": "Twin / paired seats",
+    "designer": "Matali Crasset",
+    "brand": "Campeggi",
+    "era": "2022",
+    "bed": "bed",
+    "description": "Two orange steel frames become high-backed seats, twin beds or a joined bed with bedside tables. This is a deliberately odd alternative to a conventional couch.",
+    "bedNote": "Two narrow 60 × 200 cm beds, or one joined 120 × 200 cm bed. These are paired seats, not a normal low sofa. Manufacturer archives it as out of collection, although retailers still list it.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2022/07/Twin.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/07/campeggi_design_twin_01-1.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/07/Twin-1-1.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/07/Twin-2.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/07/Twin-3.jpg"
+    ],
+    "source": "https://shop.mohd.it/en/twin-sofa-bed.html?country=DE&currency=EUR",
+    "imageSource": "https://www.campeggidesign.it/prodotto/twin/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "functionSource": "https://www.campeggidesign.it/prodotto/twin/",
+    "newBed": true,
+    "sleepLabel": "Sofa bed · 120 cm"
+  },
+  {
+    "id": "abcbed",
+    "name": "ABC",
+    "designer": "Giulio Manzoni",
+    "brand": "Campeggi",
+    "era": "2018",
+    "bed": "bed",
+    "description": "An asymmetric all-foam corner with a huge backrest and no exposed bed chassis. Close to Superonda’s rearrangeable softness.",
+    "bedNote": "Converts to two 82 × 200 cm single beds or one 165 × 200 cm double. Choose left- or right-hand version; manufacturer confirms the conversion.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2022/03/ABC.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/03/campeggi_design_abc_01.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/03/ABC-1.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/03/ABC-2.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/03/ABC-3.jpg"
+    ],
+    "source": "https://shop.fattorinidesign.com/divano-letto-abc-campeggi/",
+    "imageSource": "https://www.campeggidesign.it/prodotto/abc/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "functionSource": "https://www.campeggidesign.it/prodotto/abc/",
+    "newBed": true
+  },
+  {
+    "id": "docbunk",
+    "name": "Doc / bunk-bed sofa",
+    "designer": "Clei design team",
+    "brand": "Clei",
+    "era": "contemporary",
+    "bed": "bed",
+    "description": "The surprise is mechanical: an ordinary-looking sofa rises into two stacked beds. Included for the extraordinary transformation rather than its daytime outline.",
+    "bedNote": "Two separate single beds with slatted bases, integrated ladder and safety barrier. Confirm mattress dimensions and installation clearances. Use the ladder in the support position specified by Clei.",
+    "images": [
+      "https://www.lartdevivre.it/media/catalog/product/cache/281cdb971d36efe6278ce1d0bc6acbdd/d/o/doc1.jpg",
+      "https://www.lartdevivre.it/media/catalog/product/cache/281cdb971d36efe6278ce1d0bc6acbdd/d/o/doc_divano_clei.jpg",
+      "https://www.lartdevivre.it/media/catalog/product/cache/281cdb971d36efe6278ce1d0bc6acbdd/d/o/doc2.jpg",
+      "https://www.lartdevivre.it/media/catalog/product/cache/281cdb971d36efe6278ce1d0bc6acbdd/d/o/doc_divano_clei_2_.jpg",
+      "https://www.lartdevivre.it/media/catalog/product/cache/281cdb971d36efe6278ce1d0bc6acbdd/d/o/doc_divano_clei_3_.jpg"
+    ],
+    "source": "https://www.lartdevivre.it/en/doc-sofa-bunk-bed-clei.html",
+    "imageSource": "https://www.lartdevivre.it/en/doc-sofa-bunk-bed-clei.html",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "newBed": true,
+    "sleepLabel": "Sofa bed · bunk",
+    "functionSource": "https://www.clei.it/en/products/doc"
+  },
+  {
+    "id": "ditraverso",
+    "name": "Di-Tra-Verso",
+    "designer": "Campeggi Design",
+    "brand": "Campeggi",
+    "era": "2025",
+    "bed": "bed",
+    "description": "A low, rounded, nearly continuous upholstered volume. The sideways opening keeps it from becoming a long mechanical runway in your apartment.",
+    "bedNote": "Official mattress 155 × 200 cm, 12 cm thick. Opens across the sofa’s long side; overall width 246 cm and opened depth 175 cm.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2025/04/Ditraverso-scaled.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2025/04/geg_-021-Edit.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2025/04/geg_-020-Edit.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2025/04/geg_-022-Edit.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2025/03/03_Di-Tra-Verso_JPEG_Ph-Vincenzo-Caccia-scaled.jpg"
+    ],
+    "source": "https://shop.mohd.it/en/di-tra-verso-sofa-bed.html?country=DE&currency=EUR",
+    "imageSource": "https://www.campeggidesign.it/prodotto/di-tra-verso/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "functionSource": "https://www.campeggidesign.it/prodotto/di-tra-verso/",
+    "newBed": true
+  },
+  {
+    "id": "pierrotking",
+    "name": "Pierrot King",
+    "designer": "Glenn Thomas",
+    "brand": "Bonaldo",
+    "era": "2000s / discontinued",
+    "bed": "bed",
+    "description": "A quilted floating cushion on thin chrome legs. Less cartoonish, but an unusually good-value way into the Strips / Multy side of your taste.",
+    "bedNote": "Bonaldo catalogue gives 120 × 200 cm usable sleeping surface; verify this on the exact King version. Backrest folds flat, with an intermediate lounge position.",
+    "images": [
+      "https://storage.googleapis.com/deesup_vendure_prod/preview/43/divano-trasformabile-pierrot-king-ecopelle-beige-bonaldo-deesup__10__preview.png",
+      "https://storage.googleapis.com/deesup_vendure_prod/preview/a0/divano-trasformabile-pierrot-king-ecopelle-bonaldo-deesup6__preview.jpg",
+      "https://storage.googleapis.com/deesup_vendure_prod/preview/c2/divano-trasformabile-pierrot-king-ecopelle-bonaldo-deesup5__preview.jpg",
+      "https://storage.googleapis.com/deesup_vendure_prod/preview/56/divano-trasformabile-pierrot-king-ecopelle-bonaldo-deesup4__preview.jpg",
+      "https://storage.googleapis.com/deesup_vendure_prod/preview/36/divano-trasformabile-pierrot-king-ecopelle-bonaldo-deesup2__preview.jpg"
+    ],
+    "source": "https://www.anibis.ch/fr/vi/soleure/maison/mobilier/bonaldo-pierrot-king-leder-sofa-mit-schlaffunktion/1073854078",
+    "imageSource": "https://www.deesup.com/en/shop/convertible-sofa-pierrot-king-eco-leather-beige-bonaldo-92729",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "functionSource": "https://www.deesup.com/en/shop/convertible-sofa-pierrot-king-eco-leather-beige-bonaldo-92729",
+    "newBed": true
+  },
+  {
+    "id": "daynight",
+    "name": "Day-Night",
+    "designer": "Enzo Mari & Elio Mari",
+    "brand": "Driade",
+    "era": "1971",
+    "bed": "bed",
+    "description": "An exposed steel frame and revolving backrest turn a sofa into a proper single mattress. Vintage construction with almost prototype-like directness.",
+    "bedNote": "Single-bed mattress with revolving back; outer sofa size on the linked dealer example 214 × 84 cm. Inspect mattress condition and measure the usable sleeping length.",
+    "images": [
+      "https://compasso-design.it/sites/compasso-design.it/files/styles/teaser_wide_1_hor/public/products-o/2025_07_1572_master.jpg?itok=v8xWJgNp",
+      "https://compasso-design.it/sites/compasso-design.it/files/styles/teaser_wide_1_hor/public/products-o/2025_07_1573_master.jpg?itok=1ff7SU9t",
+      "https://compasso-design.it/sites/compasso-design.it/files/styles/teaser_wide_1_hor/public/products-o/2025_07_1574_master.jpg?itok=yyM6Wf0x",
+      "https://compasso-design.it/sites/compasso-design.it/files/styles/teaser_wide_1_hor/public/products-o/2025_07_1575_master.jpg?itok=aw55qUQO",
+      "https://compasso-design.it/sites/compasso-design.it/files/styles/teaser_wide_1_hor/public/products-o/2025_07_1577_master.jpg?itok=dvHOdtrp"
+    ],
+    "source": "https://compasso-design.it/furniture/seating/day-night-daybed-enzo-mari-driade",
+    "imageSource": "https://designmuseum.org/asset/download?id=2bb1b5af-bc2d-43ef-897d-64f78ae8dc2a",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "functionSource": "https://designmuseum.org/asset/download?id=2bb1b5af-bc2d-43ef-897d-64f78ae8dc2a",
+    "newBed": true,
+    "sleepLabel": "Sofa bed · single"
+  },
+  {
+    "id": "tango",
+    "name": "Tango",
+    "designer": "Giulio Manzoni",
+    "brand": "Campeggi",
+    "era": "2024",
+    "bed": "bed",
+    "description": "Big, rounded, deliberately overstuffed cushions. A more usable week-long guest-bed direction if you like the inflated look.",
+    "bedNote": "16 cm mattress, in 140 × 195 or 160 × 195 cm sizes. Synchronized backrest opening; confirm the exact mattress and fabric in the quote.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2024/04/Tango--scaled.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2024/04/Tango-01-Web-scaled.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2024/04/GEG-007.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2024/04/GEG-005.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2024/04/GEG-008.jpg"
+    ],
+    "source": "https://classicdesign.it/en/campeggi/tango-sofa-bed.html",
+    "imageSource": "https://www.campeggidesign.it/prodotto/tango/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "functionSource": "https://www.campeggidesign.it/prodotto/tango/",
+    "newBed": true
+  },
+  {
+    "id": "piazzagrande",
+    "name": "Piazzagrande",
+    "designer": "Giulio Manzoni",
+    "brand": "Campeggi",
+    "era": "2022",
+    "bed": "bed",
+    "description": "Quilted padding with clipped edges and a low armless outline. A practical, contemporary relative of Strips rather than a conventional armchair-shaped sleeper.",
+    "bedNote": "Manufacturer confirms 140 × 195 or 160 × 195 cm sleeping sizes. Linked larger-bed configuration is 160 × 195; check the mattress thickness with the seller.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2022/07/Piazzagrande-6.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/07/manzoni_arancione-web-galanello-0220122117.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/07/manzoni_arancione-web-galanello-0220122193.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/07/manzoni_arancione-web-galanello-0220122191-1.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/07/manzoni_arancione-web-galanello-0220122195.jpg"
+    ],
+    "source": "https://www.newpop.it/en/beds/36586-Campeggi-Piazzagrande-3-seater-double-sofa-bed-160x95-cm.html",
+    "imageSource": "https://www.campeggidesign.it/prodotto/piazzagrande/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "functionSource": "https://www.campeggidesign.it/prodotto/piazzagrande/",
+    "newBed": true
+  },
+  {
+    "id": "ospite",
+    "name": "Ospite",
+    "designer": "Vico Magistretti",
+    "brand": "Campeggi",
+    "era": "1996 / reissue",
+    "bed": "bed",
+    "description": "A skeletal wooden bench-bed with coloured textiles and a blue crossbar. The light, witty Magistretti alternative to a bulky pull-out.",
+    "bedNote": "Emergency single sleeping pad 77 × 190 cm in the original catalogue; current reissue dimensions should be confirmed. A thin folding pad: do not assume it equals Multy for a week.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2025/04/Ospite_Torre-al-Parco_Ph_Michele-Foti.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/04/01_CAMPEGGI-ospite-ph©Michele-Foti_Layhul-Jang.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/04/02_CAMPEGGI-ospite-ph©Michele-Foti_Layhul-Jang.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/04/03_CAMPEGGI-ospite-ph©Michele-Foti_Layhul-Jang.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/04/04_CAMPEGGI-ospite-ph©Michele-Foti_Layhul-Jang.jpg"
+    ],
+    "source": "https://www.campeggidesign.it/prodotto/ospite/",
+    "imageSource": "https://www.campeggidesign.it/prodotto/ospite/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "sofa bed"
+    ],
+    "functionSource": "https://www.campeggidesign.it/prodotto/ospite/",
+    "newBed": true,
+    "sleepLabel": "Sofa bed · single"
+  },
+  {
+    "id": "gobbalunga",
+    "name": "Gobbalunga",
+    "designer": "Giovanni Levanti",
+    "brand": "Campeggi",
+    "era": "2007 / reissue 2023",
+    "bed": "daybed",
+    "description": "An armchair with an absurdly long, jointed upholstered tail. It curls into a conversation space or stretches into a reclining landscape.",
+    "bedNote": "Lounging and lying down are confirmed; no proper overnight mattress or week-long sleeping performance verified. This is the sculptural wildcard, not a substitute for a tested sofa bed.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/Gobbalunga-7.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/campeggi_design_gobbalunga_01.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/Gobbalunga-1.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/Gobbalunga-2.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/Gobbalunga-3.1.jpg"
+    ],
+    "source": "https://www.campeggidesign.it/prodotto/gobbalunga/",
+    "imageSource": "https://www.campeggidesign.it/prodotto/gobbalunga/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "daybed"
+    ]
+  },
+  {
+    "id": "commedia",
+    "name": "Commedia",
+    "designer": "Julie Richoz",
+    "brand": "Campeggi",
+    "era": "2025",
+    "bed": "daybed",
+    "description": "Blue metal, a round wooden rail, sculpted arms and a huge blanket become a collage of separate parts. Playful without looking like a novelty prop.",
+    "bedNote": "Includes an 80 × 200 cm mattress, blanket and four cushions. A fixed single daybed; no double-bed opening.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2025/04/Commedia-01-scaled.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2025/04/geg_-005-Edit.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2025/04/geg_-001-Edit.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2025/04/geg_-001-Edit-2.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2025/04/geg_-002-Edit-2.jpg"
+    ],
+    "source": "https://shop.mohd.it/en/commedia-daybed.html?country=DE&currency=EUR",
+    "imageSource": "https://www.campeggidesign.it/prodotto/commedia/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "daybed"
+    ],
+    "functionSource": "https://www.campeggidesign.it/prodotto/commedia/",
+    "sleepLabel": "Daybed · single"
+  },
+  {
+    "id": "ds80",
+    "name": "DS-80",
+    "designer": "de Sede design team",
+    "brand": "de Sede",
+    "era": "1969",
+    "bed": "daybed",
+    "description": "Patchwork leather and a visible slatted frame. The closest extra de Sede reference to your favourite DS-85, with a much leaner silhouette.",
+    "bedNote": "Fixed single daybed, not a fold-out double. Vintage examples are approximately 190–200 × 90 cm overall; check the usable surface and foam condition.",
+    "images": [
+      "https://www.2nd-home.io/cdn/shop/files/STUZH38_De_Sede_DS80_Memory_Daybed_De_Sede_Design_Team_-10-scaled.jpg?v=1770778068&width=1200",
+      "https://www.2nd-home.io/cdn/shop/files/STUZH38_De_Sede_DS80_Memory_Daybed_De_Sede_Design_Team_-11-scaled.jpg?v=1770778069&width=1200"
+    ],
+    "source": "https://www.2nd-home.io/en/products/vintage-daybed-ds80-memory-de-sede-mit-patina-33803",
+    "imageSource": "https://www.2nd-home.io/en/products/vintage-daybed-ds80-memory-de-sede-mit-patina-33803",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "daybed"
+    ]
+  },
+  {
+    "id": "constanze",
+    "name": "Constanze",
+    "designer": "Johannes Spalt",
+    "brand": "Wittmann",
+    "era": "1960–1961",
+    "bed": "daybed",
+    "description": "Buttoned leather on a fine chrome frame; a single motion drops the back into a broad horizontal surface. Stronger on mechanics than colour.",
+    "bedNote": "Vintage examples open to roughly 195–200 × 107–110 cm overall. Daybed surface, no separate pull-out mattress; not a comfortable full double.",
+    "images": [
+      "https://www.kunstunddesign-auktionen.de/wp-content/themes/kunstunddesign/imagecache/137715-750-0.jpg",
+      "https://www.kunstunddesign-auktionen.de/wp-content/themes/kunstunddesign/imagecache/137715_2-750-0.jpg",
+      "https://www.kunstunddesign-auktionen.de/wp-content/themes/kunstunddesign/imagecache/137715_3-750-0.jpg",
+      "https://www.kunstunddesign-auktionen.de/wp-content/themes/kunstunddesign/imagecache/137715_4-750-0.jpg",
+      "https://www.kunstunddesign-auktionen.de/wp-content/themes/kunstunddesign/imagecache/137715_5-750-0.jpg"
+    ],
+    "source": "https://www.vntg.com/368048/early-constanze-daybed-by-johannes-spalt-for-wittmann/",
+    "imageSource": "https://www.kunstunddesign-auktionen.de/en/auktionen/K-15/johannes-spaltwittmann-austria-sofa-daybed-model-constanze-137715/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "daybed"
+    ],
+    "functionSource": "https://www.kunstunddesign-auktionen.de/en/auktionen/K-15/johannes-spaltwittmann-austria-sofa-daybed-model-constanze-137715/"
+  },
+  {
+    "id": "taipi",
+    "name": "Taipi",
+    "designer": "Paolo Imperatori",
+    "brand": "Campeggi",
+    "era": "2022",
+    "bed": "daybed",
+    "description": "Padded sail-like backs swing outward into curved arms. A wonderfully odd cross between an Empire sleigh bed and a modernist sofa.",
+    "bedNote": "Manufacturer calls it a daybed. Retailer specifies an 80 × 200 cm, 25 cm-thick foam mattress. Single sleeper; not a double.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2022/07/2_Taipi.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/07/campeggi_design_taipi_01.jpg"
+    ],
+    "source": "https://shop.mohd.it/it/taipi-divano-letto.html",
+    "imageSource": "https://www.campeggidesign.it/prodotto/taipi/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "daybed"
+    ],
+    "functionSource": "https://www.campeggidesign.it/prodotto/taipi/",
+    "sleepLabel": "Daybed · single"
+  },
+  {
+    "id": "ikoi",
+    "name": "Ikoi",
+    "designer": "Sakura Adachi",
+    "brand": "Campeggi",
+    "era": "2017",
+    "bed": "daybed",
+    "description": "A pink-and-green bench with a triangular middle that spins into a chaise. A compact graphic object rather than a lounge blob.",
+    "bedNote": "Designer lists a 195 cm-long, 60 cm-wide bench and occasional single bed. Very narrow for overnight use; not a double and not a first choice for a week.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/Ikoi.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/campeggi_design_ikoi_02.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/Ikoi-1.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/Ikoi-2.jpg",
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/Ikoi-3.jpg"
+    ],
+    "source": "https://www.campeggidesign.it/prodotto/ikoi/",
+    "imageSource": "https://www.sakurah.net/portfolio_page/ikoi/",
+    "new": true,
+    "initial": "unrated",
+    "batch": "funky-20261028",
+    "added": "2026-10-28",
+    "availability": "Model reference; stock, condition and Berlin delivery need confirmation",
+    "tags": [
+      "sculptural",
+      "transformable",
+      "daybed"
+    ],
+    "functionSource": "https://www.sakurah.net/portfolio_page/ikoi/"
   }
 ]
