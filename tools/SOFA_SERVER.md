@@ -1,5 +1,30 @@
 # Shared sofa ratings
 
+## Live managed storage
+
+The frontend now uses the hosted Sites API configured in
+`sofasberlin/api-config.json`:
+`https://sofa-ratings-frido.fridoalonso.chatgpt.site/api/ratings`.
+Both frido.ai and localhost share that same managed D1 database. No user server
+needs to remain running. Initial migration imported the existing 48 stored cells,
+including all 46 Frido scores, after taking a backup in this task's output folder.
+
+Backend source: `/Users/friedrichwicke/Developer/private/sofa-ratings-api`.
+Site identity and schema migrations are tracked there. Publish API changes through
+Sites; publish the static frontend through the existing GitHub Pages repository.
+The Sites database survives API redeployment. The endpoint deliberately has no
+sign-in: the three names are an honour system, as requested.
+
+The frontend refreshes other people's scores every five seconds while visible.
+Its footer exports a JSON backup of all three people's current scores. Back up
+through the API or the managed database before making future data migrations.
+
+## Optional offline local server
+
+Set the config endpoint to `null` to use the Python/SQLite alternative below.
+That local database is independent of cloud ratings. The original SQLite file
+is retained as an additional migration backup.
+
 Local preview (Python standard library; no install):
 
 ```sh
@@ -19,24 +44,6 @@ snapshot. Existing databases are never reseeded on restart.
 
 `GET /sofasberlin/api/ratings` returns all three people's ratings and a revision.
 `POST` to the same URL with JSON `{ "person": "clara", "sofaId": "ds85",
-"hearts": 2 }` updates only that cell. Clients poll every 2.5 seconds while visible.
+"hearts": 2 }` updates only that cell. Clients poll every five seconds while visible.
 Failed writes roll back and show an error. The footer exports the current group
 scores as JSON. Legacy browser scores are retained without modification.
-
-## Hosting later
-
-Nothing has been deployed. GitHub Pages currently serves frido.ai and cannot run
-this API. The local server binds to loopback and is available only on this Mac.
-
-To share ratings on frido.ai, host this backend on an always-on service with a
-persistent disk and HTTPS. Reverse proxy **only** `/sofasberlin/api/ratings` to it,
-keeping the existing static website on GitHub Pages. Pass
-`--public-origin https://frido.ai` and a persistent `--database` path to the backend.
-The proxy must forward the real origin. Do not expose the repository's development
-file server publicly. Back up and migrate the local SQLite database before launch
-so Frido's imported scores and any subsequent group ratings survive.
-
-The frontend already uses this same-origin endpoint. Publishing static files alone
-will show the saved snapshot with editing disabled until the API is available.
-Choosing and provisioning hosting, routing the endpoint, and publishing remain
-separate steps requiring the user's instruction.
