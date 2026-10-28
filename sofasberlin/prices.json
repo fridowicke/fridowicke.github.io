@@ -971,5 +971,223 @@
     "sources": [
       "https://shop.mohd.it/en/blitz-divanoletto.html?country=DE&currency=EUR"
     ]
+  },
+  "levele": {
+    "low": 600,
+    "high": 600,
+    "label": "Used listing",
+    "scope": "Used listing",
+    "note": "Bologna, collection only. Good condition and functioning mechanisms but small tear in left seat cover. Dealer catalogue photos illustrate model rather than this exact item. Alternative Lausanne Ricardo ask CHF950; Berlin Sofas in Motion advertises new sofa from €3,230 including Germany delivery, confirm current quote.",
+    "sources": [
+      "https://www.subito.it/arredamento-casalinghi/divano-le-vele-futura-bologna-638910005.htm"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "piumotto": {
+    "low": 740,
+    "high": 740,
+    "label": "Vintage listing",
+    "scope": "Vintage listing",
+    "note": "Current intOndo ask, seller in Udine; good condition with age-related wear. Europe shipping advertised up to €399 excluding islands, request Berlin quote. Single sleeper.",
+    "sources": [
+      "https://www.intondo.com/index.php/en/products/170901/seating/sofas/piumotto-two-seater-sofa-bed-by-arrigo-arrigoni-for-busnelli-1970"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "ds78": {
+    "low": 3299,
+    "high": 3299,
+    "label": "Refurbished listing",
+    "scope": "Refurbished listing",
+    "note": "One black two-seater available at Revive Köln; minimal signs of use, smoke free, professionally cleaned. Page lists €149 delivery into the apartment and 1–21days; confirm Berlin postcode.",
+    "sources": [
+      "https://revive.de/collections/products-with-stock-0-facebook-feed-products/products/de-sede-ds-78-leder-zweisitzer-schwarz-sofa-couch-sessel-manuelle-funktion-schlaffunktion-31589-c3"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "bretzmonster": {
+    "checkedAt": "2026-10-28",
+    "low": 600,
+    "high": 600,
+    "label": "Used asking price",
+    "scope": "Very-good-condition private listing, Bonn collection",
+    "note": "Current €600 ask includes two cushions; collection in Bonn according to description (listing header says Cologne). Berlin transport extra. Cheaper local €199 alternative exists but is only fair condition with faded fabric and a stain; no claim that it matches the €600 piece.",
+    "sources": [
+      "https://www.kleinanzeigen.de/s-anzeige/bretz-monster-sofa-schlafsofa-inkl-2-kissen/3533985008-88-985",
+      "https://www.kleinanzeigen.de/s-anzeige/bretz-schlafsofa-designerstueck-inkl-lieferung-in-berlin/3528368053-88-7775"
+    ]
+  },
+  "sambalafer": {
+    "display": "Brazil · quote",
+    "label": "Vintage dealer quote",
+    "scope": "used",
+    "note": "Gallery marks it available/in stock but publishes no price. Brazil-based; Berlin freight, import taxes and condition must be quoted. This is a design/sourcing lead, not a verified sub-€5,000 European offer.",
+    "sources": [
+      "https://www.herancacultural.com/sofa-cama-samba.html"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "gao": {
+    "low": 1695,
+    "high": 1695,
+    "label": "Vintage asking price",
+    "scope": "used",
+    "note": "Opened English listing displays €1,695; search/French cache shows a lower €1,610, so confirm seller price. Berlin-Charlottenburg. Fair condition with significant wear; delivery extra.",
+    "sources": [
+      "https://www.whoppah.com/products/original-gao-sofa-couch-ligne-roset-cinna-jean-paul-laloy-PBE7800LYFE8"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "moulemedium": {
+    "low": 2600,
+    "high": 2600,
+    "label": "Used asking price",
+    "scope": "used",
+    "note": "€2,600 used, checked and professionally prepared; Hamburg stock/pickup available. Dealer lists €180 delivery to the rest of Germany, to the room: €2,780 total for Berlin, subject to access conditions.",
+    "sources": [
+      "https://aaron-gmbh.com/products/bruhl-moule-medium-sofa-grun-schlafsofa-designer-couch"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "bretzpopeye": {
+    "checkedAt": "2026-10-28",
+    "low": 290,
+    "high": 290,
+    "label": "Used asking price",
+    "scope": "Good-condition private listing, Versmold collection",
+    "note": "Current ask €290, reduced from €450 on the category listing. Collection only; arrange Berlin transport separately. Seller gives 140 × 200 cm sleeping position. No claims of mint condition or a verified 1990s manufacture date.",
+    "sources": [
+      "https://www.kleinanzeigen.de/s-anzeige/bretz-popey-schlafsofa/3544264833-88-1638"
+    ]
+  },
+  "kenthia": {
+    "low": 1800,
+    "high": 1800,
+    "label": "Vintage listing",
+    "scope": "Vintage listing",
+    "note": "Current intOndo ask from Turin, excellent condition; Berlin shipping quote required. Also €1,800 Pamono. Attribution referenced to Saporiti catalogue and Casa Vogue September1973.",
+    "sources": [
+      "https://www.intondo.com/en/products/122460/seating/sofas/kenthia-sofa-bed-by-ernesto-radaelli-for-saporiti-1970s"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "etvoila": {
+    "display": "Quote required",
+    "label": "New / made to order",
+    "scope": "New / made to order",
+    "note": "Mobilcasa lists3–4week availability on order, no public numeric price. This is a newer design option, not verified vintage.",
+    "sources": [
+      "https://www.mobilcasa-pisa.com/prodotti/biesse-et-voila-6579.html"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "tiramolla": {
+    "low": 650,
+    "high": 650,
+    "label": "Used listing",
+    "scope": "Used listing",
+    "note": "Current Prato private ask, used very little but covers partially sun-faded. Berlin transport extra; retailer catalogue photos illustrate the model. New sofa remains listed by Mobilcasa on3–4week order, quote required.",
+    "sources": [
+      "https://www.subito.it/arredamento-casalinghi/divano-letto-biesse-modello-tira-molla-prato-659239481.htm"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "relaxy": {
+    "display": "Quote required",
+    "label": "Vintage dealer",
+    "scope": "Vintage dealer",
+    "note": "Bernini Gallery lists one vintage example, condition wear consistent with age, no public price. Separate VNTG sold reupholstered example showed €750–1,000 historical value, not a current offer.",
+    "sources": [
+      "https://berninigallery.it/it/collezioni/8-divani/71-relaxy"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "aa1": {
+    "checkedAt": "2026-10-28",
+    "low": 4600,
+    "high": 4600,
+    "label": "Vintage asking price",
+    "scope": "1990s example in Teramo, Italy",
+    "note": "Whoppah currently lists €4,600, very good condition, but washing and possibly new elastic straps should be budgeted. This leaves little of the €5,000 budget for delivery and work. Manufacturer photos in gallery; inspect seller condition images before deciding.",
+    "sources": [
+      "https://www.whoppah.com/nl/producten/aa1-alvar-aalto-bank-uit-de-jaren-90-G64HCJOKBKX1"
+    ]
+  },
+  "ritovalla": {
+    "checkedAt": "2026-10-28",
+    "low": 3500,
+    "high": 3500,
+    "label": "Vintage asking price",
+    "scope": "Reupholstered example in Oirlo, Netherlands",
+    "note": "1stDibs displays €3,500 VAT included for this piece; shipping quote extra. Seller says good condition and reupholstered in grey melange. A €2,450 search result on a separate platform could not be verified directly and is not used as a buyable offer.",
+    "sources": [
+      "https://www.1stdibs.com/furniture/seating/day-beds/mid-century-italian-sofa-bed-rito-valla-ipe-bologna-1960s/id-f_48207412/"
+    ]
+  },
+  "sleepomatic": {
+    "checkedAt": "2026-10-28",
+    "low": 2314,
+    "high": 2314,
+    "label": "Vintage asking price",
+    "scope": "Reupholstered single sleeper, ships from Italy",
+    "note": "Direct German Pamono page lists €2,314 reduced from €2,600, one available, very good condition. Delivery is additional; verify usable sleeping width and upholstery. This is one listing, not a general vintage price range.",
+    "sources": [
+      "https://www.pamono.de/sleep-o-matic-sofa-by-marco-zanuso-for-arflex-italy-1951-1"
+    ]
+  },
+  "caillette1961": {
+    "low": 4000,
+    "high": 4000,
+    "label": "Vintage asking price",
+    "scope": "used",
+    "note": "€4,000 current asking price, reduced from €6,000; professional seller. New foam and upholstery installed by an experienced upholsterer. Berlin delivery extra.",
+    "sources": [
+      "https://www.selency.fr/p/94U21TBA/canape-tissus-convertible-de-jean-rene-caillette-edition-steiner-1961"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "prestige": {
+    "low": 2900,
+    "high": 2900,
+    "label": "Vintage asking price",
+    "scope": "used",
+    "note": "Restorer publishes €2,900 with new Bultex foam, Métaphores wool and refinished black frame. The multi-item page does not mark this one sold, but is an older stock page: confirm availability before relying on the offer. Berlin delivery extra.",
+    "sources": [
+      "https://atelier-de-rodolphe.fr/guy-besnard/"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "lotus75": {
+    "low": 2230,
+    "high": 2230,
+    "label": "Vintage asking price",
+    "scope": "used",
+    "note": "€2,230 current sale price, reduced from €2,480. Restored by Sixty Fruits, in stock in Arnhem. Berlin transport quote required.",
+    "sources": [
+      "https://sixtyfruits.nl/vintage/bank-slaapbank-vintage-rob-parry-4566/"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "gijs540": {
+    "low": 1665,
+    "high": 1665,
+    "label": "Vintage asking price",
+    "scope": "used",
+    "note": "€1,665 asking price reduced from €1,850, professional seller in Assendelft. Good vintage condition: small frame/paint blemishes and slight upholstery fading. Berlin delivery extra.",
+    "sources": [
+      "https://www.whoppah.com/it/prodotti/gijs-van-der-sluis-modello-540-mobili-in-acciaio-van-der-sluis-culemborg-design-1961-5HOYSWMNR8SR"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "bonaldo1982": {
+    "low": 800,
+    "high": 800,
+    "label": "Vintage listing",
+    "scope": "Vintage listing",
+    "note": "Direct fetched EU Pamono page shows €800, one available, excellent condition, shipping from Spain. Search index shows older €480/€520 sale prices; use currently displayed €800 and reconfirm at checkout.",
+    "sources": [
+      "https://www.pamono.eu/4-seater-sofa-bed-from-bonaldo-1982"
+    ],
+    "checkedAt": "2026-10-28"
   }
 }
