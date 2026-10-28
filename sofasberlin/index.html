@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sofas — Berlin shortlist</title>
+<link rel="canonical" href="https://frido.ai/sofasberlin/">
+<meta name="description" content="Designer sofas, photographs and expected European vintage price ranges.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='white'/%3E%3Ctext x='12' y='48' font-size='48' font-family='Arial' fill='black'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+<header><div><h1>Sofas.</h1><p>Berlin apartment. €5,000 budget. <span id="total">40</span> candidates.</p></div><a href="#collection">The list ↓</a></header>
+<main id="collection">
+<div class="controls"><nav aria-label="View"><button data-view="all" class="active">All</button><button data-view="new">New ideas</button><button data-view="liked">Saved</button></nav><input id="search" type="search" aria-label="Search sofas" placeholder="Search model or designer"></div>
+<p class="price-guide">Expected European asking prices for vintage sofas in good condition, before delivery. Configuration and restoration affect the range. Recent reissues are labelled separately.</p>
+<p id="result" class="count" aria-live="polite"></p><div id="list"></div><p id="empty" hidden>No sofas match.</p>
+</main>
+<footer>Model references, including sold examples. Price estimates researched 28 October 2026. Saved picks stay in this browser.</footer>
+<dialog id="photo-view" aria-labelledby="photo-title"><button id="close-photo" aria-label="Close photograph">×</button><img id="large-photo" alt=""><div class="photo-caption"><div><h2 id="photo-title"></h2><span id="photo-price"></span></div><div class="photo-nav"><button id="prev-photo" aria-label="Previous photograph">←</button><span id="photo-count"></span><button id="next-photo" aria-label="Next photograph">→</button></div></div><a id="photo-source" target="_blank" rel="noopener noreferrer">Source ↗</a></dialog>
+</body>
+</html>

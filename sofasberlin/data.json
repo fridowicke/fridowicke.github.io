@@ -1,0 +1,856 @@
+[
+  {
+    "id": "additional",
+    "name": "Additional System",
+    "designer": "Joe Colombo",
+    "brand": "Tacchini",
+    "era": "1967 / reissue",
+    "bed": "daybed",
+    "description": "The anchor: a sequence of padded rollers on a low metal base. This is the direction you explicitly liked.",
+    "images": [
+      "https://tacchini-media.fra1.cdn.digitaloceanspaces.com/Tacchini-Home-Collection-MDW-2024-14.jpg",
+      "https://ergonomia.com/cdn/shop/files/24_PS_TACCHINI_ADDITIONALSYSTEM_1967_2024BYJOECOLOMBO_AndreaFerrari_jpg_4096x4096.jpg?v=1714690894"
+    ],
+    "source": "https://www.tacchini.it/en/products/additional-system-daybed",
+    "new": false,
+    "initial": "liked",
+    "green": true,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "bedNote": "Contoured daybed; no separate flat mattress. Test before week-long guest use.",
+    "tags": [
+      "rollers",
+      "space age",
+      "modular"
+    ]
+  },
+  {
+    "id": "ds85",
+    "name": "DS-85",
+    "designer": "de Sede design team",
+    "brand": "de Sede",
+    "era": "1970s",
+    "bed": "bed",
+    "description": "Your original target. A low leather sofa that unfolds into a generous guest bed; olive examples are the colour target.",
+    "images": [
+      "https://bestwelhip.nl/wp-content/uploads/2026/04/Vintage-DS-85-leather-daybed-sofa-leren-slaapbank-bank-De-Sede-1980s-6.jpg"
+    ],
+    "source": "https://bestwelhip.nl/en/product/vintage-ds-85-leather-daybed-sofa-de-sede/",
+    "new": false,
+    "initial": "liked",
+    "green": true,
+    "price": null,
+    "priceNote": "Olive example previously €7,400; above brief. Recheck seller.",
+    "availability": "Earlier lead · not reverified 28 Oct",
+    "tags": [
+      "leather",
+      "original brief",
+      "fold out"
+    ],
+    "bedNote": "Real folding bed. Dimensions, leather condition and foam must be verified on the exact piece."
+  },
+  {
+    "id": "superonda",
+    "name": "Superonda",
+    "designer": "Archizoom Associati",
+    "brand": "Poltronova",
+    "era": "1967",
+    "bed": "daybed",
+    "description": "Two interlocking foam waves. The radical design you liked before the Colombo discovery.",
+    "images": [
+      "https://img.edilportale.com/products/Poltronova_SUPERONDA_NRIVC3h9Mw.jpeg"
+    ],
+    "source": "https://www.poltronova.it/superonda/",
+    "new": false,
+    "initial": "liked",
+    "green": false,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "bedNote": "Rearranges into a flat foam platform; suitability for a full week needs testing.",
+    "tags": [
+      "radical",
+      "wave",
+      "foam"
+    ]
+  },
+  {
+    "id": "corbi",
+    "name": "Corbi",
+    "designer": "Klaus Uredat",
+    "brand": "COR",
+    "era": "1969 / produced 1972",
+    "bed": "daybed",
+    "description": "Rounded seat blocks and separate bolster backs. The closest previous suggestion to Additional System.",
+    "images": [
+      "https://images.whoppah.com/products/9DNZWUZM6UKJ/7DTL35XBFQIG/corbi-modular-sofa-klaus-uredat.jpeg?height=1280"
+    ],
+    "source": "https://side-gallery.com/wp-content/uploads/2022/08/Klaus_Uredat_Photo_Sofa_Corbi_03.pdf",
+    "new": false,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Photo is an archived example · €2,299 lead unavailable",
+    "tags": [
+      "rollers",
+      "modular",
+      "space age"
+    ],
+    "bedNote": "Modules can form a daybed. Check that the set contains enough pieces for a flat, adult-length surface."
+  },
+  {
+    "id": "hyaline",
+    "name": "Hyaline",
+    "designer": "Fabio Lenci",
+    "brand": "Comfortline",
+    "era": "1960s",
+    "bed": "none",
+    "description": "Leather cylinders appear suspended between transparent glass side panels. A very literal continuation of the roller idea.",
+    "images": [
+      "https://gcp-la8-storage-cdn.lot-art.com/public/upl/73/Fabio-Lenci-comfortline-Sofa-1-hyaline_1567717461_7274.jpg"
+    ],
+    "source": "https://theauctionlab.com/en/fabio-lenci-hyaline-sofa-comfort-edition/",
+    "new": false,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Earlier asking-price reference €8,900 · stretch",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "rollers",
+      "glass",
+      "space age"
+    ],
+    "budget": "stretch",
+    "bedNote": "Sofa only; no bed mechanism."
+  },
+  {
+    "id": "sesann",
+    "name": "Sesann",
+    "designer": "Gianfranco Frattini",
+    "brand": "Cassina / Tacchini",
+    "era": "1970",
+    "bed": "none",
+    "description": "Generous upholstery held in an exposed tubular metal frame. An engineered shell around soft cushions.",
+    "images": [
+      "https://a.1stdibscdn.com/tacchini-sesann-sofa-designed-by-gianfranco-frattini-in-stock-for-sale/f_32031/f_332720821678733189357/f_33272082_1678733190588_bg_processed.jpg"
+    ],
+    "source": "https://www.tacchini.it/prodotti/sesann-grand-sesann",
+    "new": false,
+    "initial": "unrated",
+    "green": true,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "chrome",
+      "padded",
+      "visible frame"
+    ],
+    "bedNote": "Sofa only. Vintage Cassina and current Tacchini examples differ."
+  },
+  {
+    "id": "confidential",
+    "name": "Confidential",
+    "designer": "Alberto Rosselli",
+    "brand": "Saporiti",
+    "era": "1972",
+    "bed": "none",
+    "description": "Puffy interlocking upholstery set in a recessed black moulded base. Look for dark leather or olive fabric.",
+    "images": [
+      "https://images.squarespace-cdn.com/content/v1/5fb2e41d5ecf5f11ea5c7a94/5969359d-73be-4c2a-a483-e38a369ff4ab/9%2BConfidential%2Bsofa%2Bsaporiti%2Bitaly%2BAlberto%2BRosselli%2Bvintage%2Bdesign%2Bfurniture%2Baera%2Blab%2Baeralab%2Balbrecht%2Bcognac%2Bbrown%2Bleather.jpg"
+    ],
+    "source": "https://www.aera-lab.com/confidential-2-sofa-saporiti-italy-alberto-rosselli-vintage-aera-lab-cognac-brown-leather",
+    "new": false,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Photo reference · seller stock unverified",
+    "tags": [
+      "modular",
+      "padded",
+      "leather"
+    ],
+    "bedNote": "No dedicated guest-bed conversion."
+  },
+  {
+    "id": "marsala",
+    "name": "Marsala",
+    "designer": "Michel Ducaroy",
+    "brand": "Ligne Roset",
+    "era": "1970s / reissued",
+    "bed": "none",
+    "description": "Deep padded cushions float in a moulded shell. A strong route from Colombo into French space-age leather seating.",
+    "images": [
+      "https://a.1stdibscdn.com/vintage-marsala-sofa-beige-patchwork-leather-by-michel-ducaroy-for-ligne-roset-for-sale-picture-2/f_59672/f_318958621671792203890/1_Marsala_3_beige_vintage_leather_michel_Ducaroy_Ligne_Roset_aera_lab_aeralab_albrecht_master.jpg"
+    ],
+    "source": "https://www.ligne-roset.com/fr/p/canapes/moyen-canape-marsala-5099",
+    "new": true,
+    "initial": "unrated",
+    "green": true,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "shell",
+      "leather",
+      "space age"
+    ],
+    "bedNote": "Sofa only. Vintage examples and the new reissue need separate price research.",
+    "imageSource": "https://a.1stdibscdn.com/vintage-marsala-sofa-beige-patchwork-leather-by-michel-ducaroy-for-ligne-roset-for-sale-picture-2/f_59672/f_318958621671792203890/1_Marsala_3_beige_vintage_leather_michel_Ducaroy_Ligne_Roset_aera_lab_aeralab_albrecht_master.jpg"
+  },
+  {
+    "id": "onda",
+    "name": "Onda / Wave",
+    "designer": "Giovanni Offredi",
+    "brand": "Saporiti",
+    "era": "1970s",
+    "bed": "none",
+    "description": "An upholstered wave balanced on a slender steel frame. Lower, more suspended and more technical than a conventional sofa.",
+    "images": [
+      "https://cdn20.pamono.com/p/s/2/1/2199231_8fkkn5fji6/canape-3-places-wave-par-giovanni-offredi-pour-saporiti-italia-1970s.jpg"
+    ],
+    "source": "https://www.pamono.com/wave-3-seater-sofa-by-giovanni-offredi-for-saporiti-italia-1970s",
+    "new": true,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "steel",
+      "wave",
+      "space age"
+    ],
+    "bedNote": "No verified bed mechanism. The manufacturer also uses Onda for an armchair; this source shows the sofa."
+  },
+  {
+    "id": "orbis",
+    "name": "Orbis",
+    "designer": "Luigi Colani",
+    "brand": "COR",
+    "era": "1969",
+    "bed": "none",
+    "description": "Sculpted modular seats with deep scooped backs and little chrome feet. A different German space-age direction.",
+    "images": [
+      "https://a.1stdibscdn.com/luigi-colani-modular-orbis-sofa-table-1969-cor-germany-orange-velvet-space-age-for-sale-picture-2/f_13912/f_417751321728121319934/Colani_Orbis_Sofa_Cor_master.jpg"
+    ],
+    "source": "https://www.vntg.com/254708/luigi-colani-orbis-modular-sofa-for-cor-1969/",
+    "new": true,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Sold photo reference · model to hunt",
+    "tags": [
+      "modular",
+      "sculpted",
+      "space age"
+    ],
+    "bedNote": "Modular seating; no verified flat-bed conversion.",
+    "imageSource": "https://a.1stdibscdn.com/luigi-colani-modular-orbis-sofa-table-1969-cor-germany-orange-velvet-space-age-for-sale-picture-2/f_13912/f_417751321728121319934/Colani_Orbis_Sofa_Cor_master.jpg"
+  },
+  {
+    "id": "soriana",
+    "name": "Soriana",
+    "designer": "Afra & Tobia Scarpa",
+    "brand": "Cassina",
+    "era": "1969",
+    "bed": "none",
+    "description": "A huge upholstered bundle held together by a metal clamp. The visible construction is the link to the Colombo.",
+    "images": [
+      "https://a.1stdibscdn.com/black-leather-and-chrome-soriana-set-by-scarpa-for-cassina-for-sale-picture-7/f_9380/f_144308611555651026704/DF708B7C_184F_4ADE_904E_E5438602F314_master.jpeg"
+    ],
+    "source": "https://www.vntg.com/260727/cognac-leather-soriana-lounge-sofa-by-afra-and-tobia-scarpa-for-cassina-1970/",
+    "new": true,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Collector / reissue pricing · stretch reference",
+    "availability": "Sold photo reference · model to hunt",
+    "tags": [
+      "chrome",
+      "clamp",
+      "leather"
+    ],
+    "budget": "stretch",
+    "bedNote": "Sofa only; the sculpted seat is not a guest mattress.",
+    "imageSource": "https://a.1stdibscdn.com/black-leather-and-chrome-soriana-set-by-scarpa-for-cassina-for-sale-picture-7/f_9380/f_144308611555651026704/DF708B7C_184F_4ADE_904E_E5438602F314_master.jpeg"
+  },
+  {
+    "id": "serpentone",
+    "name": "Serpentone",
+    "designer": "Cini Boeri",
+    "brand": "Arflex",
+    "era": "1971",
+    "bed": "none",
+    "description": "A continuous ribbed foam snake, originally conceived as seating by the metre. The most extreme repetition of the roller motif.",
+    "images": [
+      "https://www.metalocus.es/sites/default/files/metalocus_cini-boeri_fallecimiento_03.jpg"
+    ],
+    "source": "https://www.bgc.bard.edu/files/Checklist_-_Masterworks_Italian_Design%2C_1960-1994_-_1997.pdf",
+    "new": true,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Rare design reference · price unknown",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "ribbed",
+      "radical",
+      "landscape"
+    ],
+    "budget": "stretch",
+    "bedNote": "Sculptural seating; no bed mechanism."
+  },
+  {
+    "id": "kali",
+    "name": "Kali",
+    "designer": "Michel Ducaroy",
+    "brand": "Ligne Roset",
+    "era": "1970s–80s examples",
+    "bed": "none",
+    "description": "Low upholstery with a broad rolled edge and deeply shaped seats. A quieter but relevant cousin of the Colombo cylinders.",
+    "images": [
+      "https://a.1stdibscdn.com/three-seater-and-two-seater-model-kali-by-michel-ducaroy-for-ligne-roset-for-sale-picture-6/f_55832/f_351912021689155519008/AtKris_4juli_35_master.jpg"
+    ],
+    "source": "https://www.galerie44.com/fr/assises/2586-canape-michel-ducaroy-modele-kali-edition-ligne-roset-1980.html",
+    "new": true,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "foam",
+      "rolled edge",
+      "low"
+    ],
+    "bedNote": "Sofa only; check upholstery and foam on vintage pieces.",
+    "imageSource": "https://a.1stdibscdn.com/three-seater-and-two-seater-model-kali-by-michel-ducaroy-for-ligne-roset-for-sale-picture-6/f_55832/f_351912021689155519008/AtKris_4juli_35_master.jpg"
+  },
+  {
+    "id": "anfibio",
+    "name": "Anfibio",
+    "designer": "Alessandro Becchi",
+    "brand": "Giovannetti",
+    "era": "1970",
+    "bed": "bed",
+    "description": "A padded leather or fabric raft that unfolds into a bed. Still one of the strongest combinations of unusual design and sleeping function.",
+    "images": [
+      "https://www.curatedspaces.com.au/cdn/shop/products/image_a3636652-1238-4392-a2ee-db7f190c2844.jpg?v=1676096907&width=1946"
+    ],
+    "source": "https://www.giovannetticollezioni.it/en/furniture/anfibio-en/",
+    "new": false,
+    "initial": "unrated",
+    "green": true,
+    "price": null,
+    "priceNote": "Earlier example was above €5k · used hunt required",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "raft",
+      "fold out",
+      "radical"
+    ],
+    "bedNote": "Dedicated mattress and folding conversion. Check the size, foam and complete fastening system."
+  },
+  {
+    "id": "sosia",
+    "name": "Sosia",
+    "designer": "Emanuele Magini",
+    "brand": "Campeggi",
+    "era": "2011",
+    "bed": "daybed",
+    "description": "Two padded seats inside a flexible fabric enclosure. A compact conversation space that can open out into lounging configurations.",
+    "images": [
+      "https://www.campeggidesign.it/wp-content/uploads/2022/05/campeggi_design_sosia_01.jpg"
+    ],
+    "source": "https://www.campeggidesign.it/en/products/sosia/",
+    "new": false,
+    "initial": "unrated",
+    "green": true,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Earlier catalogue reference · production unverified",
+    "tags": [
+      "transformer",
+      "fabric",
+      "enclosure"
+    ],
+    "bedNote": "Convertible lounge / sleeping layout. Confirm usable dimensions and support on the exact version."
+  },
+  {
+    "id": "quilt",
+    "name": "Quilt",
+    "designer": "Giulio Manzoni",
+    "brand": "Campeggi",
+    "era": "2025",
+    "bed": "bed",
+    "description": "Quilted, softly structured upholstery with a conventional folding bed hidden inside.",
+    "images": [
+      "https://cdn.mohd.it/cache/image/format%3Dwebp/media/catalog/product/c/a/campeggi-quilt.jpg"
+    ],
+    "source": "https://shop.mohd.it/en/quilt-sofa-bed.html",
+    "new": false,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Earlier new price exceeded €5k",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "quilted",
+      "fold out"
+    ],
+    "bedNote": "Dedicated 16 cm mattress; one of the more practical guest-bed designs.",
+    "budget": "stretch"
+  },
+  {
+    "id": "d70",
+    "name": "D70",
+    "designer": "Osvaldo Borsani",
+    "brand": "Tecno",
+    "era": "1954",
+    "bed": "bed",
+    "description": "Two pivoting upholstered wings on an exposed mechanical frame. Changes angle from upright sofa to a bed.",
+    "images": [
+      "https://www.twentytwentyone.com/cdn/shop/products/tecno-d70-6_1200x1200.jpg?v=1644961160"
+    ],
+    "source": "https://www.twentytwentyone.com/products/tecno-osvaldo-borsani-d70-sofa",
+    "new": false,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "mechanical",
+      "steel",
+      "transformer"
+    ],
+    "bedNote": "Designed to convert to a bed. Inspect the locks and the sleeping dimensions on vintage examples."
+  },
+  {
+    "id": "ds76",
+    "name": "DS-76",
+    "designer": "de Sede design team",
+    "brand": "de Sede",
+    "era": "1970s",
+    "bed": "bed",
+    "description": "Blocky leather seating with an unusually direct folding conversion. An alternative to the original DS-85 hunt.",
+    "images": [
+      "https://a.1stdibscdn.com/de-sede-ds76-two-seat-sofa-bed-in-black-upholstery-by-de-sede-design-team-for-sale-picture-7/f_57992/f_360662321694160937772/Timeless_art_com_nr_230435_De_Sede_bank_7__master.JPG"
+    ],
+    "source": "https://www.1stdibs.com/furniture/seating/benches/de-sede-ds76-two-seat-sofa-bed-black-upholstery-de-sede-design-team/id-f_36066232/",
+    "new": false,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "leather",
+      "fold out",
+      "modular"
+    ],
+    "bedNote": "Real sofa-bed design. Module count determines the sleeping setup."
+  },
+  {
+    "id": "sofo",
+    "name": "Sofo",
+    "designer": "Superstudio",
+    "brand": "Poltronova",
+    "era": "1968",
+    "bed": "none",
+    "description": "One continuous S-cut upholstered block, wrapped in green/pink or pink/orange stripes.",
+    "images": [
+      "https://cdn.mohd.it/cache/image/format%3Dwebp/media/catalog/product/s/o/sofo-sofa-poltronova.jpg"
+    ],
+    "source": "https://www.poltronova.it/sofo/",
+    "new": false,
+    "initial": "unrated",
+    "green": true,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "stripes",
+      "radical",
+      "foam"
+    ],
+    "bedNote": "Sofa only. The two-seat version is 164 cm wide."
+  },
+  {
+    "id": "rumble",
+    "name": "Rumble",
+    "designer": "Gianni Pettena",
+    "brand": "Poltronova",
+    "era": "1967",
+    "bed": "daybed",
+    "description": "A square upholstered conversation pit with loose interior cushions. Furniture on the scale of a small room.",
+    "images": [
+      "https://media.madeindesign.com/cdn-cgi/image/fit%3Dpad%2Cbackground%3Dwhite%2Cformat%3Dwebp%2Cwidth%3D800%2Cheight%3D800%2Cquality%3D80/nuxeo/products/0/6/rumble-rose-poltronova_madeindesign_428818_original.jpg"
+    ],
+    "source": "https://www.poltronova.it/rumble/",
+    "new": false,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "pit",
+      "radical",
+      "landscape"
+    ],
+    "bedNote": "Lounging landscape, not a dedicated guest mattress. Large footprint: roughly 248 × 248 cm.",
+    "budget": "stretch"
+  },
+  {
+    "id": "lemura",
+    "name": "Le Mura",
+    "designer": "Mario Bellini",
+    "brand": "Cassina / Tacchini",
+    "era": "1972 / reissue",
+    "bed": "none",
+    "description": "Big upholstered blocks joined with visible belts and metal clasps.",
+    "images": [
+      "https://gardeshop.com/cdn/shop/files/LEMURA8.png?v=1725041108&width=1024"
+    ],
+    "source": "https://www.markanto.de/le-mura-sofa.html?number=SW12668.4",
+    "new": false,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Current two-module reissue previously above €8k",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "belts",
+      "modular",
+      "leather"
+    ],
+    "budget": "stretch",
+    "bedNote": "Sofa only; secondhand examples need separate research."
+  },
+  {
+    "id": "scoop",
+    "name": "Scoop",
+    "designer": "Guido Rosati",
+    "brand": "Saba",
+    "era": "2000s design",
+    "bed": "bed",
+    "description": "Two semicircular sofas come together to form a round bed. An unusually literal transformation.",
+    "images": [
+      "https://dornob.com/wp-content/uploads/2012/08/sliced-modern-bed-seat.jpg"
+    ],
+    "source": "https://dornob.com/sliced-spliced-pair-of-sofas-slide-to-form-circular-bed/",
+    "new": false,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Archival design · current production unconfirmed",
+    "tags": [
+      "circular",
+      "transformer"
+    ],
+    "bedNote": "Circular sleeping configuration. Check overall diameter, mattress support and bedding practicality."
+  },
+  {
+    "id": "gs195",
+    "name": "GS195",
+    "designer": "Gianni Songia",
+    "brand": "Sormani",
+    "era": "1960s",
+    "bed": "daybed",
+    "description": "Architectural rosewood sides with leather cushions and a sliding backrest.",
+    "images": [
+      "https://www.galerie44.com/11027-superlarge_default/gianni-songia-sofa-modele-gs195-in-rosewood-and-black-leather-edition-sormani-1960.jpg"
+    ],
+    "source": "https://www.galerie44.com/en/seatings/940-gianni-songia-sofa-modele-gs195-in-rosewood-and-black-leather-edition-sormani-1960.html",
+    "new": false,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Separate example previously €3,200; not reverified",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "wood",
+      "leather",
+      "mechanical"
+    ],
+    "bedNote": "Backrest adjusts into a daybed layout. Check clear sleeping width and cushion joins."
+  },
+  {
+    "id": "cozypad",
+    "name": "CozyPad",
+    "designer": "Innovation Living",
+    "brand": "Innovation Living",
+    "era": "contemporary",
+    "bed": "bed",
+    "description": "Layered cushions with slim metal supports and a simple guest-bed arrangement.",
+    "images": [
+      "https://www.ksl-living.fr/175703-large_default/canape-cosy-convertible-en-lit-1-ou-2-places-cozypad-innovation-living.jpg"
+    ],
+    "source": "https://www.ksl-living.fr/canapes-convertibles/canape-cosy-convertible-en-lit-1-ou-2-places-cozypad-innovation-living-9906.html",
+    "new": false,
+    "initial": "unrated",
+    "green": true,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "layered",
+      "fold out"
+    ],
+    "bedNote": "Designed to become one or two sleeping places, depending on the version."
+  },
+  {
+    "id": "multy",
+    "name": "Multy",
+    "designer": "Claude Brisson",
+    "brand": "Ligne Roset",
+    "era": "1980s design",
+    "bed": "bed",
+    "description": "A practical three-position sofa bed from the earlier shortlist.",
+    "images": [
+      "https://i.ebayimg.com/images/g/liMAAeSwK7VoWGcR/s-l500.jpg"
+    ],
+    "source": "https://www.ligne-roset.com/uk/p/sofa-beds/bedsettee-155-without-arms-with-lumbar-cushions-multy-3152",
+    "new": false,
+    "initial": "unrated",
+    "green": true,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "fold out",
+      "practical"
+    ],
+    "bedNote": "Dedicated mattress and slatted base. Standard configurations include 153 × 194 cm."
+  },
+  {
+    "id": "smala",
+    "name": "Smala",
+    "designer": "Pascal Mourgue",
+    "brand": "Ligne Roset",
+    "era": "2000s",
+    "bed": "daybed",
+    "description": "A low platform with independently folding backs and arms.",
+    "images": [
+      "https://cdn20.pamono.com/p/g/2/3/2375359_907ha61v7p/sofa-de-dos-plazas-smala-de-cuero-crema-de-ligne-roset-imagen-17.jpg"
+    ],
+    "source": "https://www.pamono.es/sofa-de-dos-plazas-smala-de-cuero-crema-de-ligne-roset",
+    "new": false,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "platform",
+      "mechanical"
+    ],
+    "bedNote": "Arms and backs adjust into a daybed. Confirm the exact usable surface."
+  },
+  {
+    "id": "strips",
+    "name": "Strips",
+    "designer": "Cini Boeri",
+    "brand": "Arflex",
+    "era": "1968",
+    "bed": "daybed",
+    "description": "Quilted, low modular upholstery. Retained as a model reference after the earlier pink listing disappeared.",
+    "images": [
+      "https://a.1stdibscdn.com/cini-boeri-strips-sofa-for-arflex-italy-1968-for-sale-picture-7/f_67642/f_324683621674888516921/EM_42954_master.jpg?width=768"
+    ],
+    "source": "https://www.1stdibs.com/furniture/seating/sofas/cini-boeri-strips-sofa-arflex-italy-1968/id-f_32468362/",
+    "new": false,
+    "initial": "unrated",
+    "green": false,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Earlier listing unavailable · photo reference only",
+    "tags": [
+      "quilted",
+      "modular"
+    ],
+    "bedNote": "Sleeping suitability varies by configuration; pictured sofa is not a verified sofa-bed version."
+  },
+  {
+    "id": "saruyama",
+    "name": "Saruyama Islands",
+    "designer": "Toshiyuki Kita",
+    "brand": "Moroso",
+    "era": "1989 / Islands 2006",
+    "bed": "none",
+    "description": "Organic scooped islands. Part of the batch you passed on.",
+    "images": [
+      "https://moroso.it/app/uploads/2013/06/cover172.jpg",
+      "https://urbanspaceinteriors.com/cdn/shop/files/saruyama-island-system-by-moroso-8_93dce648-3f45-4351-921e-9269b1f71331_800x.jpg?v=1719492562"
+    ],
+    "source": "https://moroso.it/prodotti/saruyama-island-4/?lang=en",
+    "new": false,
+    "initial": "passed",
+    "green": true,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "organic",
+      "island"
+    ],
+    "bedNote": "Sculptural seating only.",
+    "imageSource": "https://moroso.it/app/uploads/2013/06/cover172.jpg"
+  },
+  {
+    "id": "abcd",
+    "name": "ABCD",
+    "designer": "Pierre Paulin",
+    "brand": "Artifort",
+    "era": "1968",
+    "bed": "none",
+    "description": "An undulating upholstered wave divided into individual seats.",
+    "images": [
+      "https://a.1stdibscdn.com/archivesE/upload/f_9331/f_77846431497880782943/6165_item_6154_03_l.jpg"
+    ],
+    "source": "https://side-gallery.com/pierre-paulin-1960s-sofa-3seater-abcd/",
+    "new": false,
+    "initial": "passed",
+    "green": true,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "wave",
+      "sculpted"
+    ],
+    "bedNote": "Sofa only; heavily contoured seating."
+  },
+  {
+    "id": "terrazza",
+    "name": "DS-1025 Terrazza",
+    "designer": "Ubald Klug",
+    "brand": "de Sede",
+    "era": "1974",
+    "bed": "none",
+    "description": "Stacked leather terraces arranged as a topographic seating landscape.",
+    "images": [
+      "https://desede.ch/cdn/shop/files/DS-1025_09-De_Sede_1025_mood_0545_cc4d08c6-3c72-46d7-847a-840b3d63ab01.jpg?v=1743150514"
+    ],
+    "source": "https://desede.ch/en-en/products/ds-1025-09",
+    "new": false,
+    "initial": "passed",
+    "green": false,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "budget": "stretch",
+    "tags": [
+      "leather",
+      "terraces"
+    ],
+    "bedNote": "No flat sleeping surface."
+  },
+  {
+    "id": "flap",
+    "name": "Flap",
+    "designer": "Francesco Binfaré",
+    "brand": "Edra",
+    "era": "2000",
+    "bed": "daybed",
+    "description": "Nine independently adjustable padded sections form a large sculptural platform.",
+    "images": [
+      "https://www.edra.com/ridimensiona.html/rem/1170/750/030_50_80/custom/files/114434/ct10000_id101167_t1/Principale_Flap_1.jpg"
+    ],
+    "source": "https://www.edra.com/de/product/Flap/flap",
+    "new": false,
+    "initial": "passed",
+    "green": false,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "mechanical",
+      "platform"
+    ],
+    "budget": "stretch",
+    "bedNote": "Manufacturer describes a daybed for two. No dedicated mattress; test for longer stays."
+  },
+  {
+    "id": "mahjong",
+    "name": "Mah Jong",
+    "designer": "Hans Hopfer",
+    "brand": "Roche Bobois",
+    "era": "1971",
+    "bed": "daybed",
+    "description": "Floor-level quilted modules in a wide range of patterned fabrics.",
+    "images": [
+      "https://img.edilportale.com/product-thumbs/b_MAH-JONG-MISSONI-HOME-ROCHE-BOBOIS-60947-rel9b65f17f.jpg"
+    ],
+    "source": "https://www.roche-bobois.com/en/hans-hopfer.html",
+    "new": false,
+    "initial": "passed",
+    "green": false,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "quilted",
+      "floor",
+      "modular"
+    ],
+    "bedNote": "Can form a platform; cushion seams and support need checking."
+  },
+  {
+    "id": "bocca",
+    "name": "Bocca / Unlimited",
+    "designer": "Studio65",
+    "brand": "Gufram",
+    "era": "1970 / Unlimited 2019",
+    "bed": "none",
+    "description": "The lip-shaped sofa, shown in forest green.",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0653/7697/7075/files/7hpnu2zip26es1bbf8v75h0dg6d1_9446067e-0e0d-4761-81c1-cae49b1d78f6.jpg?v=1750059980"
+    ],
+    "source": "https://gufram.it/prodotti/bocca-unlimited-32/",
+    "new": false,
+    "initial": "passed",
+    "green": true,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "pop",
+      "sculpted"
+    ],
+    "bedNote": "Sofa only."
+  },
+  {
+    "id": "trio",
+    "name": "Trio",
+    "designer": "team form ag",
+    "brand": "COR",
+    "era": "1973 / bed version 2018",
+    "bed": "bed",
+    "description": "Low modular blocks with loose backs. The dedicated folding-bed version is a later addition.",
+    "images": [
+      "https://jukiamsterdam.com/cdn/shop/files/CORTrioModularSofabyTeamFormAG_Green_19_2048x2048.jpg?v=1706800922"
+    ],
+    "source": "https://www.cor.de/en/furniture/trio",
+    "new": false,
+    "initial": "unrated",
+    "green": true,
+    "price": null,
+    "priceNote": "Price and Berlin delivery to research",
+    "availability": "Model reference · stock unverified",
+    "tags": [
+      "modular",
+      "fold out"
+    ],
+    "bedNote": "Only the dedicated bed version folds into a mattress. Do not assume a vintage 1970s Trio has it.",
+    "imageSource": "https://jukiamsterdam.com/cdn/shop/files/CORTrioModularSofabyTeamFormAG_Green_19_2048x2048.jpg?v=1706800922"
+  }
+]

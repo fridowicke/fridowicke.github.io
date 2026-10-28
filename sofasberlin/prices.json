@@ -1,0 +1,434 @@
+{
+  "additional": {
+    "low": 8000,
+    "high": 8300,
+    "label": "New reissue reference",
+    "scope": "New Tacchini daybed; vintage price on request",
+    "sources": [
+      "https://sarto-group.de/en/products/additional-system-daybed",
+      "https://www.markanto.de/additional-system-daybed.html"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "ds85": {
+    "low": 4000,
+    "high": 7500,
+    "label": "Expected vintage price",
+    "scope": "Complete sofa; olive examples command a premium",
+    "sources": [
+      "https://studiomenzel.com/our-collection/all/seatings/de-sede-ds-85-sofa-daybed-2/",
+      "https://bestwelhip.nl/en/product/vintage-ds-85-leather-daybed-sofa-de-sede/"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "superonda": {
+    "low": 2000,
+    "high": 3500,
+    "label": "Expected vintage price",
+    "scope": "Complete two-wave sofa",
+    "sources": [
+      "https://www.dimanoinmano.it/en/cp342951/modernism/sofas/poltronova-superonda-sofa-vintage-design-archizoom-1970s",
+      "https://www.galerie44.com/en/seatings/2631-archizoom-sofa-model-superonda-in-fabric-edition-poltronova-1960.html"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "corbi": {
+    "low": 9000,
+    "high": 18000,
+    "label": "Expected vintage price",
+    "scope": "3–5 modules; restored collector sets",
+    "sources": [
+      "https://www.theauctionlab.com/en/klaus-uredat-sofa-corbi-gray-used-4/",
+      "https://www.1stdibs.com/furniture/seating/sectional-sofas/klaus-uredat-corbi-sofa-cor-germany-1969-new-boucle-upholstery/id-f_31852452/"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "hyaline": {
+    "low": 9000,
+    "high": 19000,
+    "label": "Expected vintage price",
+    "scope": "Rare two-seat sofa",
+    "sources": [
+      "https://theauctionlab.com/en/fabio-lenci-hyaline-sofa-comfort-edition/",
+      "https://www.1stdibs.com/furniture/seating/sofas/fabio-lenci-sofa-2-seat/id-f_14276011/"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "sesann": {
+    "low": 5500,
+    "high": 10000,
+    "label": "Expected vintage price",
+    "scope": "Original Cassina; 2–3 seats",
+    "sources": [
+      "https://www.rijpvintage.com/product-page/sesann-sofa-by-gianfranco-frattini-for-cassina-1970s",
+      "https://magazzino76.it/prodotto/divano-sesann-di-gianfranco-frattini-per-cassina-1970-ca/"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "confidential": {
+    "low": 2500,
+    "high": 5000,
+    "label": "Expected vintage price",
+    "scope": "2–3 seats; larger landscapes cost more",
+    "sources": [
+      "https://www.whoppah.com/brands/saporiti/sofas",
+      "https://piccothefinder.com/en-eu/products/sofa-saporiti-confidential"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "marsala": {
+    "low": 2500,
+    "high": 5000,
+    "label": "Expected vintage price",
+    "scope": "Vintage 2–3 seats",
+    "sources": [
+      "https://galerie-boketto.com/fr/produit/canape-marsala-par-michel-ducaroy-pour-ligne-roset-1971/",
+      "https://www.proantic.com/en/1655613-quotmarsalaquot-sofa-by-michel-ducaroy-for-ligne-roset-1970s.html"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "onda": {
+    "low": 3000,
+    "high": 6000,
+    "label": "Expected vintage price",
+    "scope": "Two-seat through long sofa; size matters",
+    "sources": [
+      "https://www.vntg.com/342385/wave-sofa-by-giovanni-offredi-for-saporiti-italia/",
+      "https://www.1stdibs.com/furniture/seating/sofas/wave-sofa-giovanni-offredi-saporiti-italy-1970/id-f_35767162/"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "orbis": {
+    "low": 4000,
+    "high": 8000,
+    "label": "Expected vintage price",
+    "scope": "Five seats with tables",
+    "sources": [
+      "https://www.2nd-home.io/en/products/vintage-modulsofa-orbis-luigi-colani-cor-38394",
+      "https://www.zorrobot.de/common/download.php?i=2028&p=en%2Fseating%2Fluigi-colani-orbis-sofa-1969-cor"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "soriana": {
+    "low": 8000,
+    "high": 16000,
+    "label": "Expected vintage price",
+    "scope": "Vintage 2–3 seats; exceptional pieces higher",
+    "sources": [
+      "https://www.pamono.eu/scarpa-soriana-seating"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "serpentone": {
+    "display": "Price on request",
+    "label": "Vintage price",
+    "scope": "Rare design; no reliable asking-price range found",
+    "sources": [
+      "https://www.bgc.bard.edu/files/Checklist_-_Masterworks_Italian_Design%2C_1960-1994_-_1997.pdf"
+    ],
+    "note": "Insufficient comparable asking prices. Do not confuse Serpentone with Arflex 9000 / Serpentine."
+  },
+  "kali": {
+    "low": 1000,
+    "high": 2500,
+    "label": "Expected vintage price",
+    "scope": "Vintage 2–3 seats",
+    "sources": [
+      "https://brocnshop.com/boutique/non-classe/canape-ligne-roset-modele-kali-par-michel-ducaroy/",
+      "https://www.leboncoin.fr/ck/ameublement/kali-ligne-roset"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "anfibio": {
+    "low": 8000,
+    "high": 12500,
+    "label": "Expected vintage price",
+    "scope": "Complete vintage sofa-bed",
+    "sources": [
+      "https://www.vntg.com/372360/",
+      "https://www.italiandesignclub.com/manufacturer/giovannetti/"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "sosia": {
+    "display": "Price on request",
+    "label": "Expected secondhand price",
+    "scope": "Discontinued; too few comparable used listings",
+    "sources": [
+      "https://www.campeggidesign.it/en/product/sosia/"
+    ],
+    "note": "The manufacturer marks Sosia out of collection. No sufficiently reliable used asking-price range found."
+  },
+  "quilt": {
+    "low": 8542,
+    "high": 8542,
+    "label": "New price reference",
+    "scope": "2025 model; no established vintage market",
+    "sources": [
+      "https://www.silvera.fr/en/eshop/sofa-bed-quilt-brown-campeggi.html"
+    ],
+    "note": "Observed new asking price €8,541.60; used market too thin for a credible range."
+  },
+  "d70": {
+    "low": 4000,
+    "high": 8000,
+    "label": "Expected vintage price",
+    "scope": "Vintage fabric; special leather examples higher",
+    "sources": [
+      "https://modestfurniture.com/product/d70-sofa-by-osvaldo-borsani-for-tecno/",
+      "https://www.pamono.eu/makers/tecno/standard-sofas"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "ds76": {
+    "low": 1500,
+    "high": 3500,
+    "label": "Expected vintage price",
+    "scope": "2–3 modules; large sets cost more",
+    "sources": [
+      "https://www.pamono.eu/makers/de-sede/couches-sofas",
+      "https://indubio.nl/collections/seating/products/xxl-de-sede-ds76-sofa-daybed-swiss-design-1970s"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "sofo": {
+    "display": "€6,900 set reference",
+    "label": "Vintage asking-price reference",
+    "scope": "Sofa + two chairs; sofa-only range unverified",
+    "sources": [
+      "https://www.intondo.com/it/products/11913/sedute/divani/divano-e-coppia-di-poltrone-sofo-di-superstudio-per-poltronova-1966",
+      "https://modernism.com/printpdf/items/1295/furniture-seating-sofas/6215-4078-sofa-sofo-superstudio-poltronova"
+    ],
+    "note": "The €6,900 reference is a three-piece set. An older sofa-only USD listing is not sufficient to infer a current EUR range."
+  },
+  "rumble": {
+    "low": 20200,
+    "high": 21500,
+    "label": "New reissue reference",
+    "scope": "Current reissue; vintage price on request",
+    "sources": [
+      "https://shopmohd.com/de/rumble-sofa.html",
+      "https://www.diffusioneshop.com/en/manufacturer/poltronova"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "lemura": {
+    "low": 10000,
+    "high": 15000,
+    "label": "Expected vintage price",
+    "scope": "Original Cassina, approximately three modules",
+    "sources": [
+      "https://www.galerie44.com/en/seatings/2716-mario-bellini-sofa-model-le-mura-edition-cassina-1972.html",
+      "https://www.1stdibs.com/furniture/seating/sofas/mario-bellini-le-mura-modular-sofa-cassina-brown-velvet-1972-set-of-3/id-f_48077812/"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "scoop": {
+    "display": "Price on request",
+    "label": "Expected secondhand price",
+    "scope": "Rare used market; insufficient comparable prices",
+    "sources": [
+      "https://www.leblogdeco.fr/scoop-canape-convertible-en-lit-rond/"
+    ],
+    "note": "No defensible current European used asking-price range found."
+  },
+  "gs195": {
+    "low": 2800,
+    "high": 4500,
+    "label": "Expected vintage price",
+    "scope": "Complete sofa / daybed in good usable condition",
+    "sources": [
+      "https://www.intondo.com/en/products/145348/seating/sofas/daybed-sofa-gs195-by-gianni-songia-for-sormani-60s-70s",
+      "https://www.selency.co.uk/p/WWPZ2HP2/3-seater-sofa-gs-195-leather-and-rosewood-gianni-songia-1963-sormani-editor"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "cozypad": {
+    "low": 950,
+    "high": 1800,
+    "label": "New price reference",
+    "scope": "Contemporary standard sofa; no vintage market",
+    "sources": [
+      "https://www.segmueller.de/produkte/schlafsofa-cozypad-m048040-00000",
+      "https://www.beckhuis.com/b/innovation-living/cozypad"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "multy": {
+    "low": 500,
+    "high": 1500,
+    "label": "Expected secondhand price",
+    "scope": "Fully working 2–3 seat sofa bed; recent or older production",
+    "sources": [
+      "https://www.timelessvalues.de/m%C3%B6bel-angebote/ligne-roset-multy-gelb/",
+      "https://www.ebay.de/b/Ligne-Roset-Multy-Sofa/bn_7005696978"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "smala": {
+    "low": 1500,
+    "high": 4100,
+    "label": "Expected secondhand price",
+    "scope": "Full adjustable three-seat platform",
+    "sources": [
+      "https://www.ebay.de/b/Ligne-Roset-Smala/bn_7005701748"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "strips": {
+    "low": 3000,
+    "high": 7000,
+    "label": "Expected vintage / used price",
+    "scope": "Small / medium 2–4 seat configuration",
+    "sources": [
+      "https://www.whoppah.com/de/marken/arflex/sofas",
+      "https://www.whoppah.com/brands/arflex/furniture"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "saruyama": {
+    "low": 2000,
+    "high": 4000,
+    "label": "Expected secondhand price",
+    "scope": "Per Saruyama Islands sofa; not the full 1989 three-piece set",
+    "sources": [
+      "https://www.silvera.fr/en/eshop/saruyama-island-orange-leather.html",
+      "https://www.whoppah.com/brands/moroso/modular-sofas"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "abcd": {
+    "low": 12000,
+    "high": 28000,
+    "label": "Expected vintage price",
+    "scope": "Original collector 2–3 seat sofa; auctions can be lower",
+    "sources": [
+      "https://www.whoppah.com/de/produkte/abcd-2-sitz-sofa-von-pierre-paulin-fur-artifort-1960s-UD1MAUPNM4YA",
+      "https://www.selency.co.uk/p/HEJCHKDD/pierre-paulin-pour-artifort-rare-premiere-edition-canape-abcd-trois-places-1968"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "terrazza": {
+    "low": 25000,
+    "high": 35000,
+    "label": "Expected vintage price",
+    "scope": "Pair of mirrored modules; not a single seat",
+    "sources": [
+      "https://www.pamono.eu/makers/de-sede/couches-sofas",
+      "https://www.1stdibs.com/furniture/seating/sofas/de-sede-ds-1025-terrazza-sofa-pair-ubald-klug-1970s/id-f_46321632/"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "flap": {
+    "low": 5000,
+    "high": 12000,
+    "label": "Expected secondhand price",
+    "scope": "Complete 355–360 cm platform in good usable condition",
+    "sources": [
+      "https://www.whoppah.com/products/edra-flap-sofa-black-leather-7C9ORDV8VFWW",
+      "https://www.kleinanzeigen.de/s-anzeige/edra-flap-leder-ecksofa-creme-weiss-manuelle-funktion-sofa-couch/2784307296-88-18670"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "mahjong": {
+    "low": 4000,
+    "high": 10000,
+    "label": "Expected secondhand price",
+    "scope": "Modest 8–17 element used set; couture sets can cost more",
+    "sources": [
+      "https://www.whoppah.com/brands/roche-bobois/modular-sofas",
+      "https://www.vntg.com/371279/roche-bobois-mah-jong-sofa-group-1990s/"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "bocca": {
+    "low": 4000,
+    "high": 8000,
+    "label": "Expected vintage price",
+    "scope": "Vintage red; pictured green Unlimited is a later reissue",
+    "sources": [
+      "https://shop.magazzino76.it/products/sofa-bocca-by-salvador-dali-for-gufram-1970s",
+      "https://www.finarte.it/auction/design-heritage-milan-2026-06-23/studio-65-sofa-model-bocca-195390?lang=en"
+    ],
+    "note": "Lower-confidence budget estimate, anchored by a €4,880 archived dealer ask and a €3,000–3,500 auction estimate. Auction estimate is not a realised price. Green Unlimited has no supported used range."
+  },
+  "trio": {
+    "low": 2500,
+    "high": 9000,
+    "label": "Expected vintage price",
+    "scope": "Small sofa through 4–5 modules; vintage does not imply a foldout bed",
+    "sources": [
+      "https://www.whoppah.com/products/original-cor-trio-sofa-restored-like-new-79H3LO9BA44K",
+      "https://vintagevonk.com/products/cor-trio"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "freesystem": {
+    "low": 7500,
+    "high": 20000,
+    "label": "New reissue reference",
+    "scope": "Small / medium new reissue; original vintage price on request",
+    "sources": [
+      "https://www.tomassini.com/en/acerbis-free-system-sofa-p-9371.html",
+      "https://pozzoli.net/products/divano-modulare-free-system-acerbis"
+    ],
+    "note": "No reliable original-vintage or contemporary-used range found. Small two-seat from €7,500; 300 × 200 cm around €12,320; 400 × 200 cm around €19,710. Large configurations can exceed €28,500.",
+    "highPlus": true
+  },
+  "amanta": {
+    "low": 2000,
+    "high": 5500,
+    "label": "Expected vintage price",
+    "scope": "Original C&B, 3–4 modules; photo shows the HAY reissue",
+    "sources": [
+      "https://www.whoppah.com/products/mario-bellini-amanta-3-modules-cb-italia-original-vintage-1960s70s-brown-corduroy-A9EYFA36EZ1X",
+      "https://www.la-ramon.com/products/amanta-sofa-mario-bellini-for-c-b-italia-1969",
+      "https://www.pamono.eu/designers/mario-bellini/couches-sofas?labels=3"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "ds600": {
+    "low": 14000,
+    "high": 20000,
+    "label": "Expected vintage price",
+    "scope": "12–16 modules; larger landscapes cost substantially more",
+    "sources": [
+      "https://www.marktplaats.nl/v/huis-en-inrichting/banken-sofa-s-en-chaises-longues/m2397464337-de-sede-ds600-snake-tatzelwurm-13delig-zwart-leder-topstaat",
+      "https://www.pamono.eu/makers/de-sede/couches-sofas"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "alanda": {
+    "low": 1800,
+    "high": 4000,
+    "label": "Expected vintage price",
+    "scope": "2–3 seats; functioning hinges and good upholstery",
+    "sources": [
+      "https://www.fussypeople.eu/collections/the-vintage-design-collection/products/vintage-80s-black-leather-alanda-sofa-by-paolo-piva-for-b-b-italia-260cm",
+      "https://www.pamono.eu/vintage-alanda-sofa-by-paolo-piva-for-b-b-italia-1980s"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "duc": {
+    "low": 2500,
+    "high": 5000,
+    "label": "Expected vintage price",
+    "scope": "Original Cassina, 2–3 seats",
+    "sources": [
+      "https://en.catanai.it/shop/seating-1/cassina-duc-three-seater-sofa-in-burgundy-velvet-designed-by-mario-bellini-1970s.html",
+      "https://www.1stdibs.com/fr/meubles/si%C3%A8ges/sofas/mario-bellini-canap%C3%A9-trois-places-duc-duc/id-f_46456922/"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  },
+  "sapporo": {
+    "low": 2500,
+    "high": 6500,
+    "label": "Expected vintage price",
+    "scope": "2–3 seats; condition and upholstery matter",
+    "sources": [
+      "https://thecuratedobjects.com/products/sapporo-two-seater-sofa-mario-marenco-mobil-girgi-1970s",
+      "https://www.selency.co.uk/p/22WXFB69/sapporo-sofa-by-mario-marenco-for-mobil-girgi-italy-1970s"
+    ],
+    "note": "Rounded asking-price estimate for good usable examples, before Berlin delivery. Not completed sale prices."
+  }
+}

@@ -1,0 +1,150 @@
+[
+  {
+    "id": "freesystem",
+    "name": "Free System",
+    "designer": "Claudio Salocchi",
+    "brand": "Acerbis",
+    "era": "1973 / reissue 2023",
+    "bed": "daybed",
+    "description": "Ribbed tatami-like pads with interchangeable curved and inclined backs. The strongest fresh match to Additional System.",
+    "images": [
+      "https://duplexdsgn.com/cdn/shop/files/1_Acerbis_FreeSystem_ClaudioSalocchi_LorenzoCappelliniBaio.jpg?v=1686931848"
+    ],
+    "source": "https://www.acerbisdesign.com/en/products/free-system-sofa/",
+    "imageSource": "https://duplexdsgn.com/products/free-system-sofa-acerbis-duplex",
+    "new": true,
+    "initial": "unrated",
+    "green": true,
+    "tags": [
+      "ribbed",
+      "modular",
+      "landscape"
+    ],
+    "bedNote": "Can form a flat lounging platform. No dedicated mattress or verified overnight performance.",
+    "priceNote": "Reissue / vintage research needed · likely a stretch",
+    "budget": "stretch",
+    "availability": "Model reference · stock unverified"
+  },
+  {
+    "id": "amanta",
+    "name": "Amanta",
+    "designer": "Mario Bellini",
+    "brand": "C&B Italia / HAY",
+    "era": "1966 / HAY reissue 2025",
+    "bed": "none",
+    "description": "Deep tufted cushions sit inside conspicuous moulded shells. Modular space-age seating with a current reissue route.",
+    "images": [
+      "https://www.scp.co.uk/cdn/shop/files/HAY_0013_AF330-A414-AA25-01ES_Amanta3seaterHallingdal220_creambeigeshell.jpg?v=1755255246&width=1120",
+      "https://media.madeindesign.com/cdn-cgi/image/fit%3Dpad%2Cformat%3Dauto%2Cwidth%3D1000%2Cheight%3D1000%2Cquality%3D70/nuxeo/products/2/b/amanta-grun-stoff-hay_madeindesign_1758897130_original.jpg"
+    ],
+    "source": "https://www.hay.com/news/news-2025/amanta-sofa",
+    "imageSource": "https://www.scp.co.uk/cdn/shop/files/HAY_0013_AF330-A414-AA25-01ES_Amanta3seaterHallingdal220_creambeigeshell.jpg?v=1755255246&width=1120",
+    "new": true,
+    "initial": "unrated",
+    "green": true,
+    "tags": [
+      "shell",
+      "modular",
+      "space age"
+    ],
+    "bedNote": "Sofa only. Separate sculpted shells do not create a continuous mattress.",
+    "priceNote": "Vintage and HAY reissue prices to compare",
+    "availability": "Photo example sold · current collection exists"
+  },
+  {
+    "id": "ds600",
+    "name": "DS-600 Non-Stop",
+    "designer": "Berger, Peduzzi-Riva, Ulrich & Vogt",
+    "brand": "de Sede",
+    "era": "1972",
+    "bed": "none",
+    "description": "Narrow leather modules join into an articulated snake. Repetition and visible construction taken to an extreme.",
+    "images": [
+      "https://a.1stdibscdn.com/de-sede-ds-600-sofa-in-black-leather-for-sale-picture-2/f_9091/f_307420721665112787155/02DeSedeNonStopSofaBlack_master.jpg"
+    ],
+    "source": "https://www.christies.com/en/lot/lot-6187048",
+    "imageSource": "https://www.1stdibs.com/furniture/seating/sofas/de-sede-ds-600-sofa-black-leather-vintage/id-f_30742072/",
+    "new": true,
+    "initial": "unrated",
+    "tags": [
+      "leather",
+      "ribbed",
+      "snake"
+    ],
+    "bedNote": "Sofa only. Shaped seats and repeated joints; no guest-bed function.",
+    "budget": "stretch",
+    "priceNote": "Stretch reference · a full landscape is not a €5k assumption",
+    "availability": "Model reference · stock unverified"
+  },
+  {
+    "id": "alanda",
+    "name": "Alanda",
+    "designer": "Paolo Piva",
+    "brand": "B&B Italia",
+    "era": "1980",
+    "bed": "daybed",
+    "description": "Articulated padded headrests and arms on a slim steel structure. A mechanical, adjustable branch of the same taste.",
+    "images": [
+      "https://images.auctionet.com/thumbs/medium_item_3292817_120eb5c54a.jpg"
+    ],
+    "source": "https://www.chantala.com/product-page/paolo-piva-alanda",
+    "imageSource": "https://images.auctionet.com/thumbs/medium_item_3292817_120eb5c54a.jpg",
+    "new": true,
+    "initial": "unrated",
+    "tags": [
+      "mechanical",
+      "leather",
+      "steel"
+    ],
+    "bedNote": "Adjustable lounge surface. No dedicated mattress; overnight suitability and dimensions unverified.",
+    "priceNote": "Vintage hunt · price and delivery to research",
+    "availability": "Sold photo reference · model to hunt"
+  },
+  {
+    "id": "duc",
+    "name": "Duc",
+    "designer": "Mario Bellini",
+    "brand": "Cassina",
+    "era": "1976",
+    "bed": "none",
+    "description": "Leather-covered structural panels joined with exposed zips. The interest is in the construction and the thick loose cushions.",
+    "images": [
+      "https://images.capitoliumart.com/auction-images/402/221945.jpg"
+    ],
+    "source": "https://www.capitoliumart.com/en/lotto/duc-sofa-for-cassina/xlt-107244",
+    "new": true,
+    "initial": "unrated",
+    "tags": [
+      "zip",
+      "leather",
+      "visible frame"
+    ],
+    "bedNote": "Sofa only; no sleeping conversion.",
+    "priceNote": "Vintage price and delivery to research",
+    "availability": "Historical auction reference · not live stock"
+  },
+  {
+    "id": "sapporo",
+    "name": "Sapporo",
+    "designer": "Mario Marenco",
+    "brand": "Mobil Girgi",
+    "era": "1970s",
+    "bed": "none",
+    "description": "Enormous cushions within a thick rounded walnut frame. A wood-and-leather branch to test against the metal-and-foam favourites.",
+    "images": [
+      "https://cdn20.pamono.com/p/s/1/8/1821370_yefhykbn9i/sapporo-sofa-by-mario-marenco-for-mobilgirgi-1970s.jpg"
+    ],
+    "source": "https://thecuratedobjects.com/products/sapporo-two-seater-sofa-mario-marenco-mobil-girgi-1970s",
+    "imageSource": "https://cdn20.pamono.com/p/s/1/8/1821370_yefhykbn9i/sapporo-sofa-by-mario-marenco-for-mobilgirgi-1970s.jpg",
+    "new": true,
+    "initial": "unrated",
+    "tags": [
+      "walnut",
+      "padded",
+      "visible frame"
+    ],
+    "bedNote": "Sofa only; no conversion.",
+    "priceNote": "Vintage price and delivery to research",
+    "availability": "Model reference · stock unverified"
+  }
+]
