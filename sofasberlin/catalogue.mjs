@@ -1,0 +1,56 @@
+export function heartsFor(sofa, preferences = {}) {
+  const saved = preferences[sofa.id];
+  if (Number.isInteger(saved?.hearts) && saved.hearts >= 0 && saved.hearts <= 3) return saved.hearts;
+  return (saved?.status ?? sofa.initial) === 'liked' ? 1 : 0;
+}
+
+export function setHearts(preferences, id, hearts) {
+  if (!Number.isInteger(hearts) || hearts < 0 || hearts > 3) throw new RangeError('Choose 0–3 hearts');
+  return { ...preferences, [id]: { ...preferences[id], hearts, status: hearts > 0 ? 'liked' : preferences[id]?.status === 'passed' ? 'passed' : 'unrated' } };
+}
+
+export function upperPrice(price) {
+  if (Number.isFinite(price?.high)) return price.high;
+  const reference = price?.display?.match(/^€([\d,]+)/);
+  return reference ? Number(reference[1].replaceAll(',', '')) : null;
+}
+
+export function priceKind(price) {
+  if (upperPrice(price) === null) return 'quote';
+  if (/new/i.test(price.label)) return 'new';
+  if (/vintage/i.test(price.label)) return 'vintage';
+  return 'used';
+}
+
+export function initialFilters() {
+  return { hearts: [0, 1, 2, 3], priceMin: '', priceMax: '', priceKinds: ['vintage', 'used', 'new', 'quote'], sleeping: ['bed', 'daybed', 'none'], sort: 'curated' };
+}
+
+export function filterSofas(sofas, prices, preferences, filters, query = '', view = 'all') {
+  const q = query.toLowerCase().trim();
+  return sofas.filter(sofa => {
+    const hearts = heartsFor(sofa, preferences), price = prices[sofa.id], amount = upperPrice(price);
+    if (view === 'new' && !sofa.new || view === 'liked' && hearts === 0) return false;
+    if (!filters.hearts.includes(hearts) || !filters.sleeping.includes(sofa.bed) || !filters.priceKinds.includes(priceKind(price))) return false;
+    if (filters.priceMin !== '' && (amount === null || amount < Number(filters.priceMin))) return false;
+    if (filters.priceMax !== '' && (amount === null || amount > Number(filters.priceMax))) return false;
+    return !q || [sofa.name, sofa.designer, sofa.brand, sofa.era, ...(sofa.tags || [])].join(' ').toLowerCase().includes(q);
+  });
+}
+
+export function sortSofas(sofas, prices, preferences, sort, rank = []) {
+  const curated = sofa => { const index = rank.indexOf(sofa.id); return index < 0 ? 999 : index; };
+  return [...sofas].sort((a, b) => {
+    if (sort === 'hearts-desc') return heartsFor(b, preferences) - heartsFor(a, preferences) || curated(a) - curated(b);
+    if (sort === 'hearts-asc') return heartsFor(a, preferences) - heartsFor(b, preferences) || curated(a) - curated(b);
+    if (sort === 'price-asc' || sort === 'price-desc') {
+      const x = upperPrice(prices[a.id]), y = upperPrice(prices[b.id]);
+      if (x === null && y !== null) return 1;
+      if (y === null && x !== null) return -1;
+      if (x !== null && y !== null) return (sort === 'price-asc' ? x - y : y - x) || curated(a) - curated(b);
+    }
+    if (sort === 'name') return a.name.localeCompare(b.name);
+    if (sort === 'designer') return a.designer.localeCompare(b.designer);
+    return curated(a) - curated(b);
+  });
+}
