@@ -781,5 +781,131 @@
     ],
     "checkedAt": "2026-10-28",
     "note": "Design reference only. No live offer or current price verified."
+  },
+  "morfeo": {
+    "display": "Resale hunt",
+    "label": "Archived model reference",
+    "scope": "No current price or available example verified",
+    "note": "Design reference for a resale search; not a current buyable offer. Stock, usable sleeping surface and Berlin delivery need confirmation.",
+    "sources": [
+      "https://www.behance.net/gallery/3385465/Morfeo-Domodinamica"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "slash": {
+    "display": "Resale hunt",
+    "label": "Archived model reference",
+    "scope": "No current price or available example verified",
+    "note": "Design reference for a resale search; not a current buyable offer. Stock, usable sleeping surface and Berlin delivery need confirmation.",
+    "sources": [
+      "https://www.campeggidesign.it/en/product/slash/"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "tandem": {
+    "display": "Resale hunt",
+    "label": "Archived model reference",
+    "scope": "No current price or available example verified",
+    "note": "Design reference for a resale search; not a current buyable offer. Stock, usable sleeping surface and Berlin delivery need confirmation.",
+    "sources": [
+      "https://www.campeggidesign.it/en/product/tandem/"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "chama": {
+    "low": 3348,
+    "high": 3348,
+    "starting": true,
+    "label": "New price reference",
+    "scope": "Entry fabric configuration before Berlin delivery",
+    "note": "Salvioni lists €3,348 for fabric cat. B, SE0002. Mohd Germany/EUR currently shows €4,373.55 for its displayed configuration. These are different offers/configurations, not a guaranteed delivered range.",
+    "sources": [
+      "https://www.salvioniarredamenti.it/en/products/lago-chama-sofa-bed/",
+      "https://shop.mohd.it/it/chama-divano-letto.html?country=DE&currency=EUR"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "circlesleeper": {
+    "display": "£1,995 · sold",
+    "label": "Sold reference",
+    "scope": "Archived UK asking price, in GBP",
+    "note": "The photographed example is sold, with an archived £1,995 ask. Not a current offer or a confirmed realised sale. No invented EUR conversion or Berlin shipping allowance.",
+    "sources": [
+      "https://relicsofretro.co.uk/products/mid-century-circle-sofa-bed-vintage-geometric-pattern-retro-mcm"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "kisskiss": {
+    "display": "Resale hunt",
+    "label": "Archived model reference",
+    "scope": "No current price or available example verified",
+    "note": "Design reference for a resale search; not a current buyable offer. Stock, usable sleeping surface and Berlin delivery need confirmation.",
+    "sources": [
+      "https://www.campeggidesign.it/en/product/kiss-kiss/"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "oritami": {
+    "display": "Quote · €1,583 ref.",
+    "label": "Dealer catalogue reference",
+    "scope": "Current product page requests a quote",
+    "note": "Brera category listings show €1,583, while the product page requests a price and availability check. Do not treat this as confirmed available stock.",
+    "sources": [
+      "https://www.brerainterni.com/furniture/chairs-and-stools",
+      "https://www.brerainterni.com/campeggi-ori-tami-chair"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "huggy": {
+    "low": 1641.64,
+    "high": 1641.64,
+    "label": "Used / showroom price",
+    "scope": "Specific white-base patchwork showroom piece",
+    "note": "LAGO Outlet lists €1,641.64, showroom condition described as perfect, available at the time checked. Berlin delivery is extra; confirm usable dimensions and stock.",
+    "sources": [
+      "https://outlet.lago.it/ita/soggiorno/poltrona-huggy-bianca-e-patchwork.html"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "xito": {
+    "display": "Quote · €1,399 ref.",
+    "label": "Dealer reference / supply unconfirmed",
+    "scope": "Discontinued model; conflicting dealer price references",
+    "note": "Designlager product search result shows €1,399; its category page shows €2,790 for Xito. That conflict and discontinued status require a fresh quote. No live stock has been verified.",
+    "sources": [
+      "https://designlager.de/product_info.php/en/multifunction-easy-chair-xito-campeggi-p-701",
+      "https://www.campeggidesign.it/en/product/xito/"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "gea": {
+    "display": "Resale hunt",
+    "label": "Archived model reference",
+    "scope": "No current price or available example verified",
+    "note": "Design reference for a resale search; not a current buyable offer. Stock, usable sleeping surface and Berlin delivery need confirmation.",
+    "sources": [
+      "https://www.campeggidesign.it/en/product/gea/"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "deepattention": {
+    "display": "Resale hunt",
+    "label": "Archived model reference",
+    "scope": "No current price or available example verified",
+    "note": "Design reference for a resale search; not a current buyable offer. Stock, usable sleeping surface and Berlin delivery need confirmation.",
+    "sources": [
+      "https://www.campeggidesign.it/en/product/deep-attention-and-sleep/"
+    ],
+    "checkedAt": "2026-10-28"
+  },
+  "nessy": {
+    "display": "Resale hunt",
+    "label": "Archived model reference",
+    "scope": "No current price or available example verified",
+    "note": "Design reference for a resale search; not a current buyable offer. Stock, usable sleeping surface and Berlin delivery need confirmation.",
+    "sources": [
+      "https://www.campeggidesign.it/en/product/nessy/"
+    ],
+    "checkedAt": "2026-10-28"
   }
 }
