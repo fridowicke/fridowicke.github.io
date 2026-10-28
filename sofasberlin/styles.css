@@ -8,11 +8,11 @@ a{color:inherit;text-underline-offset:3px}
 button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid #000;outline-offset:3px}
 [hidden]{display:none!important}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-main,footer{width:min(1360px,calc(100% - 48px));margin:auto}
+main,footer{width:min(1520px,calc(100% - 48px));margin:auto}
 input{border:1px solid #bbb;padding:6px 8px;font-size:11px;border-radius:0;background:#fff}
 main{padding-top:16px}.table-wrap{overflow-x:auto}
-table{width:100%;min-width:1000px;border-collapse:collapse;table-layout:fixed;text-align:left}
-.col-photo{width:10%}.col-name{width:18%}.col-designer{width:17%}.col-brand{width:14%}.col-hearts{width:11%}.col-price{width:19%}.col-bed{width:11%}
+table{width:100%;min-width:1280px;border-collapse:collapse;table-layout:fixed;text-align:left}
+.col-photo{width:9%}.col-name{width:15%}.col-designer{width:13%}.col-brand{width:10%}.col-person{width:8%}.col-total{width:5%}.col-price{width:15%}.col-bed{width:9%}
 thead{border-top:1px solid #000;border-bottom:1px solid #000}
 thead th{font-weight:400;font-size:11px;padding:10px 12px}
 thead th:first-child{padding-left:0}
@@ -30,10 +30,10 @@ thead button.active{text-decoration:underline;text-decoration-thickness:2px;text
 .designer-cell,.maker-cell{font-size:12px;color:#444}
 .hearts-control{display:flex;gap:2px;align-items:center;white-space:nowrap}
 .heart{width:26px;height:30px;display:grid;place-items:center;border-radius:3px}
-.heart svg{display:block;width:17px;height:17px;fill:none;stroke:#999;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-.heart svg.filled{fill:#000;stroke:#000}
-.heart:hover{background:#eee}
-.heart:hover svg{stroke:#000}
+.heart svg{display:block;width:16px;height:16px;fill:none;stroke:var(--person-color,#999);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.heart svg.filled{fill:var(--person-color,#000);stroke:var(--person-color,#000)}
+.heart:enabled:hover{background:#eee}.heart:disabled{cursor:default;opacity:1}
+.heart:enabled:hover svg{stroke:var(--person-color,#000)}
 .price{display:block;font-size:14px;font-weight:600;line-height:1.3;letter-spacing:-.2px}
 .price-label{display:block;font-size:10px;color:#777;margin-top:3px}
 .sleep-cell{font-size:11px}.bed-badge{display:inline-block;padding:4px 7px;border-radius:3px;line-height:1.35}.bed-bed{background:#e7f3e9;color:#24452d}.bed-daybed{background:#fff4cd;color:#65531f}.bed-none{background:#f9e5e4;color:#70413d}#export-scores{text-decoration:underline;color:inherit}
@@ -46,3 +46,5 @@ h2{font-size:20px;font-weight:500;line-height:1.2;margin:0 0 8px}
 
 @media(max-width:1050px){main,footer{width:calc(100% - 24px)}}
 @media(max-width:520px){main{padding-top:8px}.photo-caption{gap:10px}.photo-caption h2{font-size:18px}.photo-nav{gap:7px}dialog{padding:16px}}
+
+.identity-bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 0 12px;font-size:11px;color:#555}.identity-bar label{display:flex;gap:8px;align-items:center}select{font:inherit;color:#000;background:#fff;border:1px solid #bbb;border-radius:0;padding:5px 25px 5px 7px}.sync-error{color:#943a35}.person-clara{--person-color:#b24672}.person-mamer{--person-color:#167b7c}.person-frido{--person-color:#7950b3}thead th[class*=person-]{color:var(--person-color)}.person-selected{background:color-mix(in srgb,var(--person-color) 5%,white)}.total-cell{font-size:14px;font-weight:600;font-variant-numeric:tabular-nums}.heart{width:24px;background:transparent}.sofa .hearts-cell{padding-left:8px;padding-right:8px}select:focus-visible{outline:2px solid #000;outline-offset:3px}

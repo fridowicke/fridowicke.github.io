@@ -7,15 +7,16 @@
 <meta name="description" content="Designer sofas, photographs, vintage price ranges and personal 0–3 heart ratings.">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='white'/%3E%3Ctext x='12' y='48' font-size='48' font-family='Arial' fill='black'%3ES%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="styles.css?v=table-1"><script type="module" src="app.js?v=table-1"></script>
+<link rel="stylesheet" href="styles.css?v=group-1"><script type="module" src="app.js?v=group-1"></script>
 </head>
 <body>
 <main id="collection">
+<div class="identity-bar"><label for="person">I am <select id="person"><option value="">Choose your name</option><option value="clara">Clara</option><option value="mamer">Mamer</option><option value="frido">Frido</option></select></label><span id="sync-status" role="status" aria-live="polite">Connecting…</span></div>
 <p id="result" class="sr-only" aria-live="polite"></p>
-<div class="table-wrap"><table aria-label="Sofa shortlist"><colgroup><col class="col-photo"><col class="col-name"><col class="col-designer"><col class="col-brand"><col class="col-hearts"><col class="col-price"><col class="col-bed"></colgroup><thead><tr><th scope="col"><span class="sr-only">Photo</span></th><th scope="col"><button data-column="sofa">Name</button></th><th scope="col"><button data-column="designer">Designer</button></th><th scope="col"><button data-column="brand">Maker</button></th><th scope="col"><button data-column="hearts">Hearts</button></th><th scope="col"><button data-column="price">Price</button></th><th scope="col"><button data-column="sleeping">Bed</button></th></tr></thead><tbody id="list"></tbody></table></div><p id="empty" hidden>No sofas loaded.</p>
+<div class="table-wrap"><table aria-label="Sofa shortlist"><colgroup><col class="col-photo"><col class="col-name"><col class="col-designer"><col class="col-brand"><col class="col-person"><col class="col-person"><col class="col-person"><col class="col-total"><col class="col-price"><col class="col-bed"></colgroup><thead><tr><th scope="col"><span class="sr-only">Photo</span></th><th scope="col"><button data-column="sofa">Name</button></th><th scope="col"><button data-column="designer">Designer</button></th><th scope="col"><button data-column="brand">Maker</button></th><th scope="col" class="person-clara"><button data-column="clara">Clara</button></th><th scope="col" class="person-mamer"><button data-column="mamer">Mamer</button></th><th scope="col" class="person-frido"><button data-column="frido">Frido</button></th><th scope="col"><button data-column="total">Total</button></th><th scope="col"><button data-column="price">Price</button></th><th scope="col"><button data-column="sleeping">Bed</button></th></tr></thead><tbody id="list"></tbody></table></div><p id="empty" hidden>No sofas loaded.</p>
 </main>
-<footer>Prices before delivery. Click column headings to sort, names for sources, photos to enlarge. Click a selected heart to clear. <button id="export-scores">Export scores</button>.</footer>
+<footer>Prices before delivery. Click column headings to sort, names for sources, photos to enlarge. Choose your name to rate. Click a selected heart to clear. <button id="export-scores">Export scores</button>.</footer>
 <dialog id="photo-view" aria-labelledby="photo-title"><button id="close-photo" aria-label="Close photograph">×</button><img id="large-photo" alt=""><div class="photo-caption"><div><h2 id="photo-title"></h2><span id="photo-price"></span></div><div class="photo-nav"><button id="prev-photo" aria-label="Previous photograph">←</button><span id="photo-count"></span><button id="next-photo" aria-label="Next photograph">→</button></div></div><a id="photo-source" target="_blank" rel="noopener noreferrer">Source ↗</a></dialog>
-<p id="storage-message" class="storage-message" role="status" hidden>Browser storage is unavailable. Ratings will last until this page closes.</p>
+
 </body>
 </html>

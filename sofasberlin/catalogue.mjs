@@ -44,7 +44,22 @@ export function nextColumnSort(current, column) {
   return `${key}-${current === `${key}-asc` ? 'desc' : 'asc'}`;
 }
 
-export function sortSofas(sofas, prices, preferences, sort, rank = []) {
+export const PEOPLE = [
+  { id: 'clara', name: 'Clara' },
+  { id: 'mamer', name: 'Mamer' },
+  { id: 'frido', name: 'Frido' },
+];
+
+export function personHearts(people, sofaId, person) {
+  const score = people?.[person]?.[sofaId];
+  return Number.isInteger(score) && score >= 0 && score <= 3 ? score : 0;
+}
+
+export function totalHearts(people, sofaId) {
+  return PEOPLE.reduce((total, person) => total + personHearts(people, sofaId, person.id), 0);
+}
+
+export function sortSofas(sofas, prices, preferences, sort, rank = [], people = {}) {
   const curated = sofa => { const index = rank.indexOf(sofa.id); return index < 0 ? 999 : index; };
   const [key, direction = 'asc'] = sort.split('-');
   const sign = direction === 'desc' ? -1 : 1;
@@ -53,6 +68,8 @@ export function sortSofas(sofas, prices, preferences, sort, rank = []) {
   return [...sofas].sort((a, b) => {
     let comparison = 0;
     if (key === 'hearts') comparison = heartsFor(a, preferences) - heartsFor(b, preferences);
+    if (key === 'total') comparison = totalHearts(people, a.id) - totalHearts(people, b.id);
+    if (PEOPLE.some(person => person.id === key)) comparison = personHearts(people, a.id, key) - personHearts(people, b.id, key);
     if (key === 'price') {
       const x = amount(a), y = amount(b);
       if (x === null && y !== null) return 1;

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { heartsFor, setHearts, initialFilters, filterSofas, sortSofas, restoreScores, nextColumnSort } from '../sofasberlin/catalogue.mjs';
+import { heartsFor, setHearts, initialFilters, filterSofas, sortSofas, restoreScores, nextColumnSort, personHearts, totalHearts } from '../sofasberlin/catalogue.mjs';
 
 const read = async file => JSON.parse(await readFile(new URL(`../sofasberlin/${file}`, import.meta.url)));
 const sofas = [...await read('data.json'), ...await read('extra.json')];
@@ -87,4 +87,31 @@ test('bed and text column order reverse consistently', () => {
   assert.deepEqual(sortSofas(subset, prices, {}, 'bed-asc').map(s => s.bed), ['bed', 'daybed', 'none']);
   assert.deepEqual(sortSofas(subset, prices, {}, 'bed-desc').map(s => s.bed), ['none', 'daybed', 'bed']);
   assert.deepEqual(sortSofas(subset, prices, {}, 'name-desc').map(s => s.name), ['Superonda', 'Marsala', 'DS-85']);
+});
+
+
+test('three independent ratings total at most nine and clearing preserves other people', () => {
+  const people = { clara: { ds85: 3 }, mamer: { ds85: 3 }, frido: { ds85: 3 } };
+  assert.equal(totalHearts(people, 'ds85'), 9);
+  people.clara.ds85 = 0;
+  assert.equal(totalHearts(people, 'ds85'), 6);
+  assert.equal(personHearts(people, 'ds85', 'frido'), 3);
+  assert.equal(totalHearts(people, 'unknown'), 0);
+  for (const invalid of [-1, 4, 1.5, '3']) {
+    people.clara.ds85 = invalid;
+    assert.equal(personHearts(people, 'ds85', 'clara'), 0);
+  }
+});
+
+test('group total and each person sort independently, ascending then descending', () => {
+  const subset = ['ds85', 'ds76', 'multy'].map(id => sofas.find(s => s.id === id));
+  const people = { clara: { ds85: 0, ds76: 1, multy: 2 }, mamer: { ds85: 3, ds76: 0, multy: 2 }, frido: { ds85: 3, ds76: 0, multy: 1 } };
+  const ordered = sort => sortSofas(subset, prices, {}, sort, [], people).map(s => s.id);
+  assert.deepEqual(ordered('total-desc'), ['ds85', 'multy', 'ds76']);
+  assert.deepEqual(ordered('total-asc'), ['ds76', 'multy', 'ds85']);
+  assert.deepEqual(ordered('clara-desc'), ['multy', 'ds76', 'ds85']);
+  assert.deepEqual(ordered('mamer-asc'), ['ds76', 'multy', 'ds85']);
+  assert.deepEqual(ordered('frido-desc'), ['ds85', 'multy', 'ds76']);
+  assert.equal(nextColumnSort('total-desc', 'clara'), 'clara-asc');
+  assert.equal(nextColumnSort('clara-asc', 'clara'), 'clara-desc');
 });
