@@ -29,20 +29,22 @@ thead th{font-weight:400;font-size:11px;padding:10px 12px}
 thead th:first-child{padding-left:0}
 thead button{white-space:nowrap;text-align:left}
 thead button.active{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
-.sofa{border-bottom:1px solid #ddd}
+.sofa{height:88px;border-bottom:1px solid #ddd}
 .sofa td,.sofa th{padding:9px 12px;vertical-align:middle;overflow-wrap:anywhere}
-.sofa td:first-child{padding-left:0}
+.sofa .photo-cell{position:relative;padding:0}
 .sofa th{font-weight:400}
 .sofa:hover{background:#fafafa}
-.sofa-photo{display:flex;align-items:center;justify-content:center;width:100%;height:76px;background:#fafafa;overflow:hidden}
-.sofa-photo img{display:block;width:100%;height:100%;object-fit:contain}
+.sofa-photo{position:absolute;inset:0;display:block;width:100%;height:100%;background:#fafafa;overflow:hidden}
+.sofa-photo img{display:block;width:100%;height:100%;object-fit:cover}
 .sofa-name{font-size:15px;font-weight:500;line-height:1.3;text-decoration:none}
 .sofa-name:hover{text-decoration:underline}
 .designer-cell,.maker-cell{font-size:12px;color:#444}
-.hearts-control{display:flex;gap:1px;align-items:center;white-space:nowrap}
-.heart{font:21px/1 Arial,sans-serif;width:24px;height:30px;display:grid;place-content:center}
-.heart-zero{font-size:10px;width:16px;height:24px;margin-right:2px;color:#777;border-bottom:1px solid transparent}
-.heart-zero[aria-pressed=true]{color:#000;border-color:#000}
+.hearts-control{display:flex;gap:2px;align-items:center;white-space:nowrap}
+.heart{width:26px;height:30px;display:grid;place-items:center;border-radius:3px}
+.heart svg{display:block;width:17px;height:17px;fill:none;stroke:#999;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.heart svg.filled{fill:#000;stroke:#000}
+.heart:hover{background:#eee}
+.heart:hover svg{stroke:#000}
 .price{display:block;font-size:14px;font-weight:600;line-height:1.3;letter-spacing:-.2px}
 .price-label{display:block;font-size:10px;color:#777;margin-top:3px}
 .sleep-cell{font-size:11px}
