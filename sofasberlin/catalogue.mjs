@@ -23,13 +23,14 @@ export function priceKind(price) {
 }
 
 export function initialFilters() {
-  return { hearts: [0, 1, 2, 3], priceMin: '', priceMax: '', priceKinds: ['vintage', 'used', 'new', 'quote'], sleeping: ['bed', 'daybed', 'none'], sort: 'curated' };
+  return { hearts: [0, 1, 2, 3], designer: '', brand: '', priceMin: '', priceMax: '', priceKinds: ['vintage', 'used', 'new', 'quote'], sleeping: ['bed', 'daybed', 'none'], sort: 'curated' };
 }
 
 export function filterSofas(sofas, prices, preferences, filters, query = '', view = 'all') {
   const q = query.toLowerCase().trim();
   return sofas.filter(sofa => {
     const hearts = heartsFor(sofa, preferences), price = prices[sofa.id], amount = upperPrice(price);
+    for (const key of ['designer', 'brand']) if (filters[key] && !sofa[key].toLowerCase().includes(filters[key].trim().toLowerCase())) return false;
     if (view === 'new' && !sofa.new || view === 'liked' && hearts === 0) return false;
     if (!filters.hearts.includes(hearts) || !filters.sleeping.includes(sofa.bed) || !filters.priceKinds.includes(priceKind(price))) return false;
     if (filters.priceMin !== '' && (amount === null || amount < Number(filters.priceMin))) return false;
@@ -51,6 +52,7 @@ export function sortSofas(sofas, prices, preferences, sort, rank = []) {
     }
     if (sort === 'name') return a.name.localeCompare(b.name);
     if (sort === 'designer') return a.designer.localeCompare(b.designer);
+    if (sort === 'brand') return a.brand.localeCompare(b.brand);
     return curated(a) - curated(b);
   });
 }
