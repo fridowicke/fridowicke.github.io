@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gemeinde rund</title>
+<meta name="description" content="Plan eines Altars aus Fichte: acht Figuren im Oval. Nicht gebaut, nicht geprüft.">
+<style>
+  :root { --ink:#26231f; --mute:#6f695f; --line:#d9d3c7; --bg:#faf8f3; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.55 Georgia, 'Times New Roman', serif; }
+  main { max-width:720px; margin:0 auto; padding:48px 16px 72px; }
+  h1 { font-size:26px; font-weight:400; margin:0 0 10px; }
+  h2 { font-size:18px; font-weight:400; margin:36px 0 8px; }
+  p { margin:0 0 14px; }
+  a { color:inherit; }
+  #view { width:100%; height:440px; background:#fff; border:1px solid var(--line); display:block; touch-action:none; margin:18px 0 8px; }
+  .bar { display:flex; flex-wrap:wrap; gap:6px; }
+  button { font:14px/1 Georgia, serif; padding:8px 10px; border:1px solid var(--line); background:#fff; color:var(--ink); cursor:pointer; }
+  button[aria-pressed="true"] { background:var(--ink); color:#fff; border-color:var(--ink); }
+  ul { margin:0; padding-left:20px; }
+  li { margin-bottom:6px; }
+  .cap { color:var(--mute); font-size:15px; min-height:44px; margin-top:10px; }
+  @media (max-width:640px) { #view { height:340px; } }
+</style>
+</head>
+<body>
+<main>
+<h1>Gemeinde rund</h1>
+<p>Ein Altar aus Fichte, 1300 × 1000 × 940 mm, rund 40 kg. Acht Figuren stehen im Oval: ein Kopf unter der Platte, ein Ring an der Schulter, zwei Glieder zum Boden. Von aussen sieht man nur Holz. Das hier ist der Plan. Gebaut und geprüft ist noch nichts.</p>
+<canvas id="view"></canvas>
+<div class="bar" id="shots"></div>
+<p class="cap" id="caption"></p>
+<h2>Die Pläne</h2>
+<ul>
+<li><a href="gemeinde-rund-1-schneiden.html">Kaufen und schneiden</a></li>
+<li><a href="gemeinde-rund-2-verschrauben.html">Bauen</a></li>
+<li><a href="gemeinde-rund-3-pruefen.html">Prüfen</a></li>
+<li><a href="anleitung/">Anleitung in Bildern</a></li>
+<li><a href="gemeinde-rund-lehre.dxf">Aufbaulehre als DXF</a></li>
+</ul>
+</main>
+<script type="application/json" id="data">{"panels":[{"id":"p1a","name":"Stab","colour":"#efe0bf","hexa":[[1221.22,0,544.97],[1265.22,0,545.72],[1218.4,776,708.96],[1262.4,776,709.71],[1222,0,500],[1265.99,0,500.76],[1219.18,776,663.99],[1263.17,776,664.75]]},{"id":"p1b","name":"Stab","colour":"#efe0bf","hexa":[[1157.63,0,886.84],[1121.17,0,862.22],[1249.41,776,750.9],[1212.94,776,726.28],[1132.47,0,924.11],[1096,0,899.49],[1224.24,776,788.18],[1187.78,776,763.56]]},{"id":"p3a","name":"Stab","colour":"#efe0bf","hexa":[[1051.33,0,904.68],[1056.41,0,948.39],[888.41,776,923.6],[893.49,776,967.31],[1096,0,899.49],[1101.08,0,943.2],[933.08,776,918.41],[938.16,776,962.12]]},{"id":"p3b","name":"Stab","colour":"#efe0bf","hexa":[[695.11,0,969.86],[694.97,0,925.86],[859.12,776,969.35],[858.99,776,925.35],[650.14,0,970],[650,0,926],[814.15,776,969.49],[814.01,776,925.49]]},{"id":"p5a","name":"Stab","colour":"#efe0bf","hexa":[[605.03,0,925.86],[604.89,0,969.86],[441.01,776,925.35],[440.88,776,969.35],[650,0,926],[649.86,0,970],[485.99,776,925.49],[485.85,776,969.49]]},{"id":"p5b","name":"Stab","colour":"#efe0bf","hexa":[[243.59,0,948.39],[248.67,0,904.68],[406.51,776,967.31],[411.59,776,923.6],[198.92,0,943.2],[204,0,899.49],[361.84,776,962.12],[366.92,776,918.41]]},{"id":"p7a","name":"Stab","colour":"#efe0bf","hexa":[[178.83,0,862.22],[142.37,0,886.84],[87.06,776,726.28],[50.59,776,750.9],[204,0,899.49],[167.53,0,924.11],[112.22,776,763.56],[75.76,776,788.18]]},{"id":"p7b","name":"Stab","colour":"#efe0bf","hexa":[[34.78,0,545.72],[78.78,0,544.97],[37.6,776,709.71],[81.6,776,708.96],[34.01,0,500.76],[78,0,500],[36.83,776,664.75],[80.82,776,663.99]]},{"id":"p9a","name":"Stab","colour":"#efe0bf","hexa":[[78.78,0,455.03],[34.78,0,454.28],[81.6,776,291.04],[37.6,776,290.29],[78,0,500],[34.01,0,499.24],[80.82,776,336.01],[36.83,776,335.25]]},{"id":"p9b","name":"Stab","colour":"#efe0bf","hexa":[[142.37,0,113.16],[178.83,0,137.78],[50.59,776,249.1],[87.06,776,273.72],[167.53,0,75.89],[204,0,100.51],[75.76,776,211.82],[112.22,776,236.44]]},{"id":"p11a","name":"Stab","colour":"#efe0bf","hexa":[[248.67,0,95.32],[243.59,0,51.61],[411.59,776,76.4],[406.51,776,32.69],[204,0,100.51],[198.92,0,56.8],[366.92,776,81.59],[361.84,776,37.88]]},{"id":"p11b","name":"Stab","colour":"#efe0bf","hexa":[[604.89,0,30.14],[605.03,0,74.14],[440.88,776,30.65],[441.01,776,74.65],[649.86,0,30],[650,0,74],[485.85,776,30.51],[485.99,776,74.51]]},{"id":"p13a","name":"Stab","colour":"#efe0bf","hexa":[[694.97,0,74.14],[695.11,0,30.14],[858.99,776,74.65],[859.12,776,30.65],[650,0,74],[650.14,0,30],[814.01,776,74.51],[814.15,776,30.51]]},{"id":"p13b","name":"Stab","colour":"#efe0bf","hexa":[[1056.41,0,51.61],[1051.33,0,95.32],[893.49,776,32.69],[888.41,776,76.4],[1101.08,0,56.8],[1096,0,100.51],[938.16,776,37.88],[933.08,776,81.59]]},{"id":"p15a","name":"Stab","colour":"#efe0bf","hexa":[[1121.17,0,137.78],[1157.63,0,113.16],[1212.94,776,273.72],[1249.41,776,249.1],[1096,0,100.51],[1132.47,0,75.89],[1187.78,776,236.44],[1224.24,776,211.82]]},{"id":"p15b","name":"Stab","colour":"#efe0bf","hexa":[[1265.22,0,454.28],[1221.22,0,455.03],[1262.4,776,290.29],[1218.4,776,291.04],[1265.99,0,499.24],[1222,0,500],[1263.17,776,335.25],[1219.18,776,336.01]]},{"id":"s1","name":"Kopf","colour":"#efe0bf","hexa":[[1265.93,820,775.67],[1290.47,820,699.53],[1265.93,900,775.67],[1290.47,900,699.53],[1189.78,820,751.13],[1214.32,820,674.99],[1189.78,900,751.13],[1214.32,900,674.99]]},{"id":"s3","name":"Kopf","colour":"#efe0bf","hexa":[[837.55,820,989.65],[917.4,820,984.8],[837.55,900,989.65],[917.4,900,984.8],[832.71,820,909.79],[912.56,820,904.95],[832.71,900,909.79],[912.56,900,904.95]]},{"id":"s5","name":"Kopf","colour":"#efe0bf","hexa":[[382.6,820,984.8],[462.45,820,989.65],[382.6,900,984.8],[462.45,900,989.65],[387.44,820,904.95],[467.29,820,909.79],[387.44,900,904.95],[467.29,900,909.79]]},{"id":"s7","name":"Kopf","colour":"#efe0bf","hexa":[[9.53,820,699.53],[34.07,820,775.67],[9.53,900,699.53],[34.07,900,775.67],[85.68,820,674.99],[110.22,820,751.13],[85.68,900,674.99],[110.22,900,751.13]]},{"id":"s9","name":"Kopf","colour":"#efe0bf","hexa":[[34.07,820,224.33],[9.53,820,300.47],[34.07,900,224.33],[9.53,900,300.47],[110.22,820,248.87],[85.68,820,325.01],[110.22,900,248.87],[85.68,900,325.01]]},{"id":"s11","name":"Kopf","colour":"#efe0bf","hexa":[[462.45,820,10.35],[382.6,820,15.2],[462.45,900,10.35],[382.6,900,15.2],[467.29,820,90.21],[387.44,820,95.05],[467.29,900,90.21],[387.44,900,95.05]]},{"id":"s13","name":"Kopf","colour":"#efe0bf","hexa":[[917.4,820,15.2],[837.55,820,10.35],[917.4,900,15.2],[837.55,900,10.35],[912.56,820,95.05],[832.71,820,90.21],[912.56,900,95.05],[832.71,900,90.21]]},{"id":"s15","name":"Kopf","colour":"#efe0bf","hexa":[[1290.47,820,300.47],[1265.93,820,224.33],[1290.47,900,300.47],[1265.93,900,224.33],[1214.32,820,325.01],[1189.78,820,248.87],[1214.32,900,325.01],[1189.78,900,248.87]]},{"id":"r0","name":"Ringstück","colour":"#efe0bf","hexa":[[1266,776,500],[1222,776,500],[1266,820,500],[1222,820,500],[1262.01,776,732.23],[1218.24,776,718.43],[1262.01,820,732.23],[1218.24,820,718.43]]},{"id":"r1","name":"Ringstück","colour":"#efe0bf","hexa":[[1262.01,776,732.23],[1218.24,776,718.43],[1262.01,820,732.23],[1218.24,820,718.43],[1121.16,776,940.87],[1096,776,899.49],[1121.16,820,940.87],[1096,820,899.49]]},{"id":"r2","name":"Ringstück","colour":"#efe0bf","hexa":[[1121.16,776,940.87],[1096,776,899.49],[1121.16,820,940.87],[1096,820,899.49],[876.36,776,969.29],[873.75,776,925.3],[876.36,820,969.29],[873.75,820,925.3]]},{"id":"r3","name":"Ringstück","colour":"#efe0bf","hexa":[[876.36,776,969.29],[873.75,776,925.3],[876.36,820,969.29],[873.75,820,925.3],[650,776,970],[650,776,926],[650,820,970],[650,820,926]]},{"id":"r4","name":"Ringstück","colour":"#efe0bf","hexa":[[650,776,970],[650,776,926],[650,820,970],[650,820,926],[423.64,776,969.29],[426.25,776,925.3],[423.64,820,969.29],[426.25,820,925.3]]},{"id":"r5","name":"Ringstück","colour":"#efe0bf","hexa":[[423.64,776,969.29],[426.25,776,925.3],[423.64,820,969.29],[426.25,820,925.3],[178.84,776,940.87],[204,776,899.49],[178.84,820,940.87],[204,820,899.49]]},{"id":"r6","name":"Ringstück","colour":"#efe0bf","hexa":[[178.84,776,940.87],[204,776,899.49],[178.84,820,940.87],[204,820,899.49],[37.99,776,732.23],[81.76,776,718.43],[37.99,820,732.23],[81.76,820,718.43]]},{"id":"r7","name":"Ringstück","colour":"#efe0bf","hexa":[[37.99,776,732.23],[81.76,776,718.43],[37.99,820,732.23],[81.76,820,718.43],[34,776,500],[78,776,500],[34,820,500],[78,820,500]]},{"id":"r8","name":"Ringstück","colour":"#efe0bf","hexa":[[34,776,500],[78,776,500],[34,820,500],[78,820,500],[37.99,776,267.77],[81.76,776,281.57],[37.99,820,267.77],[81.76,820,281.57]]},{"id":"r9","name":"Ringstück","colour":"#efe0bf","hexa":[[37.99,776,267.77],[81.76,776,281.57],[37.99,820,267.77],[81.76,820,281.57],[178.84,776,59.13],[204,776,100.51],[178.84,820,59.13],[204,820,100.51]]},{"id":"r10","name":"Ringstück","colour":"#efe0bf","hexa":[[178.84,776,59.13],[204,776,100.51],[178.84,820,59.13],[204,820,100.51],[423.64,776,30.71],[426.25,776,74.7],[423.64,820,30.71],[426.25,820,74.7]]},{"id":"r11","name":"Ringstück","colour":"#efe0bf","hexa":[[423.64,776,30.71],[426.25,776,74.7],[423.64,820,30.71],[426.25,820,74.7],[650,776,30],[650,776,74],[650,820,30],[650,820,74]]},{"id":"r12","name":"Ringstück","colour":"#efe0bf","hexa":[[650,776,30],[650,776,74],[650,820,30],[650,820,74],[876.36,776,30.71],[873.75,776,74.7],[876.36,820,30.71],[873.75,820,74.7]]},{"id":"r13","name":"Ringstück","colour":"#efe0bf","hexa":[[876.36,776,30.71],[873.75,776,74.7],[876.36,820,30.71],[873.75,820,74.7],[1121.16,776,59.13],[1096,776,100.51],[1121.16,820,59.13],[1096,820,100.51]]},{"id":"r14","name":"Ringstück","colour":"#efe0bf","hexa":[[1121.16,776,59.13],[1096,776,100.51],[1121.16,820,59.13],[1096,820,100.51],[1262.01,776,267.77],[1218.24,776,281.57],[1262.01,820,267.77],[1218.24,820,281.57]]},{"id":"r15","name":"Ringstück","colour":"#efe0bf","hexa":[[1262.01,776,267.77],[1218.24,776,281.57],[1262.01,820,267.77],[1218.24,820,281.57],[1266,776,500],[1222,776,500],[1266,820,500],[1222,820,500]]},{"id":"mensa","name":"Platte","colour":"#efe0bf","hexa":[[0,900,0],[0,900,1000],[0,940,0],[0,940,1000],[1300,900,0],[1300,900,1000],[1300,940,0],[1300,940,1000]]}],"pegs":[{"at":[1244,820,475],"along":[0,1,0],"length":0.6,"diameter":12,"materialId":"stick-fichte-80x80"},{"at":[1243.11,30,448.32],"along":[0,0,1],"length":0.6,"diameter":12,"materialId":"stick-fichte-80x80"},{"at":[1129.94,820,907.19],"along":[0,1,0],"length":0.6,"diameter":12,"materialId":"stick-fichte-80x80"},{"at":[1142.95,30,869.27],"along":[-0.85,0,0.52],"length":0.6,"diameter":12,"materialId":"stick-fichte-80x80"},{"at":[675,820,948],"along":[0,1,0],"length":0.6,"diameter":12,"materialId":"stick-fichte-80x80"},{"at":[701.38,30,947.84],"along":[-1,0,0],"length":0.6,"diameter":12,"materialId":"stick-fichte-80x80"},{"at":[212.78,820,933.17],"along":[0,1,0],"length":0.6,"diameter":12,"materialId":"stick-fichte-80x80"},{"at":[252.43,30,927.26],"along":[-0.85,0,-0.52],"length":0.6,"diameter":12,"materialId":"stick-fichte-80x80"},{"at":[56,820,525],"along":[0,1,0],"length":0.6,"diameter":12,"materialId":"stick-fichte-80x80"},{"at":[56.89,30,551.68],"along":[0,0,-1],"length":0.6,"diameter":12,"materialId":"stick-fichte-80x80"},{"at":[170.06,820,92.81],"along":[0,1,0],"length":0.6,"diameter":12,"materialId":"stick-fichte-80x80"},{"at":[157.05,30,130.73],"along":[0.85,0,-0.52],"length":0.6,"diameter":12,"materialId":"stick-fichte-80x80"},{"at":[625,820,52],"along":[0,1,0],"length":0.6,"diameter":12,"materialId":"stick-fichte-80x80"},{"at":[598.62,30,52.16],"along":[1,0,0],"length":0.6,"diameter":12,"materialId":"stick-fichte-80x80"},{"at":[1087.22,820,66.83],"along":[0,1,0],"length":0.6,"diameter":12,"materialId":"stick-fichte-80x80"},{"at":[1047.57,30,72.74],"along":[0.85,0,0.52],"length":0.6,"diameter":12,"materialId":"stick-fichte-80x80"}],"spots":{"front":[875.0547055628681,947.2977050150287],"side":[1240.1253959146597,725.3321313468925],"corner":[1110,925],"chord":[650,960],"cornerFoot":[1125,930]},"size":[1300,940,1000]}</script>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.183.2/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.183.2/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+const { panels, pegs, spots, size } = JSON.parse(document.getElementById('data').textContent);
+const canvas = document.getElementById('view');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setClearColor(0xffffff);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(24, 1, 5, 12000);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true;
+scene.add(new THREE.HemisphereLight(0xffffff, 0xd8cfc0, 2.1));
+const sun = new THREE.DirectionalLight(0xffffff, 1.5); sun.position.set(900, 1600, 1400); scene.add(sun);
+const fill = new THREE.DirectionalLight(0xffffff, 0.5); fill.position.set(-1200, -300, -700); scene.add(fill);
+const WOOD = { Stab: 0xe2cda2, 'Ringstück': 0xe7d4ac, Kopf: 0xeadbb9, Platte: 0xf0e4c6 };
+const lineMat = new THREE.LineBasicMaterial({ color: 0x4b4338, transparent: true, opacity: 0.6 });
+const mat = (c) => new THREE.MeshStandardMaterial({ color: c, roughness: 0.82, metalness: 0, side: THREE.DoubleSide });
+const mats = Object.fromEntries(Object.entries(WOOD).map(([k, c]) => [k, mat(c)]));
+const hexa = (c) => {
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.BufferAttribute(new Float32Array(c.flat()), 3));
+  g.setIndex([0,1,3, 0,3,2, 4,6,7, 4,7,5, 0,4,5, 0,5,1, 2,3,7, 2,7,6, 0,2,6, 0,6,4, 1,5,7, 1,7,3]);
+  const flat = g.toNonIndexed(); flat.computeVertexNormals(); return flat;
+};
+let slab;
+for (const p of panels) {
+  const g = hexa(p.hexa);
+  const m = new THREE.Mesh(g, mats[p.name]);
+  m.add(new THREE.LineSegments(new THREE.EdgesGeometry(g, 32), lineMat));
+  scene.add(m);
+  if (p.name === 'Platte') slab = m;
+}
+const plug = mat(0xcdb98d);
+for (const q of pegs) {
+  const m = new THREE.Mesh(new THREE.CylinderGeometry(q.diameter / 2, q.diameter / 2, q.length + 0.6, 24), plug);
+  m.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), new THREE.Vector3(...q.along));
+  m.position.set(...q.at); scene.add(m);
+}
+const floor = new THREE.Mesh(new THREE.PlaneGeometry(3400, 3400), new THREE.MeshBasicMaterial({ color: 0xf5f2ec, side: THREE.DoubleSide })); floor.rotation.x = -Math.PI / 2; floor.position.set(size[0] / 2, -0.5, size[2] / 2); scene.add(floor);
+const at = (s, y) => [s[0], y, s[1]];
+const shots = [
+  ['Ganzer Altar', [size[0] / 2, 460, size[2] / 2], [1.0, 0.42, 1.25], 3700, 'Sechzehn gleiche Stäbe, sechzehn Ringstücke, acht Köpfe, die Platte.'],
+  ['Kopf', at(spots.front, 800), [0.35, -0.1, 1], 620, 'Der Ring läuft unter dem Kopf durch. Von unten hält ein Gewindestab Kopf und Ring an der Platte, durch die Platte geht nichts.'],
+  ['Von unten', at(spots.front, 790), [0.3, -1, 0.75], 560, 'Die Mutter sitzt in der Lücke zwischen den zwei Stäben.'],
+  ['Ringecke', at(spots.corner, 800), [0.5, 1.1, 0.7], 620, 'Ohne Platte gezeigt: eine Gehrung, von oben eine Schraube unter einem Holzstopfen.'],
+  ['Fuss', at(spots.cornerFoot, 40), [0.8, 0.45, 1], 700, 'Zwei Stäbe, Spitze an Spitze, eine Schraube quer unter einem Stopfen, darunter Kork.'],
+];
+const caption = document.getElementById('caption');
+const box = document.getElementById('shots');
+function go(i) {
+  const [, c, dir, dist, text] = shots[i];
+  const d = new THREE.Vector3(...dir).normalize().multiplyScalar(dist);
+  slab.visible = shots[i][0] !== 'Ringecke';
+  controls.target.set(...c); camera.position.set(...c).add(d); controls.update();
+  caption.textContent = text;
+  [...box.children].forEach((b, k) => b.setAttribute('aria-pressed', String(k === i)));
+}
+shots.forEach(([name], i) => { const b = document.createElement('button'); b.textContent = name; b.onclick = () => go(i); box.append(b); });
+function resize() { const w = canvas.clientWidth, h = canvas.clientHeight; renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); }
+addEventListener('resize', resize); resize(); go(0);
+(function loop() { controls.update(); renderer.render(scene, camera); requestAnimationFrame(loop); })();
+</script>
+</body>
+</html>
